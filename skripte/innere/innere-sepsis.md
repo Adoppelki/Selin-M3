@@ -1,77 +1,88 @@
 # Sepsis und septischer Schock
 
-Priorität A · Infektiologie/Intensiv · Prüfungsbezug: Willuweit 2026-06-a: DD SpO2-Abfall (Sepsis, Pneumonie, LAE); Cholangitis und infizierte Nekrose als Fokus
+Priorität A · Intensivmedizin/Infektiologie · Prüfungsbezug: Willuweit 2026-06-a: DD SpO2-Abfall (Sepsis, Pneumonie, LAE); Wie diagnostiziert/schließt man Sepsis aus?; Gastro-Fälle mit Sepsis
 
-**Prüfstatus:** Karten mit „Beleg: Leitlinie“ stammen aus der gelesenen SSC-2021-Zusammenfassung. Definitionen sind Standardwissen. Vasopressor-Wahl und MAP-Ziel standen in der gelesenen Quelle nicht und sind als Standardwissen markiert.
+**Prüfstatus:** Teilweise gegen die Zusammenfassung der SSC 2021 geprüft; übrige Inhalte Standardwissen. Keine Dosierungen.
 
-- Sepsis = lebensbedrohliche Organdysfunktion durch dysregulierte Wirtsantwort auf Infektion (Sepsis-3, SOFA-Anstieg ≥ 2)
-- **Antibiotika in Schock/hoher Wahrscheinlichkeit innerhalb 1 h**, Fokussuche und Sanierung
-- Kristalloide 30 ml/kg bei Hypotonie/Schock, Vasopressoren, Laktat
+## Worum geht es?
+Die Sepsis ist nach Sepsis-3 eine **lebensbedrohliche Organdysfunktion durch eine fehlregulierte Wirtsantwort auf eine Infektion**. Organdysfunktion wird als **Anstieg des SOFA-Scores um mindestens 2 Punkte** gemessen. Der **septische Schock** ist die Sepsis mit trotz Volumentherapie notwendigem Vasopressor, um einen mittleren arteriellen Druck von mindestens 65 mmHg zu halten, und einem Laktat über 2 mmol/l. Die Sterblichkeit beim Schock ist hoch. Früherkennung und schnelle Therapie entscheiden über das Überleben.
+
+## Erkennung
+Zeichen: Fieber oder Hypothermie, Tachykardie, Tachypnoe, Hypotonie, Bewusstseinsstörung, marmorierte Haut, verlängerte Rekapillarisierungszeit, Oligurie, Ikterus, Gerinnungsstörung. Als Screening dient der **qSOFA** (Atemfrequenz ab 22, veränderte Vigilanz, systolischer Blutdruck ≤ 100), die SSC 2021 rät allerdings davon ab, den qSOFA als einzelnes Screeninginstrument zu verwenden, da Sensitivität gering ist. Besser sind Scores wie NEWS oder MEWS und die klinische Beurteilung. Im Labor: Leukozyten (hoch oder erniedrigt), CRP, Procalcitonin, Laktat, Kreatinin, Bilirubin, Thrombozyten, Gerinnung, BGA.
+
+## Ursachen und Fokus
+Häufigste Foci: Lunge (Pneumonie), Abdomen (Cholangitis, Peritonitis, Abszess, Anastomoseninsuffizienz), Harnwege (Urosepsis), Haut/Weichteile, Katheter, Endokarditis, ZNS. Wichtig ist die **Fokussuche und Fokussanierung**: Drainage eines Abszesses, Entlastung einer Cholangitis (ERCP), Revision, Katheterwechsel. Ohne Fokussanierung versagt die Antibiotikatherapie.
+
+## Therapie (nach SSC 2021, Zusammenfassung)
+- **Rasch handeln**: Die ersten Stunden sind entscheidend („Hour-1“).
+- **Laktat messen** und wiederholen, wenn erhöht.
+- **Blutkulturen vor Antibiotikagabe**, sofern dies keine wesentliche Verzögerung bedeutet.
+- **Antibiotika sofort**, bei Schock oder hoher Wahrscheinlichkeit innerhalb einer Stunde. Breite empirische Therapie nach dem vermuteten Fokus und lokalen Erregern, später Deeskalation nach Antibiogramm.
+- **Volumen**: Kristalloide, bevorzugt balancierte, in den ersten Stunden (die Leitlinie schlägt 30 ml/kg in den ersten 3 Stunden vor, schwache Empfehlung) und dann nach dynamischen Parametern und Rekapillarisierung steuern.
+- **Vasopressor**: **Noradrenalin** als Mittel der ersten Wahl mit Ziel-MAP 65 mmHg; bei unzureichendem Effekt Vasopressin ergänzen.
+- **Hydrokortison**, wenn trotz ausreichender Vasopressortherapie ein anhaltender Bedarf besteht.
+- Weitere Maßnahmen: Beatmung bei Atemversagen, Nierenersatz bei Indikation, Thromboseprophylaxe, Stressulkusprophylaxe bei Risiko, Glukosekontrolle, Ernährung.
+
+## Kernfakten zum Merken
+- Sepsis-3: Infektion + SOFA-Anstieg ≥ 2; Schock: Vasopressor für MAP ≥ 65 und Laktat > 2 trotz Volumen.
+- SSC 2021: Antibiotika innerhalb 1 h bei Schock/hoher Wahrscheinlichkeit; Blutkulturen vorher; Laktat messen.
+- SSC 2021: Kristalloide (balanciert), Noradrenalin als erster Vasopressor, MAP-Ziel 65 mmHg; qSOFA nicht als alleiniges Screening.
+- Hydrokortison bei anhaltendem Vasopressorbedarf.
+- Fokussanierung ist Teil der Therapie.
 
 ## Typische Prüferfragen mit Antwort
 
-### 1. Definieren Sie Sepsis und septischen Schock.
+### 1. Wie diagnostizieren oder schließen Sie eine Sepsis aus?
 
-- **Sepsis:** lebensbedrohliche Organdysfunktion durch eine dysregulierte Wirtsantwort auf eine Infektion (Anstieg des SOFA-Scores um ≥ 2)
-- **Septischer Schock:** Sepsis mit Vasopressorbedarf zur Aufrechterhaltung eines MAP ≥ 65 mmHg **und** Laktat > 2 mmol/l trotz ausreichender Volumengabe
+Eine Sepsis ist eine klinische Diagnose aus Infektion plus Organdysfunktion. Ich suche nach einem Infektionsfokus und prüfe Organfunktionen: Bewusstsein, Atemfrequenz und Sauerstoffsättigung, Kreislauf mit Blutdruck und Rekapillarisierung, Urinausscheidung, Laborwerte wie Laktat, Kreatinin, Bilirubin, Thrombozyten, und berechne den SOFA-Score. Procalcitonin und CRP unterstützen, ersetzen aber nicht die Klinik. Ausschließen kann ich sie nur, wenn die Vitalparameter und Organfunktionen unauffällig sind oder eine andere Ursache wie eine Lungenembolie oder ein kardiogener Schock besser erklärt. Bei Sauerstoffabfall denke ich an Sepsis, Pneumonie und Lungenembolie.
 
-*Beleg: Standardwissen (Sepsis-3)*
+**Im Protokoll:** Willuweit 2026-06-a: Wie diagnostiziert/schließt man Sepsis aus?
 
-### 2. Reicht der qSOFA zum Screening?
+### 2. Wie behandeln Sie eine Sepsis?
 
-Nein. Die SSC 2021 spricht eine **starke Empfehlung gegen qSOFA als einzelnes Screening-Instrument** aus; er ist weder ausreichend sensitiv noch spezifisch.
+Nach der Surviving Sepsis Campaign gilt: schnell handeln. Ich messe das Laktat und entnehme Blutkulturen, wenn das keine wesentliche Verzögerung bringt, und gebe dann sofort Antibiotika, bei Schock innerhalb einer Stunde. Die Antibiotika wähle ich breit nach Fokus, später deeskaliere ich. Ich gebe balancierte Kristalloide zur Volumentherapie, und bei Schock Noradrenalin als ersten Vasopressor mit einem Ziel-MAP von 65 mmHg, bei Bedarf zusätzlich Vasopressin. Hydrokortison erwäge ich bei anhaltendem Vasopressorbedarf. Ganz wichtig ist die Fokussanierung, zum Beispiel Abszessdrainage, Gallenwegsdrainage oder Revisions-OP.
 
-*Beleg: Leitlinie (SSC 2021)*
+**Im Protokoll:** Willuweit: Sepsis als DD bei SpO2-Abfall
 
-### 3. Wann geben Sie Antibiotika?
+### 3. Wie definieren Sie Sepsis und septischen Schock?
 
-- Septischer Schock oder hohe Wahrscheinlichkeit einer Sepsis: **sofort, idealerweise innerhalb 1 h**
-- Mögliche Sepsis ohne Schock: zeitlich begrenzte rasche Abklärung, bei fortbestehendem Verdacht Antibiotika **innerhalb 3 h**
-- Niedrige Wahrscheinlichkeit einer Infektion ohne Schock: Zurückhalten und engmaschig beobachten (schwache Empfehlung)
-Blutkulturen vor Antibiose, wenn dadurch keine relevante Verzögerung entsteht.
+Nach Sepsis-3 ist Sepsis eine lebensbedrohliche Organdysfunktion durch eine dysregulierte Wirtsantwort auf eine Infektion, gemessen als Anstieg des SOFA-Scores um mindestens zwei Punkte. Der septische Schock liegt vor, wenn trotz adäquater Volumentherapie ein Vasopressor nötig ist, um einen MAP von 65 mmHg zu halten, und das Laktat über 2 mmol pro Liter liegt.
 
-*Beleg: Leitlinie (SSC 2021); Blutkulturen Standardwissen*
+### 4. Was ist der qSOFA, und wie wird er bewertet?
 
-### 4. Wie gehen Sie bei Hypotonie oder Schock mit Volumen und Katecholaminen vor?
+Ein Schnellscreening mit drei Kriterien: Atemfrequenz ab 22 pro Minute, veränderte Bewusstseinslage und systolischer Blutdruck bis 100 mmHg. Zwei oder mehr Punkte sind ein Warnsignal. Die Surviving Sepsis Campaign 2021 empfiehlt, den qSOFA nicht als einzelnes Screeninginstrument zu verwenden, weil er im Vergleich zu anderen Scores weniger sensitiv ist.
 
-- Vorschlag: **30 ml/kg i.v. Kristalloide** (schwache Empfehlung, abgestuft)
-- Vasopressoren dürfen **peripher begonnen** werden, ohne auf den zentralen Zugang zu warten
-- Steuerung am **Laktat**; Kapillarfüllungszeit als Ergänzung
-- **Hydrocortison** bei septischem Schock mit anhaltendem Vasopressorbedarf (schwache Empfehlung)
-- Mittel der ersten Wahl: Noradrenalin (Standardwissen), MAP-Ziel 65 mmHg (Standardwissen)
+### 5. Warum Fokussanierung bei Sepsis, z. B. bei chronischer Pankreatitis oder Cholangitis?
 
-*Beleg: Leitlinie (SSC 2021) für Volumen, peripheren Beginn, Laktat, Hydrocortison; Rest Standardwissen*
+Antibiotika erreichen abgekapselte Eiter- oder Gallenansammlungen schlecht, und solange der Fokus Bakterien streut, bleibt die Sepsis bestehen. Deshalb gehören Drainage, Entlastung der Gallenwege per ERCP, operative Sanierung oder Katheterwechsel zur Therapie, so früh wie möglich.
 
-### 5. Was gehört noch zur Sepsistherapie?
-
-**Fokussuche und Fokussanierung** so früh wie möglich: z. B. Cholangitis → ERCP-Drainage, infizierte Nekrose → Drainage, Abszess, Pneumonie, Harnwegsinfekt, Katheter entfernen. Organunterstützung nach Bedarf.
-
-*Beleg: Standardwissen*
+**Im Protokoll:** Protokoll: Chronische Pankreatitis, OP bei Sepsis
 
 ## Spezialwissen (Facharzt-Niveau)
 
-## Warum innerhalb einer Stunde Antibiotika?
-Bei septischem Schock steigt die Mortalität mit jeder Stunde Verzögerung der wirksamen Antibiotikagabe (Beobachtungsdaten, z. B. Kumar 2006). Deshalb in der SSC-Leitlinie 2021: bei Schock oder hoher Sepsiswahrscheinlichkeit sofort, bei möglicher Sepsis ohne Schock nach rascher Abklärung innerhalb von 3 Stunden (Quelle: SSC 2021).
+## Warum Antibiotika innerhalb der ersten Stunde bei Schock
+Beobachtungsdaten zeigen, dass jede Verzögerung bei Patienten im Schock die Sterblichkeit erhöht. Bei möglicher, aber unsicherer Sepsis ohne Schock empfiehlt die SSC 2021 eine kurze Zeit zur schnellen Abklärung, aber Antibiotika innerhalb von 3 Stunden, wenn die Infektion wahrscheinlich bleibt.
 
-## Warum 30 ml/kg Kristalloide, aber nur noch als schwache Empfehlung?
-Der Wert stammt aus früheren Protokollen. Die Evidenz ist begrenzt, deshalb wurde die Empfehlung auf einen Vorschlag abgeschwächt. Nach der Anfangsgabe richtet sich weiteres Volumen nach dem Ansprechen (Kapillarfüllung, Laktat, Dynamik), um Überwässerung zu vermeiden (Quelle: SSC 2021).
+## Warum balancierte Kristalloide
+Große Mengen NaCl 0,9 % führen zu hyperchlorämischer Azidose. Balancierte Lösungen vermeiden das; die SSC 2021 schlägt sie vor.
 
-## Warum Laktat?
-Erhöhtes Laktat zeigt Gewebehypoperfusion (anaerobe Glykolyse), aber auch β2-adrenerge Stimulation und eingeschränkte Leberclearance. Die Normalisierung gilt als Therapieziel und Verlaufsparameter (Quelle: SSC 2021: Laktat-gesteuerte Therapie).
+## Warum Noradrenalin Mittel der ersten Wahl ist
+Es hebt den Gefäßtonus über Alpha-1-Rezeptoren und erhält den Perfusionsdruck, mit weniger Tachyarrhythmien als bei Dopamin. Die SSC empfiehlt Noradrenalin als erstes Mittel; bei unzureichendem Effekt Vasopressin ergänzen, bevor die Noradrenalindosis weiter gesteigert wird. Bei kardialer Dysfunktion mit niedrigem Herzzeitvolumen kann ein Inotropikum ergänzt werden.
 
-## Warum Noradrenalin als Erstwahl?
-Noradrenalin steigert den Gefäßtonus über α1-Rezeptoren stark und die Herzfrequenz weniger als Dopamin; Dopamin führte in Vergleichsstudien zu mehr Rhythmusstörungen. MAP-Ziel 65 mmHg. Vasopressin als zweites Mittel zur Katecholaminersparnis (Standardwissen, nicht in der gelesenen Quelle).
+## Warum Hydrokortison
+Im septischen Schock bestehen relative Nebenniereninsuffizienz und Vasopressorresistenz. Die SSC 2021 schlägt Hydrokortison bei anhaltendem Vasopressorbedarf vor.
 
-## Warum Hydrocortison bei anhaltendem Vasopressorbedarf?
-Bei septischem Schock besteht eine relative Nebenniereninsuffizienz und verminderte Katecholaminansprechbarkeit der Gefäße. Hydrocortison verkürzt die Zeit bis zur Katecholaminfreiheit (Quelle: SSC 2021: schwache Empfehlung).
+## Warum Laktat gemessen wird
+Es ist Marker für Gewebehypoperfusion und zelluläre Stoffwechselstörung, hilft bei Risikoeinschätzung und Verlaufskontrolle. Rekapillarisierungszeit kann als zusätzliche Perfusionsbeurteilung dienen.
 
-## Warum qSOFA nicht als einzige Screening-Methode?
-qSOFA (Atemfrequenz ≥ 22, Bewusstseinsänderung, systolischer Blutdruck ≤ 100) ist spezifisch, aber wenig sensitiv und erkennt Sepsis zu spät. SSC 2021 empfiehlt es deshalb stark nicht als Einzelinstrument.
+## Warum Blutkulturen vor Antibiotika
+Antibiotika senken die Nachweisrate und damit die Möglichkeit zur gezielten Therapie und Deeskalation. Zwei Sets aus getrennten Punktionen, aerob und anaerob.
 
-## Warum Fokussuche und Fokussanierung?
-Ohne Beseitigung der Infektionsquelle (Abszess, Cholangitis, Nekrose, infizierter Katheter) bleiben Antibiotika unzureichend. Source Control so früh wie möglich ist Teil der Basistherapie (Standardwissen).
+## Warum Procalcitonin hilft, aber nicht entscheidet
+PCT steigt bei bakteriellen Infektionen und fällt bei Therapieerfolg. Die SSC schlägt es zur Entscheidung über das Beenden der Antibiotika vor; zum Entscheiden über den Beginn sollte es nicht allein dienen.
 
 ## Quellen
 
-- Surviving Sepsis Campaign International Guidelines 2021: gelesen über eine Übersichtsarbeit (PMC10246868)
-- Sepsis-3 (JAMA 2016): Definition, Standardwissen
+- Surviving Sepsis Campaign 2021: Zusammenfassung abgerufen (Hour-1, Laktat, Blutkulturen, Kristalloide, Noradrenalin, MAP 65, Hydrokortison bei persistierendem Vasopressorbedarf)
+- Sepsis-3 (JAMA 2016) Definition: Standardwissen
+- Standardwissen Intensivmedizin

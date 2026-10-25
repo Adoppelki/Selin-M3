@@ -1,0 +1,94 @@
+[
+ {
+  "id": "innere-aki",
+  "titel": "Akutes Nierenversagen (AKI)",
+  "fach": "Innere Medizin",
+  "bereich": "Nephrologie",
+  "prio": "A",
+  "protokoll_bezug": "Willuweit: zweifach Lebertransplantierter mit akutem Nierenversagen, metabolischer Azidose und Hyperkaliämie; Chirurgie: Dialyseindikationen",
+  "quellen": [
+   "KDIGO-Leitlinie AKI 2012: Definition bekannt, nicht abgerufen",
+   "Standardwissen Nephrologie"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen KDIGO bzw. Fachinformationen prüfen. Keine Dosierungen.",
+  "skript": "## Worum geht es?\nDas akute Nierenversagen (AKI, Acute Kidney Injury) ist ein plötzlicher Abfall der Nierenfunktion über Stunden bis Tage. Nach KDIGO liegt ein AKI vor bei einem **Kreatininanstieg um mindestens 0,3 mg/dl innerhalb von 48 Stunden**, einem Anstieg auf das 1,5-Fache des Ausgangswerts innerhalb von 7 Tagen oder einer **Urinausscheidung unter 0,5 ml/kg/h über 6 Stunden**. Die Stadieneinteilung (1 bis 3) richtet sich nach Ausmaß des Kreatininanstiegs und der Oligurie. Die Prognose hängt stark von der Ursache ab; ein AKI auf der Intensivstation geht mit deutlich erhöhter Sterblichkeit einher.\n\n## Einteilung nach Ursache\n- **Prärenal** (häufigste Form): verminderte Nierenperfusion. Volumenmangel (Blutung, Erbrechen, Durchfall, Diuretika), Herzinsuffizienz, Sepsis mit Vasodilatation, Hepatorenales Syndrom. Die Niere ist intakt und reagiert mit Natrium- und Wasserretention, der Urin ist konzentriert.\n- **Intrarenal**: Schädigung des Nierengewebes. Akute tubuläre Nekrose (ischämisch, toxisch: Kontrastmittel, Aminoglykoside), akute interstitielle Nephritis (Medikamente wie Antibiotika, NSAR, PPI), Glomerulonephritis, Rhabdomyolyse, Vaskulitis.\n- **Postrenal**: Abflusshindernis. Prostatahyperplasie, Steine, Tumoren, Katheter verstopft. Sonografisch Harnstau.\n\n## Vorgehen in der Praxis\nIch suche zuerst nach **reversiblen Ursachen**. Anamnese: Medikamente (NSAR, ACE-Hemmer/Sartane, Diuretika, nephrotoxische Substanzen), Kontrastmittel, Volumenverluste, Infekt, Miktion. Untersuchung: Volumenstatus (Hautturgor, Halsvenen, Ödeme, Blutdruck), Blasenperkussion. Labor: Kreatinin, Harnstoff, Elektrolyte (vor allem Kalium), BGA, Urinstatus mit Sediment. Sonografie der Nieren und ableitenden Harnwege, um einen Harnstau auszuschließen und die Nierengröße zu beurteilen.\nIm Urinsediment gibt das Muster Hinweise: **braune granulierte Zylinder** bei tubulärer Nekrose, **Erythrozytenzylinder und dysmorphe Erythrozyten** bei Glomerulonephritis, Leukozyten bei interstitieller Nephritis.\n\n## Therapie\n- Ursache beseitigen: Volumen bei Hypovolämie, Absetzen nephrotoxischer Medikamente, Harnstau entlasten (Katheter, Nephrostomie), Sepsis behandeln.\n- Kreislauf stabilisieren und ausreichenden Perfusionsdruck sichern.\n- Elektrolyte und Säure-Basen-Haushalt überwachen, Medikamentendosen an die Nierenfunktion anpassen.\n- Bei dringlicher Indikation Nierenersatzverfahren.\n\n## Dialyseindikationen (Merkwort AEIOU)\n- **A**zidose, schwer und therapierefraktär\n- **E**lektrolyte, vor allem Hyperkaliämie, die nicht konservativ beherrschbar ist\n- **I**ntoxikation mit dialysierbaren Substanzen\n- **O**verload, Volumenüberladung mit Lungenödem trotz Diuretika\n- **U**rämie, Perikarditis, Enzephalopathie, Blutungsneigung\n\n## Typische Fallstricke\nNach Kontrastmittel steigt das Kreatinin meist nach 24 bis 72 Stunden. Metformin vor und nach Kontrastmittel bei eingeschränkter Nierenfunktion pausieren. Beim Hepatorenalen Syndrom (Zirrhose mit Aszites) ist die Niere strukturell intakt, die Perfusion jedoch durch splanchnische Vasodilatation gestört; Auslöser sind Infekte, Blutung, Diuretika oder große Parazentese ohne Albumin.",
+  "fakten": [
+   "AKI-Definition nach KDIGO: Kreatinin +0,3 mg/dl in 48 h oder 1,5-fach in 7 Tagen, oder Urin < 0,5 ml/kg/h über 6 h.",
+   "Prärenal ist die häufigste Ursache; zuerst reversible Ursachen und Harnstau (Sonografie) suchen.",
+   "Dialyseindikationen AEIOU: Azidose, Elektrolyte (Hyperkaliämie), Intoxikation, Overload, Urämie.",
+   "Erythrozytenzylinder: Glomerulonephritis; braune granulierte Zylinder: tubuläre Nekrose.",
+   "Hepatorenales Syndrom: funktionell, Niere intakt, Auslöser Infekt/Blutung/Diuretika."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie gehen Sie bei einem Patienten mit akutem Nierenversagen, metabolischer Azidose und Hyperkaliämie vor?",
+    "antwort": "Zuerst sichere ich die Vitalfunktionen und bewerte den Volumenstatus. Die Hyperkaliämie bewerte ich am EKG, denn sie kann lebensbedrohliche Rhythmusstörungen auslösen: spitze T-Wellen, verbreiterter QRS-Komplex, Bradykardie. Bei EKG-Veränderungen gebe ich zuerst Kalzium zur Membranstabilisierung, dann verschiebe ich Kalium in die Zellen mit Insulin plus Glukose und gegebenenfalls Salbutamol. Eliminieren kann ich es über Schleifendiuretika bei erhaltener Diurese, Ionenaustauscher oder die Dialyse. Parallel suche ich die Ursache: prärenal, intrarenal oder postrenal, mit Anamnese, Medikamenten, Urinstatus und Sonografie. Bei einem Lebertransplantierten denke ich zusätzlich an Calcineurininhibitoren als nephrotoxische Medikation, an ein hepatorenales Syndrom und an Sepsis. Bei therapierefraktärer Hyperkaliämie oder Azidose ist die Dialyse indiziert.",
+    "protokoll": "Willuweit: zweifach Lebertransplantierter mit ANV, metabolischer Azidose und Hyperkaliämie"
+   },
+   {
+    "frage": "Welche Indikationen für eine Dialyse kennen Sie?",
+    "antwort": "Die akuten Indikationen merke ich mir mit AEIOU: schwere, therapierefraktäre **A**zidose, nicht beherrschbare **E**lektrolytstörung, vor allem Hyperkaliämie, **I**ntoxikation mit dialysierbaren Substanzen, **O**verload also Volumenüberladung mit Lungenödem trotz Diuretika und **U**rämiezeichen wie Perikarditis, Enzephalopathie oder Blutungsneigung. Beim chronischen Nierenversagen beginne ich die Dialyse bei symptomatischer Urämie und nicht allein nach einem Laborwert.",
+    "protokoll": "Chirurgie-Protokoll: Dialyseindikationen"
+   },
+   {
+    "frage": "Wie definiert sich ein akutes Nierenversagen?",
+    "antwort": "Nach KDIGO durch einen Kreatininanstieg um mindestens 0,3 mg/dl innerhalb von 48 Stunden oder auf das 1,5-Fache des Ausgangswertes innerhalb von 7 Tagen, oder durch eine Urinmenge unter 0,5 ml pro kg und Stunde über 6 Stunden. Das Stadium richtet sich nach dem Ausmaß."
+   },
+   {
+    "frage": "Wie unterscheiden Sie prärenal, intrarenal und postrenal?",
+    "antwort": "Prärenal: Volumenmangel oder Perfusionsstörung, die Niere selbst ist intakt, der Urin ist konzentriert, die Natriumausscheidung niedrig. Intrarenal: Parenchymschaden, zum Beispiel tubuläre Nekrose oder Nephritis; das Sediment zeigt Zylinder, die Natriumausscheidung ist erhöht. Postrenal: Abflusshindernis, in der Sonografie Harnstau. Sonografie ist daher immer der erste Schritt, um das Postrenale auszuschließen."
+   },
+   {
+    "frage": "Was ist das hepatorenale Syndrom?",
+    "antwort": "Ein funktionelles Nierenversagen bei fortgeschrittener Leberzirrhose. Durch die splanchnische Vasodilatation sinkt das effektive zirkulierende Volumen, die Nierengefäße verengen sich, die Niere selbst ist strukturell intakt. Es bleibt eine Ausschlussdiagnose, nachdem Volumenmangel, nephrotoxische Medikamente, Schock und andere Ursachen ausgeschlossen sind. Die Therapie umfasst das Absetzen der Diuretika, Albuminsubstitution und Vasokonstriktoren; die definitive Therapie ist die Lebertransplantation."
+   },
+   {
+    "frage": "Welche Medikamente und Substanzen schaden der Niere besonders?",
+    "antwort": "NSAR, weil sie die vasodilatierenden Prostaglandine hemmen. ACE-Hemmer und Sartane, weil sie bei Volumenmangel den Filtrationsdruck senken. Aminoglykoside, Kontrastmittel, Calcineurininhibitoren, Vancomycin, Aciclovir, Cisplatin. Zusätzlich kann PPI eine interstitielle Nephritis auslösen. Bei Niereninsuffizienz passe ich renal eliminierte Medikamente an."
+   }
+  ]
+ },
+ {
+  "id": "innere-ckd",
+  "titel": "Chronische Niereninsuffizienz",
+  "fach": "Innere Medizin",
+  "bereich": "Nephrologie",
+  "prio": "B",
+  "protokoll_bezug": "Dialyseindikationen (Chirurgie); ANV-Fall Willuweit",
+  "quellen": [
+   "KDIGO CKD 2012/2024: Stadieneinteilung bekannt, nicht abgerufen",
+   "Standardwissen Nephrologie"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen KDIGO bzw. Fachinformationen prüfen. Keine Dosierungen.",
+  "skript": "## Worum geht es?\nChronische Nierenerkrankung (CKD) bedeutet eine über mehr als **3 Monate** bestehende Nierenschädigung oder eine reduzierte glomeruläre Filtrationsrate (GFR). Die Einteilung nach KDIGO erfolgt nach **GFR (G1 bis G5)** und **Albuminurie (A1 bis A3)**. G5 ist eine GFR unter 15 ml/min, die terminale Niereninsuffizienz. Die häufigsten Ursachen in Industrieländern sind **Diabetes mellitus** und **arterielle Hypertonie**, gefolgt von Glomerulonephritiden, polyzystischer Nierenerkrankung und Nephrosklerose.\n\n## Folgen und Komplikationen\nMit sinkender Filtration treten systemische Folgen auf:\n- **Renale Hypertonie** und Volumenüberladung, Herzinsuffizienz. Die kardiovaskuläre Sterblichkeit ist stark erhöht.\n- **Renale Anämie**: Erythropoetinmangel. Therapie mit Erythropoese-stimulierenden Substanzen, nach Ausgleich von Eisenmangel.\n- **Renale Osteopathie / CKD-MBD**: Phosphatretention, Calcitriolmangel (fehlende 1-alpha-Hydroxylierung in der Niere), Hypokalzämie, sekundärer Hyperparathyreoidismus.\n- **Metabolische Azidose**, Hyperkaliämie, Hyperphosphatämie.\n- **Urämie**: Müdigkeit, Juckreiz, Übelkeit, Perikarditis, Enzephalopathie, Blutungsneigung (Thrombozytenfunktion gestört), Polyneuropathie.\n\n## Vorgehen und Therapie\nZiel ist die **Progressionsverzögerung** und die Vermeidung von Komplikationen:\n- Blutdruck und Blutzucker gut einstellen. ACE-Hemmer oder Sartane bei Albuminurie, SGLT2-Hemmer haben nierenprotektive Wirkung.\n- Nephrotoxika meiden, Medikamente anpassen, Kontrastmittel kritisch abwägen.\n- Phosphat in der Ernährung begrenzen, Phosphatbinder, Vitamin-D-Substitution bei sekundärem Hyperparathyreoidismus.\n- Impfungen, Vorbereitung auf Nierenersatz rechtzeitig.\n- **Nierenersatz**: Hämodialyse, Peritonealdialyse oder Transplantation. Die Transplantation ist die beste Therapie, wenn geeignet. Zugang für die Dialyse: arteriovenöse Fistel, Shunt, Katheter.\n\n## Praxis\nKreatinin allein ist zur Einschätzung ungenau; die GFR wird geschätzt (CKD-EPI) oder bei Bedarf mit Cystatin C bestimmt. Eine kleine geschrumpfte Niere in der Sonografie spricht für chronisch, große Nieren sprechen für Diabetes, Amyloidose oder polyzystische Erkrankung.",
+  "fakten": [
+   "CKD: > 3 Monate Nierenschaden oder GFR < 60; Einteilung nach GFR (G1–G5) und Albuminurie (A1–A3).",
+   "Häufigste Ursachen: Diabetes mellitus, arterielle Hypertonie.",
+   "Renale Anämie = EPO-Mangel; CKD-MBD = Phosphat hoch, Calcitriol niedrig, Ca niedrig, PTH hoch.",
+   "Nierenschutz: Blutdruck/Blutzucker, ACE-Hemmer/Sartane bei Albuminurie, SGLT2-Hemmer.",
+   "Beste Therapie der terminalen Niereninsuffizienz: Transplantation."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie ist die chronische Niereninsuffizienz definiert und eingeteilt?",
+    "antwort": "Als Nierenschädigung oder verminderte GFR über mehr als drei Monate. Nach KDIGO teile ich nach GFR in die Stadien G1 bis G5 ein, G5 ist eine GFR unter 15 ml pro Minute, und zusätzlich nach Albuminurie in A1 bis A3. Beides zusammen bestimmt das Risiko für Progression und kardiovaskuläre Ereignisse."
+   },
+   {
+    "frage": "Welche Komplikationen der Niereninsuffizienz kennen Sie?",
+    "antwort": "Hypertonie und Volumenüberladung, renale Anämie durch Erythropoetinmangel, Störung des Kalzium-Phosphat-Haushalts mit sekundärem Hyperparathyreoidismus und renaler Osteopathie, metabolische Azidose, Hyperkaliämie und im Endstadium die Urämie mit Perikarditis, Enzephalopathie, Juckreiz und Blutungsneigung. Dazu ein stark erhöhtes kardiovaskuläres Risiko."
+   },
+   {
+    "frage": "Wie können Sie die Progression verlangsamen?",
+    "antwort": "Durch gute Einstellung von Blutdruck und Blutzucker, ACE-Hemmer oder Sartane bei Albuminurie, SGLT2-Hemmer, Vermeidung von Nephrotoxika wie NSAR, angepasste Medikamentendosierung, und Behandlung von Komplikationen wie Azidose und Anämie."
+   },
+   {
+    "frage": "Welche Nierenersatzverfahren gibt es?",
+    "antwort": "Hämodialyse, Peritonealdialyse und die Nierentransplantation. Die Transplantation ist die Therapie der Wahl bei geeigneten Patienten, weil sie Lebensqualität und Überleben am besten verbessert. Für die Hämodialyse brauche ich einen Gefäßzugang, bevorzugt eine arteriovenöse Fistel."
+   },
+   {
+    "frage": "Warum entsteht bei Niereninsuffizienz ein sekundärer Hyperparathyreoidismus?",
+    "antwort": "Die geschädigte Niere scheidet weniger Phosphat aus und bildet weniger aktives Vitamin D (Calcitriol). Dadurch sinkt die intestinale Kalziumaufnahme, das Serumkalzium fällt, Phosphat steigt. Beides stimuliert die Nebenschilddrüsen zur vermehrten Parathormonbildung. Folge sind Knochenumbau und Gefäßverkalkung."
+   }
+  ]
+ }
+]

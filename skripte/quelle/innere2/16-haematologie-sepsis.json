@@ -1,0 +1,140 @@
+[
+ {
+  "id": "innere-anaemie",
+  "titel": "Anämien und Anämiediagnostik",
+  "fach": "Innere Medizin",
+  "bereich": "Hämatologie",
+  "prio": "A",
+  "protokoll_bezug": "Willuweit: Anämiediagnostik (mikrozytär vs. makrozytär); Müdigkeit/Erschöpfung DD; Zöliakie mit mikrozytärer Anämie",
+  "quellen": [
+   "Standardwissen Hämatologie; DGHO-Leitlinien bekannt, nicht abgerufen"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen Fachliteratur prüfen. Keine Dosierungen.",
+  "skript": "## Worum geht es?\nAnämie bedeutet eine Verminderung von Hämoglobin unterhalb des altersabhängigen Normbereichs (nach WHO bei Frauen unter 12, bei Männern unter 13 g/dl). Sie ist ein Symptom, keine Diagnose. Typische Beschwerden sind Müdigkeit, Leistungsminderung, Blässe, Belastungsdyspnoe, Tachykardie, Kopfschmerzen und bei Angina-Patienten Verschlechterung der Beschwerden. In der Prüfung wird häufig nach der **Anämiediagnostik** gefragt, und sie gehört zur Differenzialdiagnose der Müdigkeit.\n\n## Systematik nach MCV\nDer erste Schritt ist das **Blutbild mit MCV und Retikulozyten**.\n- **Mikrozytär (MCV niedrig)**: **Eisenmangel** (häufigste Anämie weltweit), Thalassämie, Anämie der chronischen Erkrankung (oft normozytär, später mikrozytär), sideroblastische Anämie. Merke: Bei Eisenmangel ist Ferritin niedrig, Transferrinsättigung niedrig, Transferrin hoch. Bei Entzündung ist Ferritin als Akutphaseprotein erhöht, daher Ferritin zusammen mit der Transferrinsättigung beurteilen. Ursache suchen: **Blutverlust** (Magen-Darm: Ulkus, Karzinom; gynäkologisch), Malabsorption (Zöliakie, Atrophe Gastritis, nach Magenresektion), Mangelernährung. Bei Männern und Frauen nach der Menopause immer Magen-Darm-Diagnostik, Gastroskopie und Koloskopie.\n- **Normozytär**: Akuter Blutverlust, Hämolyse (Retikulozyten erhöht), renale Anämie (EPO-Mangel), Anämie der chronischen Erkrankung, Knochenmarkinsuffizienz.\n- **Makrozytär (MCV hoch)**: **Vitamin-B12-Mangel**, **Folsäuremangel** (megaloblastär), Alkohol, Lebererkrankungen, Hypothyreose, Medikamente (Methotrexat, Hydroxyurea), myelodysplastisches Syndrom. B12-Mangel: perniziöse Anämie (Autoimmungastritis mit Antikörpern gegen Parietalzellen und Intrinsic Factor), nach Magenresektion oder Ileumresektion, Metformin, strikte vegane Ernährung. Neurologische Symptome (funikuläre Myelose, Parästhesien) sind für B12-Mangel typisch, nicht für Folsäuremangel.\n\n## Hämolyse\nZeichen: Retikulozyten erhöht, indirektes Bilirubin und LDH erhöht, Haptoglobin erniedrigt, Skleren­ikterus. Ursachen: autoimmun (Wärme- und Kälteantikörper, Coombs-Test), angeboren (Sphärozytose, Glukose-6-Phosphat-Dehydrogenase-Mangel, Sichelzellanämie, Thalassämie), mechanisch (Klappen, TTP/HUS) und infektiös (Malaria).\n\n## Therapie\nUrsachenorientiert. Eisenmangel: Ursache klären, Eisen oral, bei Unverträglichkeit, Malabsorption oder schweren Verläufen intravenös. B12-Mangel: Substitution (bei perniziöser Anämie parenteral oder hochdosiert oral), Folsäure erst nach Ausschluss eines B12-Mangels geben, da sonst die neurologischen Schäden fortschreiten können. Transfusion nur bei Symptomen oder kritischer Anämie.",
+  "fakten": [
+   "Erster Schritt: MCV und Retikulozyten.",
+   "Mikrozytär: Eisenmangel (Ferritin niedrig), Thalassämie, Entzündung; Ursache des Eisenmangels suchen (GI-Blutung, Malabsorption).",
+   "Makrozytär: B12-/Folsäuremangel, Alkohol, Leber, Hypothyreose, Medikamente.",
+   "B12-Mangel macht neurologische Symptome (funikuläre Myelose); Folsäure nie allein bei unklarem B12-Status.",
+   "Hämolyse: Retikulozyten ↑, LDH ↑, indirektes Bilirubin ↑, Haptoglobin ↓."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie gehen Sie bei einer Anämie diagnostisch vor?",
+    "antwort": "Ich beginne mit Anamnese und Untersuchung: Blutungszeichen, Ernährung, Medikamente, Alkohol, Begleiterkrankungen, B-Symptomatik, Blässe, Ikterus, Zunge, Nägel. Dann das Blutbild mit MCV und Retikulozyten. Mikrozytär denke ich an Eisenmangel, Thalassämie und chronische Erkrankung; ich bestimme Ferritin, Transferrinsättigung und Entzündungswerte und suche beim Eisenmangel die Blutungsquelle oder Malabsorption, bei Erwachsenen mit Gastro- und Koloskopie. Makrozytär bestimme ich Vitamin B12, Folsäure, Leber- und Schilddrüsenwerte und frage nach Alkohol und Medikamenten. Normozytär mit hohen Retikulozyten denke ich an Blutung oder Hämolyse, mit niedrigen an Nierenerkrankung, chronische Erkrankung oder Knochenmarkinsuffizienz.",
+    "protokoll": "Willuweit: Anämiediagnostik (mikrozytär vs. makrozytär)"
+   },
+   {
+    "frage": "Welche Ursachen hat ein Eisenmangel, und wie gehen Sie vor?",
+    "antwort": "Blutverlust ist die häufigste Ursache, bei Frauen im gebärfähigen Alter die Menstruation, sonst gastrointestinale Blutung durch Ulkus, Tumor oder Angiodysplasie. Dazu Malabsorption wie Zöliakie oder Helicobacter-Gastritis, erhöhter Bedarf und Mangelernährung. Bei Männern und postmenopausalen Frauen veranlasse ich Gastroskopie und Koloskopie, bei Verdacht auf Zöliakie serologisch Gewebstransglutaminase-IgA, und danach die Histologie.",
+    "protokoll": "Fall mit Durchfällen, Aphthen und mikrozytärer Anämie, Zottenatrophie → Zöliakie"
+   },
+   {
+    "frage": "Wie erkennen Sie einen Vitamin-B12-Mangel, und was ist das Besondere?",
+    "antwort": "Makrozytäre, hyperchrome Anämie mit Hypersegmentierung der Neutrophilen, B12 im Serum niedrig, bei Grenzwerten Holotranscobalamin oder Methylmalonsäure. Besonders sind die neurologischen Symptome: Parästhesien, Gangunsicherheit durch funikuläre Myelose der Hinterstränge und Pyramidenbahnen, kognitive Veränderungen. Bei perniziöser Anämie finden sich Antikörper gegen Intrinsic Factor und Parietalzellen. Folsäure allein darf nicht gegeben werden, weil sie die Anämie bessert, aber die Neurologie nicht aufhält."
+   },
+   {
+    "frage": "Woran erkennen Sie eine Hämolyse?",
+    "antwort": "Retikulozyten erhöht, LDH und indirektes Bilirubin erhöht, Haptoglobin erniedrigt, gegebenenfalls Ikterus und Splenomegalie. Im Ausstrich Fragmentozyten oder Sphärozyten. Der direkte Coombs-Test unterscheidet autoimmune von nichtimmunen Formen."
+   },
+   {
+    "frage": "Was ist bei Müdigkeit und Erschöpfung differenzialdiagnostisch zu bedenken?",
+    "antwort": "Ich denke an Anämie, Hypothyreose, Diabetes, Infektionen, Herz- und Niereninsuffizienz, Leber- und Nierenerkrankungen, Schlafapnoe, Depression, Medikamente, Mangelzustände wie Eisen- und B12-Mangel, Tumorerkrankungen und Störungen der Elektrolyte. Basisdiagnostik: Anamnese, Untersuchung, Blutbild, CRP, Elektrolyte, Glukose, TSH, Leber- und Nierenwerte, Ferritin.",
+    "protokoll": "Willuweit: Müdigkeit/Erschöpfung DD (Anämie u. a.)"
+   }
+  ]
+ },
+ {
+  "id": "innere-lymphom-leukaemie",
+  "titel": "Lymphknotenvergrößerung, Lymphome und Leukämien",
+  "fach": "Innere Medizin",
+  "bereich": "Hämatologie/Onkologie",
+  "prio": "B",
+  "protokoll_bezug": "Hinrichs/Chirurgie-Protokolle: DD Lymphadenopathie cervikal; Virchow-LK; axilläre LK bei Frau; LK am Kopf (Leukämie, Lymphome, EBV); Mycosis fungoides",
+  "quellen": [
+   "Standardwissen Hämatologie/Onkologie; DGHO-Leitlinien nicht abgerufen"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen Fachliteratur prüfen. Keine Dosierungen. Hinweis: In einem Protokoll wurde Onkologie als Prüfungsthema ausgeschlossen; Fokus daher auf Basiswissen und Differenzialdiagnose.",
+  "skript": "## Lymphadenopathie: Vorgehen\nLymphknoten sind Filterstationen der Lymphe. Ihre Vergrößerung hat viele Ursachen. Entscheidend sind **Lokalisation, Konsistenz, Verschieblichkeit, Schmerz und Begleitsymptome**. Weiche, druckschmerzhafte, verschiebliche Knoten sprechen für Entzündung, derbe, indolente, verbackene, nicht verschiebliche für Malignität. Sie sollen nach 4 bis 6 Wochen ohne erkennbaren Infekt abgeklärt werden, bei Verdacht auf Malignität früher.\nDifferenzialdiagnosen:\n- **Infektiös**: Virale Infekte, EBV (Mononukleose), CMV, HIV, Toxoplasmose, bakterielle Lymphadenitis, Tuberkulose, Katzenkratzkrankheit.\n- **Autoimmun**: Sarkoidose, Lupus, rheumatoide Arthritis.\n- **Maligne**: Lymphome, Leukämien, Metastasen solider Tumoren.\nDie Lokalisation gibt einen Hinweis auf den Primärtumor: **Virchow-Lymphknoten** (supraklavikulär links) bei Magenkarzinom und anderen abdominellen Tumoren, weil der Ductus thoracicus dort in den linken Venenwinkel mündet; **axillär bei der Frau** Mammakarzinom; Kopf-Hals-Region Tumoren des HNO-Bereichs, Schilddrüse, Lymphome; inguinal Haut der unteren Extremität, Genitale, Anus.\nDiagnostik: Anamnese (B-Symptome: Fieber, Nachtschweiß, Gewichtsverlust über 10 % in 6 Monaten), Untersuchung aller Lymphknotenstationen, Leber und Milz, Labor mit Blutbild und Differenzialblutbild, LDH, CRP, Serologien, Sonografie, gegebenenfalls CT. Bei Verdacht auf Lymphom ist die **Exstirpation des ganzen Lymphknotens** der Feinnadelpunktion überlegen, weil die Architektur beurteilt werden muss.\n\n## Lymphome\n- **Hodgkin-Lymphom**: Reed-Sternberg-Zellen, junge Erwachsene, kontiguierliche Ausbreitung, zervikaler Befall häufig, B-Symptome, Juckreiz, Alkoholschmerz. Gute Heilungschancen.\n- **Non-Hodgkin-Lymphome**: indolent (follikulär, CLL) und aggressiv (diffus großzellig). Aggressive Formen wachsen schnell, sind aber häufig heilbar.\n- **Kutane T-Zell-Lymphome**: Mycosis fungoides, langsam verlaufend, oft jahrelang als Ekzem verkannt.\n\n## Leukämien\n- **Akute Leukämien** (AML, ALL): Knochenmarkinsuffizienz mit Anämie, Infektionen durch Neutropenie, Blutungen durch Thrombozytopenie, Blasten im Blut. Notfall; Abklärung mit Knochenmarkpunktion.\n- **Chronische Leukämien**: CML (Philadelphia-Chromosom, BCR-ABL, Tyrosinkinaseinhibitoren), CLL (ältere Menschen, oft Zufallsbefund, Lymphozytose).\nDie Klinik umfasst Müdigkeit, Infektneigung, Blutungen, Lymphknoten- und Milzvergrößerung.",
+  "fakten": [
+   "Verdächtige Lymphknoten: derb, indolent, nicht verschieblich, > 4–6 Wochen; B-Symptome beachten.",
+   "Virchow-LK (links supraklavikulär): Magen- und abdominelle Tumoren; Ductus thoracicus mündet links.",
+   "Axillär bei der Frau: Mammakarzinom; Kopf-Hals: HNO-Tumoren, Lymphome, EBV.",
+   "Bei Lymphomverdacht: Lymphknoten komplett exstirpieren statt nur punktieren.",
+   "Hodgkin: Reed-Sternberg-Zellen; CML: Philadelphia-Chromosom (BCR-ABL)."
+  ],
+  "fragen": [
+   {
+    "frage": "Welche Differenzialdiagnosen einer zervikalen Lymphadenopathie kennen Sie?",
+    "antwort": "Am häufigsten reaktive Lymphknoten bei Infekten der oberen Atemwege, Tonsillitis oder Zahninfekten. Außerdem EBV-Mononukleose, CMV, Toxoplasmose, Tuberkulose und HIV. Bei den malignen Ursachen denke ich an Lymphome, Leukämien und Metastasen von HNO-Tumoren, Schilddrüsenkarzinom und, supraklavikulär, abdominellen oder thorakalen Tumoren. Ich beurteile Größe, Konsistenz, Schmerz, Verschieblichkeit, und frage nach B-Symptomen, Infekten, Zahnstatus und Rauchen.",
+    "protokoll": "Protokoll: DD Lymphadenopathie cervikal"
+   },
+   {
+    "frage": "Was ist ein Virchow-Lymphknoten, und warum tritt er auf?",
+    "antwort": "Ein vergrößerter Lymphknoten in der linken Supraklavikulargrube, auch Troisier-Zeichen genannt. Er entsteht, weil der Ductus thoracicus, der die Lymphe des Bauchraums und der unteren Körperhälfte sammelt, im linken Venenwinkel mündet. Metastasen abdomineller Tumoren, klassisch des Magenkarzinoms, erreichen diesen Lymphknoten. Beim Magenkarzinom entspricht eine Fernmetastase dem M-Stadium, weil der Virchow-Knoten jenseits der regionären Stationen liegt.",
+    "protokoll": "Protokoll: Virchow-LK Pathophysiologie, bei Magen-Ca N- oder M-Stadium?"
+   },
+   {
+    "frage": "Wie unterscheiden Sie einen infektiösen von einem malignen Lymphknoten?",
+    "antwort": "Infektiöse Lymphknoten sind weich, druckschmerzhaft, verschieblich und bilden sich mit dem Infekt zurück. Maligne Knoten sind derb, meist schmerzlos, verbacken und nicht verschieblich, nehmen an Größe zu und bestehen länger als vier bis sechs Wochen. Ergänzend zählen B-Symptome, Milzvergrößerung und Befund im Blutbild. Im Zweifel entnehme ich den Lymphknoten komplett zur Histologie.",
+    "protokoll": "Protokoll: infektiös vs. maligne LK"
+   },
+   {
+    "frage": "Welche Lymphknotenstationen untersuchen Sie?",
+    "antwort": "Zervikal (submental, submandibulär, nuchal, jugulär), supraklavikulär, axillär, epitrochlear, inguinal und popliteal, dazu Leber und Milz im Abdomen. Ich untersuche stets seitenvergleichend und beschreibe Größe, Konsistenz, Verschieblichkeit und Druckschmerz.",
+    "protokoll": "Protokolle: Lymphknotenstationen am Hals; axillär/Kopf"
+   },
+   {
+    "frage": "Was sind B-Symptome?",
+    "antwort": "Unerklärtes Fieber über 38 Grad, Nachtschweiß mit Wechsel der Kleidung und ungewollter Gewichtsverlust von mehr als 10 Prozent in sechs Monaten. Sie sprechen für Lymphome und sind prognostisch relevant."
+   }
+  ]
+ },
+ {
+  "id": "innere-sepsis",
+  "titel": "Sepsis und septischer Schock",
+  "fach": "Innere Medizin",
+  "bereich": "Intensivmedizin/Infektiologie",
+  "prio": "A",
+  "protokoll_bezug": "Willuweit 2026-06-a: DD SpO2-Abfall (Sepsis, Pneumonie, LAE); Wie diagnostiziert/schließt man Sepsis aus?; Gastro-Fälle mit Sepsis",
+  "quellen": [
+   "Surviving Sepsis Campaign 2021: Zusammenfassung abgerufen (Hour-1, Laktat, Blutkulturen, Kristalloide, Noradrenalin, MAP 65, Hydrokortison bei persistierendem Vasopressorbedarf)",
+   "Sepsis-3 (JAMA 2016) Definition: Standardwissen",
+   "Standardwissen Intensivmedizin"
+  ],
+  "status": "Teilweise gegen die Zusammenfassung der SSC 2021 geprüft; übrige Inhalte Standardwissen. Keine Dosierungen.",
+  "skript": "## Worum geht es?\nDie Sepsis ist nach Sepsis-3 eine **lebensbedrohliche Organdysfunktion durch eine fehlregulierte Wirtsantwort auf eine Infektion**. Organdysfunktion wird als **Anstieg des SOFA-Scores um mindestens 2 Punkte** gemessen. Der **septische Schock** ist die Sepsis mit trotz Volumentherapie notwendigem Vasopressor, um einen mittleren arteriellen Druck von mindestens 65 mmHg zu halten, und einem Laktat über 2 mmol/l. Die Sterblichkeit beim Schock ist hoch. Früherkennung und schnelle Therapie entscheiden über das Überleben.\n\n## Erkennung\nZeichen: Fieber oder Hypothermie, Tachykardie, Tachypnoe, Hypotonie, Bewusstseinsstörung, marmorierte Haut, verlängerte Rekapillarisierungszeit, Oligurie, Ikterus, Gerinnungsstörung. Als Screening dient der **qSOFA** (Atemfrequenz ab 22, veränderte Vigilanz, systolischer Blutdruck ≤ 100), die SSC 2021 rät allerdings davon ab, den qSOFA als einzelnes Screeninginstrument zu verwenden, da Sensitivität gering ist. Besser sind Scores wie NEWS oder MEWS und die klinische Beurteilung. Im Labor: Leukozyten (hoch oder erniedrigt), CRP, Procalcitonin, Laktat, Kreatinin, Bilirubin, Thrombozyten, Gerinnung, BGA.\n\n## Ursachen und Fokus\nHäufigste Foci: Lunge (Pneumonie), Abdomen (Cholangitis, Peritonitis, Abszess, Anastomoseninsuffizienz), Harnwege (Urosepsis), Haut/Weichteile, Katheter, Endokarditis, ZNS. Wichtig ist die **Fokussuche und Fokussanierung**: Drainage eines Abszesses, Entlastung einer Cholangitis (ERCP), Revision, Katheterwechsel. Ohne Fokussanierung versagt die Antibiotikatherapie.\n\n## Therapie (nach SSC 2021, Zusammenfassung)\n- **Rasch handeln**: Die ersten Stunden sind entscheidend („Hour-1“).\n- **Laktat messen** und wiederholen, wenn erhöht.\n- **Blutkulturen vor Antibiotikagabe**, sofern dies keine wesentliche Verzögerung bedeutet.\n- **Antibiotika sofort**, bei Schock oder hoher Wahrscheinlichkeit innerhalb einer Stunde. Breite empirische Therapie nach dem vermuteten Fokus und lokalen Erregern, später Deeskalation nach Antibiogramm.\n- **Volumen**: Kristalloide, bevorzugt balancierte, in den ersten Stunden (die Leitlinie schlägt 30 ml/kg in den ersten 3 Stunden vor, schwache Empfehlung) und dann nach dynamischen Parametern und Rekapillarisierung steuern.\n- **Vasopressor**: **Noradrenalin** als Mittel der ersten Wahl mit Ziel-MAP 65 mmHg; bei unzureichendem Effekt Vasopressin ergänzen.\n- **Hydrokortison**, wenn trotz ausreichender Vasopressortherapie ein anhaltender Bedarf besteht.\n- Weitere Maßnahmen: Beatmung bei Atemversagen, Nierenersatz bei Indikation, Thromboseprophylaxe, Stressulkusprophylaxe bei Risiko, Glukosekontrolle, Ernährung.",
+  "fakten": [
+   "Sepsis-3: Infektion + SOFA-Anstieg ≥ 2; Schock: Vasopressor für MAP ≥ 65 und Laktat > 2 trotz Volumen.",
+   "SSC 2021: Antibiotika innerhalb 1 h bei Schock/hoher Wahrscheinlichkeit; Blutkulturen vorher; Laktat messen.",
+   "SSC 2021: Kristalloide (balanciert), Noradrenalin als erster Vasopressor, MAP-Ziel 65 mmHg; qSOFA nicht als alleiniges Screening.",
+   "Hydrokortison bei anhaltendem Vasopressorbedarf.",
+   "Fokussanierung ist Teil der Therapie."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie diagnostizieren oder schließen Sie eine Sepsis aus?",
+    "antwort": "Eine Sepsis ist eine klinische Diagnose aus Infektion plus Organdysfunktion. Ich suche nach einem Infektionsfokus und prüfe Organfunktionen: Bewusstsein, Atemfrequenz und Sauerstoffsättigung, Kreislauf mit Blutdruck und Rekapillarisierung, Urinausscheidung, Laborwerte wie Laktat, Kreatinin, Bilirubin, Thrombozyten, und berechne den SOFA-Score. Procalcitonin und CRP unterstützen, ersetzen aber nicht die Klinik. Ausschließen kann ich sie nur, wenn die Vitalparameter und Organfunktionen unauffällig sind oder eine andere Ursache wie eine Lungenembolie oder ein kardiogener Schock besser erklärt. Bei Sauerstoffabfall denke ich an Sepsis, Pneumonie und Lungenembolie.",
+    "protokoll": "Willuweit 2026-06-a: Wie diagnostiziert/schließt man Sepsis aus?"
+   },
+   {
+    "frage": "Wie behandeln Sie eine Sepsis?",
+    "antwort": "Nach der Surviving Sepsis Campaign gilt: schnell handeln. Ich messe das Laktat und entnehme Blutkulturen, wenn das keine wesentliche Verzögerung bringt, und gebe dann sofort Antibiotika, bei Schock innerhalb einer Stunde. Die Antibiotika wähle ich breit nach Fokus, später deeskaliere ich. Ich gebe balancierte Kristalloide zur Volumentherapie, und bei Schock Noradrenalin als ersten Vasopressor mit einem Ziel-MAP von 65 mmHg, bei Bedarf zusätzlich Vasopressin. Hydrokortison erwäge ich bei anhaltendem Vasopressorbedarf. Ganz wichtig ist die Fokussanierung, zum Beispiel Abszessdrainage, Gallenwegsdrainage oder Revisions-OP.",
+    "protokoll": "Willuweit: Sepsis als DD bei SpO2-Abfall"
+   },
+   {
+    "frage": "Wie definieren Sie Sepsis und septischen Schock?",
+    "antwort": "Nach Sepsis-3 ist Sepsis eine lebensbedrohliche Organdysfunktion durch eine dysregulierte Wirtsantwort auf eine Infektion, gemessen als Anstieg des SOFA-Scores um mindestens zwei Punkte. Der septische Schock liegt vor, wenn trotz adäquater Volumentherapie ein Vasopressor nötig ist, um einen MAP von 65 mmHg zu halten, und das Laktat über 2 mmol pro Liter liegt."
+   },
+   {
+    "frage": "Was ist der qSOFA, und wie wird er bewertet?",
+    "antwort": "Ein Schnellscreening mit drei Kriterien: Atemfrequenz ab 22 pro Minute, veränderte Bewusstseinslage und systolischer Blutdruck bis 100 mmHg. Zwei oder mehr Punkte sind ein Warnsignal. Die Surviving Sepsis Campaign 2021 empfiehlt, den qSOFA nicht als einzelnes Screeninginstrument zu verwenden, weil er im Vergleich zu anderen Scores weniger sensitiv ist."
+   },
+   {
+    "frage": "Warum Fokussanierung bei Sepsis, z. B. bei chronischer Pankreatitis oder Cholangitis?",
+    "antwort": "Antibiotika erreichen abgekapselte Eiter- oder Gallenansammlungen schlecht, und solange der Fokus Bakterien streut, bleibt die Sepsis bestehen. Deshalb gehören Drainage, Entlastung der Gallenwege per ERCP, operative Sanierung oder Katheterwechsel zur Therapie, so früh wie möglich.",
+    "protokoll": "Protokoll: Chronische Pankreatitis, OP bei Sepsis"
+   }
+  ]
+ }
+]

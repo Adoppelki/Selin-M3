@@ -1,0 +1,132 @@
+[
+ {
+  "id": "innere-hyponatriaemie",
+  "titel": "Hyponatriämie",
+  "fach": "Innere Medizin",
+  "bereich": "Nephrologie/Elektrolyte",
+  "prio": "A",
+  "protokoll_bezug": "Chirurgie/Innere-Protokoll: dekompensierte Herzinsuffizienz mit Hyponatriämie; Frage: Warum Hyponatriämie? Wie ausgleichen (max. 10 mmol/d, pontine Myelinolyse)?",
+  "quellen": [
+   "Europäische Leitlinie Hyponatriämie 2014: bekannt, nicht abgerufen",
+   "Standardwissen Nephrologie"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen Fachliteratur prüfen. Keine Dosierungen.",
+  "skript": "## Worum geht es?\nHyponatriämie bedeutet Serumnatrium unter 135 mmol/l und ist die häufigste Elektrolytstörung im Krankenhaus. Natrium bestimmt die Serumosmolalität. Eine Hyponatriämie bedeutet daher fast immer ein **Wasserüberschuss relativ zum Natrium**, nicht einfach zu wenig Salz. Gefährlich sind zwei Dinge: die Hyponatriämie selbst (Hirnödem bei akutem, starkem Abfall) und ein **zu schneller Ausgleich** (osmotische Demyelinisierung, früher zentrale pontine Myelinolyse).\n\n## Diagnostischer Weg\nZuerst die **Serumosmolalität**: Die echte hypotone Hyponatriämie ist der häufigste Fall. Eine Pseudohyponatriämie (Hyperlipidämie, Paraproteine) oder eine hypertone Form (Hyperglykämie, Mannit) schließt man so aus. Dann der **Volumenstatus** und die Urinwerte (Urinosmolalität, Urinnatrium):\n- **Hypovolämisch**: Verlust von Natrium und Wasser. Renal (Diuretika, besonders Thiazide, Nebenniereninsuffizienz, salzverlierende Nephropathie, Urinnatrium hoch) oder extrarenal (Erbrechen, Durchfall, Urinnatrium niedrig).\n- **Hypervolämisch**: Wasser- und Natriumretention mit Ödemen. Herzinsuffizienz, Leberzirrhose, nephrotisches Syndrom. Das effektive arterielle Volumen ist vermindert, ADH wird vermehrt freigesetzt.\n- **Euvolämisch**: häufig **SIADH**, daneben Hypothyreose, Glukokortikoidmangel, Polydipsie, Medikamente (Antidepressiva, Carbamazepin). SIADH: Urinosmolalität erhöht, Urinnatrium erhöht, Serumosmolalität niedrig, Diagnose nach Ausschluss von Hypothyreose, Nebenniereninsuffizienz und Diuretika. Ursachen: Bronchialkarzinom (kleinzellig), ZNS-Erkrankungen, Pneumonie, Medikamente.\n\n## Symptome\nLeichte bis mäßige Hyponatriämie: Übelkeit, Kopfschmerz, Verwirrtheit, Stürze, Gangunsicherheit. Schwere: Krampfanfälle, Koma, Atemstillstand durch Hirnödem. Chronische Formen sind oft symptomarm, weil sich das Gehirn anpasst.\n\n## Therapie\nDie Therapie richtet sich nach **Ursache, Dauer und Symptomatik**:\n- **Schwere Symptome** (Krampf, Koma): hypertone Kochsalzlösung als Bolus, mit dem Ziel, die Symptome zu beheben.\n- **Hypovolämisch**: isotone Kochsalzlösung, Ursache (Diuretika) beenden.\n- **Hypervolämisch**: Flüssigkeitsrestriktion, Behandlung der Grunderkrankung, Schleifendiuretika.\n- **SIADH**: Flüssigkeitsrestriktion, Ursache beheben, gegebenenfalls Harnstoff oder Vaptane.\n- Der Ausgleich darf nicht zu schnell erfolgen: **maximal etwa 10 mmol/l in 24 Stunden** (nach Leitlinie bei hohem Risiko eher weniger), engmaschige Natriumkontrollen. Risikofaktoren der Demyelinisierung: chronische Hyponatriämie, Alkoholismus, Mangelernährung, Hypokaliämie, Lebertransplantation.",
+  "fakten": [
+   "Hyponatriämie: Na < 135 mmol/l; erst Serumosmolalität, dann Volumenstatus, dann Urinosmolalität/Urin-Na.",
+   "Hypervolämisch: Herzinsuffizienz, Zirrhose, nephrotisches Syndrom (ADH-vermittelt).",
+   "SIADH: euvolämisch, Urinosmolalität erhöht, Urin-Na erhöht; Ausschluss von Hypothyreose, NNR-Insuffizienz, Diuretika.",
+   "Korrektur höchstens ~10 mmol/l pro 24 h, sonst osmotische Demyelinisierung (zentrale pontine Myelinolyse).",
+   "Schwere Symptome (Krampf, Koma): hypertone NaCl-Lösung als Bolus."
+  ],
+  "fragen": [
+   {
+    "frage": "Warum hat ein Patient mit dekompensierter Herzinsuffizienz eine Hyponatriämie?",
+    "antwort": "Bei Herzinsuffizienz ist das effektive arterielle Blutvolumen vermindert. Dies aktiviert das Renin-Angiotensin-Aldosteron-System und das sympathische Nervensystem und führt zur nichtosmotischen Freisetzung von ADH. Der Körper behält Wasser, mehr als Natrium, sodass das Natrium verdünnt wird: eine hypervolämische Hyponatriämie. Zusätzlich tragen Schleifen- und Thiaziddiuretika dazu bei. Ich behandle durch Flüssigkeitsrestriktion, Optimierung der Herzinsuffizienztherapie und Dekompensation mit Schleifendiuretika.",
+    "protokoll": "Protokoll: dekompensierte Herzinsuffizienz NYHA III mit Hyponatriämie, Frage nach Ursache"
+   },
+   {
+    "frage": "Wie gleichen Sie eine Hyponatriämie aus, und was ist die Gefahr?",
+    "antwort": "Langsam. Ich erhöhe das Natrium um höchstens etwa 10 mmol pro Liter in 24 Stunden, mit engmaschigen Kontrollen. Wird es zu schnell ausgeglichen, schrumpfen die Gehirnzellen durch die plötzlich hohe Serumosmolalität, und es kann eine osmotische Demyelinisierung auftreten, früher zentrale pontine Myelinolyse genannt: Tetraparese, Schluckstörung, Bewusstseinsstörung, Locked-in-Syndrom. Das Gehirn hat sich bei chronischer Hyponatriämie angepasst, indem es osmotisch aktive Teilchen abgegeben hat, und braucht Zeit, um sie wieder aufzubauen. Nur bei schweren Symptomen wie Krampf oder Koma gebe ich zuerst hypertone Kochsalzlösung als Bolus.",
+    "protokoll": "Protokoll: Wie ausgleichen (max. 10 mmol/d, pontine Myelinolyse)?"
+   },
+   {
+    "frage": "Wie klären Sie eine Hyponatriämie diagnostisch ab?",
+    "antwort": "Zuerst die Serumosmolalität, um Pseudohyponatriämie auszuschließen. Dann beurteile ich klinisch den Volumenstatus und bestimme Urinosmolalität und Urinnatrium. Hypovolämisch: Diuretika, Durchfall, Erbrechen, Nebenniereninsuffizienz. Hypervolämisch: Herzinsuffizienz, Zirrhose, nephrotisches Syndrom. Euvolämisch: SIADH, Hypothyreose, Polydipsie. Beim SIADH sind TSH und Kortisol vorher normal."
+   },
+   {
+    "frage": "Was ist ein SIADH, und was sind Ursachen?",
+    "antwort": "Das Syndrom der inadäquaten ADH-Sekretion: ADH wird trotz niedriger Serumosmolalität freigesetzt, sodass Wasser retiniert wird. Der Patient ist euvolämisch, die Urinosmolalität ist hoch. Ursachen sind Tumoren, vor allem das kleinzellige Bronchialkarzinom, ZNS-Erkrankungen, Lungenerkrankungen wie die Pneumonie und Medikamente wie Carbamazepin oder SSRI. Therapie: Ursache beseitigen, Flüssigkeit beschränken."
+   }
+  ]
+ },
+ {
+  "id": "innere-elektrolyte",
+  "titel": "Kalium-, Calcium- und Magnesiumstörungen",
+  "fach": "Innere Medizin",
+  "bereich": "Nephrologie/Elektrolyte",
+  "prio": "A",
+  "protokoll_bezug": "Willuweit: ANV mit Hyperkaliämie; Hypokalzämie nach Schilddrüsen-OP",
+  "quellen": [
+   "Standardwissen Innere Medizin / Nephrologie; Hyperkaliämie-Leitlinien bekannt, nicht abgerufen"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen Fachliteratur prüfen. Keine Dosierungen.",
+  "skript": "## Kalium\nKalium ist überwiegend intrazellulär (ca. 98 %). Der Serumspiegel ist daher kein Maß für den Gesamtbestand, und Verschiebungen zwischen den Kompartimenten sind klinisch sehr wichtig. **Azidose, Insulinmangel und Zellzerfall verschieben Kalium nach außen**, Insulin, Betaagonisten und Alkalose nach innen.\n\n**Hyperkaliämie** (K ab etwa 5,5 mmol/l). Ursachen: Niereninsuffizienz, Medikamente (ACE-Hemmer, Sartane, Spironolacton, NSAR, Trimethoprim, Heparin), Azidose, Rhabdomyolyse, Hämolyse, Nebenniereninsuffizienz. Vor der Therapie die **Pseudohyperkaliämie** ausschließen (hämolytische Probe, Thrombozytose, Leukozytose). Gefahr sind Herzrhythmusstörungen. EKG-Zeichen in der Reihenfolge der Schwere: hohe, spitze T-Wellen, verlängerte PQ-Zeit, verbreiterter QRS-Komplex, sinusoidales Bild, Kammerflimmern oder Asystolie.\nTherapie in drei Schritten:\n- **Membranstabilisierung**: intravenös Kalzium bei EKG-Veränderungen.\n- **Verschiebung nach intrazellulär**: Insulin mit Glukose, inhalatives Salbutamol, bei Azidose Bikarbonat.\n- **Elimination**: Schleifendiuretika bei erhaltener Diurese, Kaliumbinder, Dialyse bei Therapieversagen oder Anurie.\nUrsache beheben und Auslöser absetzen.\n\n**Hypokaliämie** (K unter 3,5 mmol/l). Ursachen: Diuretika, Erbrechen, Durchfall, Hyperaldosteronismus, Magnesiummangel, Insulin, Alkalose. Symptome: Muskelschwäche, Obstipation bis Ileus, Rhythmusstörungen (U-Welle, ST-Senkung, Extrasystolen), Torsade-de-pointes. Substitution oral oder intravenös, kontrolliert und zentralvenös bei hoher Konzentration; stets Magnesium mitbeachten, sonst bleibt der Ausgleich wirkungslos.\n\n## Calcium\nEtwa die Hälfte des Serumkalziums ist ionisiert und aktiv; die Gesamtkonzentration ist abhängig vom Albumin, daher ionisiertes Kalzium oder albuminkorrigiertes Kalzium bestimmen. Regulation über Parathormon, Calcitriol (Vitamin D) und Calcitonin.\n- **Hyperkalzämie**: häufigste Ursachen sind der **primäre Hyperparathyreoidismus** (ambulant) und **maligne Erkrankungen** (stationär: PTHrP, Knochenmetastasen, Myelom). Symptome: Polyurie, Durst, Obstipation, Übelkeit, Nierensteine, Knochenschmerzen, psychische Veränderungen („Stein-, Bein- und Magenpein“). Notfall: Hyperkalzämische Krise. Therapie: Volumen, Bisphosphonate oder Denosumab, Ursachenbehandlung.\n- **Hypokalzämie**: Hypoparathyreoidismus (auch nach Schilddrüsen-OP), Vitamin-D-Mangel, Niereninsuffizienz, Pankreatitis, Hypomagnesiämie. Symptome: Kribbeln perioral und an den Händen, Muskelkrämpfe, **Tetanie, Chvostek- und Trousseau-Zeichen**, Krampfanfälle, verlängerte QT-Zeit.\n\n## Magnesium\nMagnesiummangel entsteht bei Diuretika, Protonenpumpenhemmern, Alkoholismus, Durchfall, und führt zu Rhythmusstörungen, Krämpfen sowie sekundärer Hypokaliämie und Hypokalzämie, die refraktär bleiben, bis Magnesium ersetzt ist.",
+  "fakten": [
+   "Hyperkaliämie-Therapie: 1. Kalzium (Membranschutz), 2. Insulin+Glukose/Salbutamol (Verschiebung), 3. Elimination (Diuretika, Binder, Dialyse).",
+   "EKG bei Hyperkaliämie: spitze T-Wellen, PQ verlängert, QRS verbreitert, sinusoidal.",
+   "Azidose und Zellzerfall erhöhen Serumkalium; Insulin, Betamimetika und Alkalose senken es.",
+   "Hyperkalzämie: primärer Hyperparathyreoidismus und Malignom häufigste Ursachen.",
+   "Hypokalzämie: Tetanie, Chvostek, Trousseau; nach Schilddrüsen-OP an Hypoparathyreoidismus denken.",
+   "Bei refraktärer Hypokaliämie/Hypokalzämie Magnesium prüfen."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie behandeln Sie eine Hyperkaliämie?",
+    "antwort": "Zuerst EKG und Ausschluss einer Pseudohyperkaliämie. Bei EKG-Veränderungen gebe ich Kalzium intravenös zur Stabilisierung der Herzmuskelmembran. Dann verschiebe ich Kalium in die Zellen mit Insulin und Glukose, gegebenenfalls Salbutamol, bei Azidose auch Bikarbonat. Zur Elimination setze ich Schleifendiuretika bei erhaltener Diurese ein, Kaliumbinder, und bei schwerer oder therapierefraktärer Hyperkaliämie oder Anurie die Dialyse. Parallel suche ich die Ursache: Niereninsuffizienz, ACE-Hemmer, Spironolacton, Rhabdomyolyse.",
+    "protokoll": "Willuweit: ANV mit Hyperkaliämie und Azidose"
+   },
+   {
+    "frage": "Welche EKG-Veränderungen sehen Sie bei Hyperkaliämie?",
+    "antwort": "Hohe, spitze, zeltförmige T-Wellen als frühes Zeichen, dann Verlängerung der PQ-Zeit und Abflachung der P-Welle, Verbreiterung des QRS-Komplexes, schließlich ein sinusoidales Bild bis zu Kammerflimmern oder Asystolie."
+   },
+   {
+    "frage": "Warum steigt das Kalium bei Azidose?",
+    "antwort": "Bei Azidose werden Protonen gegen Kalium in die Zelle getauscht, sodass Protonen intrazellulär gepuffert werden und Kalium nach extrazellulär wandert. Daher haben Patienten mit Ketoazidose zunächst ein hohes oder normales Serumkalium, obwohl der Gesamtkörperbestand erniedrigt ist."
+   },
+   {
+    "frage": "Was sind die Ursachen der Hyperkalzämie, und wie therapieren Sie sie?",
+    "antwort": "Häufigste Ursachen sind der primäre Hyperparathyreoidismus und maligne Erkrankungen, zum Beispiel Knochenmetastasen, das Myelom oder paraneoplastisch über PTHrP. Seltener Sarkoidose, Vitamin-D-Intoxikation oder Thiazide. Therapie der Krise: ausreichend Volumen, dann Bisphosphonate, bei Niereninsuffizienz Denosumab, und die Ursache behandeln."
+   },
+   {
+    "frage": "Woran erkennen Sie eine Hypokalzämie, und warum tritt sie nach einer Schilddrüsenoperation auf?",
+    "antwort": "Typisch sind Parästhesien perioral und an den Händen, Muskelkrämpfe, Tetanie mit Pfötchenstellung, positives Chvostek-Zeichen bei Beklopfen des Fazialis und Trousseau-Zeichen mit Armmanschette, verlängerte QT-Zeit und Krampfanfälle. Nach Schilddrüsenoperation entsteht sie durch Verletzung oder Minderdurchblutung der Nebenschilddrüsen mit Hypoparathyreoidismus, meist ab dem zweiten bis dritten Tag. Therapie: Kalzium, später Vitamin D.",
+    "protokoll": "Bezug: OP-Komplikationen der Schilddrüse"
+   }
+  ]
+ },
+ {
+  "id": "innere-saeure-basen",
+  "titel": "Säure-Basen-Haushalt und Blutgasanalyse",
+  "fach": "Innere Medizin",
+  "bereich": "Nephrologie/Intensiv",
+  "prio": "A",
+  "protokoll_bezug": "Willuweit: ANV mit metabolischer Azidose; Hyperventilation, BGA",
+  "quellen": [
+   "Standardwissen Physiologie / Intensivmedizin"
+  ],
+  "status": "Standardwissen. Vor der Prüfung gegen Fachliteratur prüfen. Keine Dosierungen.",
+  "skript": "## Grundprinzip\nDer pH des Blutes liegt bei **7,35 bis 7,45**. Er wird vom Verhältnis aus Bikarbonat (Niere, metabolische Komponente) und CO2 (Lunge, respiratorische Komponente) bestimmt (Henderson-Hasselbalch). Die Lunge reagiert innerhalb von Minuten bis Stunden, die Niere über Stunden bis Tage. Daraus folgt die **Kompensation**: Bei primär metabolischer Störung antwortet die Atmung, bei primär respiratorischer Störung die Niere.\n\n## Systematisches Vorgehen bei der BGA\n1. **pH**: Azidämie (< 7,35) oder Alkalämie (> 7,45)?\n2. **Primärstörung**: CO2 und Bikarbonat anschauen. Zeigt CO2 in die Richtung des pH (hoch bei Azidose), ist es respiratorisch. Bikarbonat niedrig bei Azidose, hoch bei Alkalose: metabolisch.\n3. **Kompensation**: Ist die Gegenseite verändert? Ist die Kompensation adäquat oder liegt eine gemischte Störung vor?\n4. **Anionenlücke** bei metabolischer Azidose berechnen: Natrium minus (Chlorid plus Bikarbonat); normal etwa 8 bis 12 mmol/l (Referenzbereich abhängig vom Labor und von der Kaliumeinrechnung). Albumin berücksichtigen.\n5. **Klinik** und Sauerstoffsättigung beachten, Laktat und Ketone bestimmen.\n\n## Metabolische Azidose\n- **Erhöhte Anionenlücke** (zusätzliche Säuren): Laktatazidose (Schock, Sepsis, Ischämie, Metformin), Ketoazidose (Diabetes, Alkohol, Hunger), Urämie, Vergiftungen (Methanol, Ethylenglykol, Salicylate). Merkwort MUDPILES.\n- **Normale Anionenlücke (hyperchlorämisch)**: Bikarbonatverlust (Durchfall, renal-tubuläre Azidose), Chloridinfusion in großen Mengen.\nKlinik: Kussmaul-Atmung (tief, vertieft) als respiratorische Kompensation. Therapie der Ursache; Bikarbonat nur zurückhaltend bei schwerer Azidose.\n\n## Metabolische Alkalose\nErbrechen oder Magensaugung (Verlust von Salzsäure), Diuretika, Hyperaldosteronismus, Hypokaliämie. Die Niere kann Bikarbonat nicht ausscheiden, wenn ein Chlorid- oder Volumenmangel besteht (chloridsensibel).\n\n## Respiratorische Störungen\n- **Respiratorische Azidose**: Hypoventilation (COPD, Atemdepressionen durch Medikamente, neuromuskuläre Erkrankungen, Adipositas). pCO2 erhöht. Chronische Formen werden renal durch Bikarbonatretention kompensiert.\n- **Respiratorische Alkalose**: Hyperventilation (Angst, Schmerz, Lungenembolie, Fieber, Sepsis, Höhe, Salicylat). pCO2 erniedrigt. Symptome: Parästhesien, Pfötchenstellung durch Abfall des ionisierten Kalziums.",
+  "fakten": [
+   "pH 7,35–7,45; Lunge kompensiert metabolische Störungen rasch, Niere respiratorische langsam.",
+   "BGA-Schema: pH → Primärstörung (CO2 vs. HCO3) → Kompensation → Anionenlücke → Klinik.",
+   "Anionenlücke = Na − (Cl + HCO3); erhöht bei Laktat, Ketonen, Urämie, Vergiftungen.",
+   "Normale Anionenlücke: Durchfall, renal-tubuläre Azidose, viel Chlorid.",
+   "Kussmaul-Atmung = respiratorische Kompensation bei metabolischer Azidose.",
+   "Respiratorische Alkalose senkt ionisiertes Kalzium → Parästhesien, Tetanie."
+  ],
+  "fragen": [
+   {
+    "frage": "Wie interpretieren Sie eine Blutgasanalyse?",
+    "antwort": "Ich gehe systematisch vor. Zuerst der pH: Azidose oder Alkalose. Dann bestimme ich die Primärstörung: Ist das CO2 in Richtung des pH verändert, ist die Ursache respiratorisch; ist Bikarbonat verändert, ist sie metabolisch. Danach prüfe ich die Kompensation und eine mögliche gemischte Störung. Bei der metabolischen Azidose berechne ich die Anionenlücke, um zwischen Säureüberschuss und Bikarbonatverlust zu unterscheiden. Zum Schluss bewerte ich Oxygenierung, Laktat und die klinische Situation.",
+    "protokoll": "Willuweit: ANV mit metabolischer Azidose"
+   },
+   {
+    "frage": "Welche Ursachen einer metabolischen Azidose kennen Sie?",
+    "antwort": "Mit erhöhter Anionenlücke durch zusätzliche Säuren: Laktat bei Schock oder Sepsis, Ketoazidose bei Diabetes oder Alkohol, Urämie bei Niereninsuffizienz, Vergiftungen wie Methanol, Ethylenglykol und Salicylate. Mit normaler Anionenlücke durch Bikarbonatverlust: Durchfall, renal-tubuläre Azidose und große Mengen Kochsalz. Kompensatorisch atmet der Patient tief und schnell, die Kussmaul-Atmung."
+   },
+   {
+    "frage": "Wie berechnen Sie die Anionenlücke, und wozu ist sie nützlich?",
+    "antwort": "Natrium minus die Summe aus Chlorid und Bikarbonat, normal etwa 8 bis 12 mmol pro Liter. Sie sagt, ob eine metabolische Azidose durch zusätzlich angehäufte Säuren (hohe Lücke) oder durch Bikarbonatverlust (normale Lücke, hyperchlorämisch) entstanden ist, und lenkt die Differenzialdiagnostik."
+   },
+   {
+    "frage": "Warum bekommt ein hyperventilierender Patient Kribbeln und Krämpfe?",
+    "antwort": "Hyperventilation senkt das CO2 und führt zu einer respiratorischen Alkalose. Im alkalischen Milieu bindet mehr Kalzium an Albumin, das ionisierte Kalzium fällt und erregt Nerven und Muskeln: Parästhesien, Pfötchenstellung, Tetanie. Ich unterscheide funktionelle Hyperventilation von organischen Ursachen wie Lungenembolie, Sepsis oder Salicylatvergiftung."
+   },
+   {
+    "frage": "Wie entsteht eine metabolische Alkalose bei Erbrechen?",
+    "antwort": "Durch Verlust von Salzsäure mit dem Magensaft bleibt Bikarbonat im Körper zurück. Gleichzeitig entstehen Volumen-, Chlorid- und Kaliummangel, die die renale Bikarbonatausscheidung hemmen. Die Therapie besteht im Ersatz von Volumen, Chlorid und Kalium."
+   }
+  ]
+ }
+]

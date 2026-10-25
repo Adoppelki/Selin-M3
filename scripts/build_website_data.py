@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Erzeugt aus data/protokolle.json die Website-Dateien protokolle.js und analyse.js
 (Format laut README der Website). Ausgabe: website/data/protokolle.js, website/data/analyse.js
+ACHTUNG: data/analyse.js auf main wird seit dem Website-Thread von scripts/build_analyse.py (dort) erzeugt.
+Dieses Skript darf analyse.js NICHT mehr nach main schreiben, nur protokolle.js.
 Aufruf: python3 scripts/build_website_data.py [Zielordner]"""
 import json, os, sys, collections
 
@@ -105,6 +107,8 @@ szen = [
  {"titel": "Willuweit: Symptom → Differenzialdiagnose → Notfall", "beschreibung": "Beispiel 2026-06: Diffuse Oberbauchschmerzen → biliäre Pankreatitis → im Verlauf SpO2-Abfall (Sepsis, Pneumonie, Lungenembolie). Immer laut Differenzialdiagnosen strukturieren und sagen, wie man sie ausschließt."},
  {"titel": "Alesina: Onkologie-Fall und Allgemeinchirurgie-Fall", "beschreibung": "Laut Vorgespräch bekommt jeder Prüfling beide Fallarten. Je einen Ablauf von Diagnostik über Therapie bis Nachsorge vorbereiten."},
 ]
+if os.environ.get("MIT_ANALYSE") != "1":
+    sys.exit(0)
 with open(os.path.join(out, "analyse.js"), "w", encoding="utf-8") as fh:
     fh.write(stamp + "window.SELIN_ANALYSE = ")
     json.dump({"stand": "25.10.2026", "themen": themen, "pruefer": pruefer, "faelle": faelle, "szenarien": szen}, fh, ensure_ascii=False, indent=1)

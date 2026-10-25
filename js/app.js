@@ -1045,19 +1045,22 @@
 
   // Sehr einfaches Markdown: Absätze, Listen mit "-", **fett**
   function simpleMd(s) {
-    var lines = String(s || "").split(/\n/), out = "", inList = false;
+    var lines = String(s || "").split(/\n/), out = "", list = "";
+    function close() { if (list) { out += "</" + list + ">"; list = ""; } }
     lines.forEach(function (line) {
       var l = esc(line).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-      if (/^\s*[-•]\s+/.test(line)) {
-        if (!inList) { out += "<ul>"; inList = true; }
-        out += "<li>" + l.replace(/^\s*[-•]\s+/, "") + "</li>";
+      var ul = /^\s*[-•]\s+/.test(line), ol = /^\s*\d+[.)]\s+/.test(line);
+      if (ul || ol) {
+        var t = ul ? "ul" : "ol";
+        if (list !== t) { close(); out += "<" + t + ">"; list = t; }
+        out += "<li>" + l.replace(/^\s*([-•]|\d+[.)])\s+/, "") + "</li>";
       } else {
-        if (inList) { out += "</ul>"; inList = false; }
-        if (/^#{1,4}\s/.test(line)) out += "<p><strong>" + l.replace(/^#{1,4}\s/, "") + "</strong></p>";
+        close();
+        if (/^#{1,4}\s/.test(line)) out += '<h5 class="md-h">' + l.replace(/^#{1,4}\s/, "") + "</h5>";
         else if (l.trim()) out += "<p>" + l + "</p>";
       }
     });
-    if (inList) out += "</ul>";
+    close();
     return out;
   }
 
@@ -1164,9 +1167,9 @@
   var skriptFach = "";
   views.skripte = function (el) {
     var K = window.SELIN_SKRIPTE || [];
-    var head = '<div class="page-head"><div class="eyebrow">Kurz & knapp</div><h1>Skripte</h1><p>Die Dauerbrenner-Themen in Kurzform, mit typischen Prüferfragen und Antworten.</p></div>';
+    var head = '<div class="page-head"><div class="eyebrow">Zum Durcharbeiten</div><h1>Skripte</h1><p>Die Dauerbrenner-Themen als durchgehende Skripte, mit typischen Prüferfragen und Antworten.</p></div>';
     if (!K.length) {
-      el.innerHTML = head + placeholder("📖", "Die Skripte entstehen gerade", "Hier findest du bald zu jedem häufig gefragten Thema eine Kurzfassung mit Musterantworten. Perfekt zum Wiederholen.");
+      el.innerHTML = head + placeholder("📖", "Die Skripte entstehen gerade", "Hier findest du bald zu jedem häufig gefragten Thema ein Skript mit Prüferfragen und Musterantworten. Perfekt zum Wiederholen.");
       return;
     }
     var faecher = [];
@@ -1181,7 +1184,7 @@
       list.map(function (k) {
         var r = !!S.skripteRead[k.id];
         return '<details class="proto"><summary><button class="check' + (r ? " on" : "") + '" data-read="' + esc(k.id) + '" aria-label="Durchgearbeitet"></button><strong>' + esc(k.titel) + '</strong>' + (k.fach ? '<span class="tag">' + esc(k.fach) + '</span>' : "") + '</summary>' +
-          '<div class="proto-body"><div style="margin-top:12px"><a class="btn btn-soft btn-sm" href="#karten" data-cards="' + esc(k.id) + '">🃏 Dazu abfragen</a></div>' + (k.kurz ? '<h4>Kurzfassung</h4><div class="prose">' + simpleMd(k.kurz) + '</div>' : "") +
+          '<div class="proto-body"><div style="margin-top:12px"><a class="btn btn-soft btn-sm" href="#karten" data-cards="' + esc(k.id) + '">🃏 Dazu abfragen</a></div>' + (k.kurz ? '<h4>Skript</h4><div class="prose skript">' + simpleMd(k.kurz) + '</div>' : "") +
           ((k.fragen || []).length ? '<h4>Typische Fragen</h4>' + k.fragen.map(function (f) {
             return '<div class="qa"><div class="q">' + esc(f.frage) + '</div>' + (f.antwort ? '<div class="a prose">' + simpleMd(f.antwort) + '</div>' : "") + '</div>';
           }).join("") : "") + '</div></details>';

@@ -1,0 +1,19 @@
+{
+ "hinweise": {
+  "Prof. Dr. Willuweit": "Selins Prüfer in Innere. Im Vorgespräch gesagt: Gastroenterologie/Hepatologie muss komplett sitzen, in den übrigen Gebieten alle großen Innere-Themen. Die Fälle beginnen mit einem Symptom (Ikterus, Oberbauchschmerz, Müdigkeit mit Juckreiz, Durchfall) und springen gern in eine Notfall-Differenzialdiagnose. Serologie lesen und erklären kam vor. Nur 5 Protokolle (2024–2026).",
+  "Dr. Alesina": "Selins Prüfer in Chirurgie. Im Vorgespräch gesagt: Jeder der 3 Prüflinge bekommt einen Onkologie-Fall und einen Allgemeinchirurgie-Fall. Achtung: Es liegen nur Protokolle von 2016 bis 2020 vor, neuere fehlen.",
+  "Prof. Dr. Klaus Georg Griewank": "Selins Prüfer in Dermatologie. 7 Protokolle von 2015 bis 2025.",
+  "PD Dr. Kebir": "Selins Prüfer in Neurologie. 9 Protokolle von 2023 bis 2026.",
+  "Dr. Hinrichs (Reserve)": "RESERVE: springt nur ein, falls der eingeteilte Chirurg ausfällt. Sein Themenkatalog dient als Versicherung, nicht als Schwerpunkt."
+ },
+ "szenarien": [
+  {
+   "titel": "Willuweit: Symptom → Differenzialdiagnose → Notfall",
+   "beschreibung": "Beispiel 2026-06: Diffuse Oberbauchschmerzen → biliäre Pankreatitis → im Verlauf SpO2-Abfall (Sepsis, Pneumonie, Lungenembolie). Immer laut Differenzialdiagnosen strukturieren und sagen, wie man sie ausschließt."
+  },
+  {
+   "titel": "Alesina: Onkologie-Fall und Allgemeinchirurgie-Fall",
+   "beschreibung": "Laut Vorgespräch bekommt jeder Prüfling beide Fallarten. Je einen Ablauf von Diagnostik über Therapie bis Nachsorge vorbereiten."
+  }
+ ]
+}

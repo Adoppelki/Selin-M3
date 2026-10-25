@@ -52,22 +52,16 @@ window.SELIN_PROTOKOLLE = [
 ];
 ```
 
-### `data/analyse.js`
+### `data/analyse.js` (wird erzeugt)
 
-```js
-window.SELIN_ANALYSE = {
-  stand: "25.10.2026",
-  themen: [{ thema: "Pankreatitis", fach: "Innere Medizin", anzahl: 8 }],
-  pruefer: [{
-    name: "Dr. Müller", fach: "Innere Medizin", anzahlProtokolle: 6,
-    topThemen: [{ thema: "EKG", anzahl: 4 }],
-    faelle: ["Thoraxschmerz"],              // oder { titel }
-    hinweise: "Fragt gern nach Leitlinien."
-  }],
-  faelle: [{ titel: "Akutes Abdomen", fach: "Chirurgie", haeufigkeit: 7, beschreibung: "..." }],
-  szenarien: [{ titel: "Schockraum", beschreibung: "..." }]
-};
-```
+Nicht von Hand ändern. Die Datei entsteht mit `python3 scripts/build_analyse.py` aus den
+Protokollen (`protokolle.json`) und den Prüfer-Hinweisen in `scripts/analyse-texte.json`.
+Gezählt wird, in wie vielen Protokollen ein Thema vorkam (einmal pro Protokoll).
+Priorität: A = mindestens 3 Protokolle (oder 2 mit mindestens 2 seit 10/2024), B = 2, C = 1.
+
+Aufbau: `themen` und `bett` (je mit `fach`, `anzahl`, `prio`), `faelle` (Fallmuster mit `fach`,
+`anzahl` und den Originalbeispielen), `pruefer` (Karten mit Themen, Hinweisen, Zeitraum), `szenarien`.
+Welche Muster erkannt werden, steht im Skript (Listen THEMEN, BETT, FAELLE).
 
 ### `data/skripte.js`
 

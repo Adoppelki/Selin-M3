@@ -1062,46 +1062,100 @@
   }
 
   // ================= ANALYSE =================
-  function bars(items, max) {
-    max = max || Math.max.apply(null, items.map(function (i) { return i.anzahl || 0; }).concat([1]));
+  var analyseFach = "alle", analyseHinweisOpen = false;
+  function analyseBars(items) {
+    var max = Math.max.apply(null, items.map(function (i) { return i.anzahl; }).concat([1]));
     return items.map(function (i) {
-      return '<div class="bar-row"><span class="bar-label" title="' + esc(i.thema || i.titel) + '">' + esc(i.thema || i.titel) + '</span>' +
-        '<div class="bar"><div style="width:' + ((i.anzahl || 0) / max * 100) + '%"></div></div><span class="n">' + (i.anzahl || 0) + '</span></div>';
+      var tip = (i.zuletzt ? "zuletzt " + i.zuletzt.slice(0, 7) : "") + (i.protokolle ? " · " + i.protokolle.length + " Protokolle" : "");
+      return '<div class="bar-row" title="' + esc(tip) + '"><span class="bar-label">' + esc(i.thema) + '</span>' +
+        '<div class="bar"><div style="width:' + (i.anzahl / max * 100) + '%"></div></div>' +
+        '<span class="n">' + i.anzahl + '×</span><span class="prio prio-' + (i.prio || "C") + '" title="Priorität ' + (i.prio || "C") + '">' + (i.prio || "") + '</span></div>';
     }).join("");
+  }
+  function mergeThemen(list) {
+    // gleiche Themen verschiedener Prüfer zusammenführen (Protokolle nur einmal zählen)
+    var map = {};
+    list.forEach(function (t) {
+      var k = t.fach + "|" + t.thema;
+      var e = map[k] = map[k] || { thema: t.thema, fach: t.fach, protokolle: [], zuletzt: "", pruefer: [] };
+      t.protokolle.forEach(function (id) { if (e.protokolle.indexOf(id) < 0) e.protokolle.push(id); });
+      if ((t.zuletzt || "") > e.zuletzt) e.zuletzt = t.zuletzt;
+      if (e.pruefer.indexOf(t.pruefer) < 0) e.pruefer.push(t.pruefer);
+      e.prio = e.prio && e.prio < t.prio ? e.prio : t.prio;
+    });
+    return Object.keys(map).map(function (k) { map[k].anzahl = map[k].protokolle.length; return map[k]; })
+      .sort(function (a, b) { return b.anzahl - a.anzahl || (b.zuletzt || "").localeCompare(a.zuletzt || "") || a.thema.localeCompare(b.thema); });
   }
   views.analyse = function (el) {
     var A = window.SELIN_ANALYSE || {};
-    var head = '<div class="page-head"><div class="eyebrow">Auswertung</div><h1>Analyse</h1><p>Was wird am häufigsten gefragt? Welche Fälle kommen immer wieder? Nach Prüfer:in sortiert.</p></div>';
-    var has = (A.themen && A.themen.length) || (A.pruefer && A.pruefer.length) || (A.faelle && A.faelle.length);
-    if (!has) {
+    var head = '<div class="page-head"><div class="eyebrow">Auswertung</div><h1>Analyse</h1><p>Was wird am häufigsten gefragt? Welche Fälle kommen immer wieder? Wähle oben dein Fach.</p></div>';
+    if (!(A.themen && A.themen.length) || !A.pruefer) {
       el.innerHTML = head + placeholder("📊", "Die Analyse ist in Arbeit", "Sobald die Protokolle ausgewertet sind, siehst du hier die häufigsten Prüfungsthemen je Prüfer:in, typische Fallbeispiele und Szenarien.");
       return;
     }
-    var html = head + (A.stand ? '<p class="muted small" style="margin:-10px 0 16px">Stand: ' + esc(A.stand) + '</p>' : "");
-    if (A.themen && A.themen.length) {
-      html += '<div class="card" style="margin-bottom:18px"><h2 style="margin-bottom:14px">Häufigste Themen insgesamt</h2>' + bars(A.themen.slice(0, 20)) + '</div>';
+    var fid = analyseFach;
+    var fachOk = function (x) { return fid === "alle" || x.fach === fid; };
+    var tabs = [{ id: "alle", kurz: "Alle", farbe: "var(--text)" }].concat(FAECHER).map(function (f) {
+      var n = f.id === "alle" ? (A.faelle || []).length : (A.faelle || []).filter(function (x) { return x.fach === f.id; }).length;
+      var on = f.id === fid;
+      return '<button class="exam-tab' + (on ? " active" : "") + '" data-afach="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '"><span>' + esc(f.kurz) + '</span><small>' + (f.id === "alle" ? A.anzahlProtokolle + " Protokolle" : n + " Fallmuster") + '</small></button>';
+    }).join("");
+
+    var themen = mergeThemen(A.themen.filter(fachOk));
+    var bett = mergeThemen((A.bett || []).filter(fachOk));
+    var faelle = (A.faelle || []).filter(fachOk);
+    var pruefer = A.pruefer.filter(fachOk).sort(function (a, b) { return (a.rolle === "reserve") - (b.rolle === "reserve"); });
+    var fachName = function (id) { var f = fachById(id); return f ? f.kurz : id; };
+    var fachColor = function (id) { var f = fachById(id); return f ? f.farbe : "#999"; };
+
+    var html = head +
+      '<div class="exam-tabs">' + tabs + '</div>' +
+      '<div class="notice" style="margin-bottom:18px">📌 ' + esc(A.hinweis || "") + ' <span class="muted">Priorität: <b>A</b> = mindestens 3 Protokolle (oder 2 neuere), <b>B</b> = 2, <b>C</b> = 1.</span></div>';
+
+    // Häufigste Themen
+    html += '<div class="card" style="margin-bottom:18px"><div class="card-head"><h2>Häufigste Themen' + (fid === "alle" ? "" : " in " + esc(fachName(fid))) + '</h2><span class="muted small">mündliche Prüfung, Anzahl Protokolle</span></div>' +
+      analyseBars(themen.slice(0, 14)) + '</div>';
+
+    // Fallbeispiele
+    html += '<div class="card" style="margin-bottom:18px"><div class="card-head"><div><h2>Wiederkehrende Fallbeispiele</h2><div class="muted small">Gleiche Fälle sind zusammengefasst. Tippe auf einen Fall, um die Originale zu sehen.</div></div></div>';
+    if (!faelle.length) html += '<div class="empty">Keine Fallbeispiele erfasst.</div>';
+    faelle.forEach(function (f) {
+      html += '<details class="fall"><summary><span class="fall-count">' + f.anzahl + '×</span><span class="fall-title">' + esc(f.muster) + '</span>' +
+        (fid === "alle" ? '<span class="tag" style="background:' + fachColor(f.fach) + '22;color:' + fachColor(f.fach) + '">' + esc(fachName(f.fach)) + '</span>' : "") + '</summary><div class="fall-body">' +
+        f.beispiele.map(function (b) { return '<div class="fall-ex"><div class="fall-meta">' + esc(b.pruefer) + ' · ' + esc(b.datum) + '</div><div>' + esc(b.text) + '</div></div>'; }).join("") + '</div></details>';
+    });
+    html += '</div>';
+
+    // Am Bett
+    if (bett.length) {
+      html += '<div class="card" style="margin-bottom:18px"><div class="card-head"><h2>Am Bett: was untersucht und gefragt wurde</h2><span class="muted small">praktischer Teil</span></div>' + analyseBars(bett.slice(0, 14)) + '</div>';
     }
-    if (A.pruefer && A.pruefer.length) {
-      html += '<h2 style="margin:8px 0 12px">Nach Prüfer:in</h2><div class="grid grid-2" style="margin-bottom:18px">' + A.pruefer.map(function (p) {
-        return '<div class="card"><div class="row" style="margin-bottom:10px"><h3>' + esc(p.name) + '</h3>' + (p.fach ? '<span class="tag">' + esc(p.fach) + '</span>' : "") +
-          '<span class="spacer"></span>' + (p.anzahlProtokolle ? '<span class="muted small">' + p.anzahlProtokolle + ' Protokolle</span>' : "") + '</div>' +
-          (p.topThemen && p.topThemen.length ? bars(p.topThemen.slice(0, 8)) : "") +
-          (p.faelle && p.faelle.length ? '<h4 class="muted small" style="margin:12px 0 6px;text-transform:uppercase;letter-spacing:.06em">Typische Fälle</h4><ul style="margin:0;padding-left:18px">' + p.faelle.map(function (f) { return "<li>" + esc(typeof f === "string" ? f : f.titel) + "</li>"; }).join("") + '</ul>' : "") +
-          (p.hinweise ? '<div class="notice" style="margin-top:12px">' + esc(p.hinweise) + '</div>' : "") +
-          '</div>';
-      }).join("") + '</div>';
-    }
-    if (A.faelle && A.faelle.length) {
-      html += '<div class="card" style="margin-bottom:18px"><h2 style="margin-bottom:12px">Wiederkehrende Fallbeispiele</h2>' + A.faelle.map(function (f) {
-        return '<div class="qa"><div class="row"><span class="q">' + esc(f.titel) + '</span>' + (f.fach ? '<span class="tag">' + esc(f.fach) + '</span>' : "") + '<span class="spacer"></span>' + (f.haeufigkeit ? '<span class="muted small">' + esc(f.haeufigkeit) + '×</span>' : "") + '</div>' + (f.beschreibung ? '<div class="a">' + esc(f.beschreibung) + '</div>' : "") + '</div>';
-      }).join("") + '</div>';
-    }
+
+    // Prüfer
+    html += '<h2 style="margin:8px 0 12px">Nach Prüfer</h2><div class="grid grid-2" style="margin-bottom:18px">' + pruefer.map(function (p) {
+      var mine = A.themen.filter(function (t) { return t.pruefer === p.id; }).slice(0, 8);
+      var mineB = (A.bett || []).filter(function (t) { return t.pruefer === p.id; }).slice(0, 6);
+      return '<div class="card"><div class="row" style="margin-bottom:6px"><h3>' + esc(p.name) + '</h3><span class="tag" style="background:' + fachColor(p.fach) + '22;color:' + fachColor(p.fach) + '">' + esc(fachName(p.fach)) + '</span>' +
+        (p.rolle === "reserve" ? '<span class="tag">Reserve</span>' : '<span class="tag" style="background:var(--accent-soft);color:var(--accent-strong)">Dein Prüfer</span>') + '</div>' +
+        '<div class="muted small" style="margin-bottom:12px">' + p.anzahlProtokolle + ' Protokolle' + (p.zeitraum ? ' · ' + esc(p.zeitraum) : "") + '</div>' +
+        (mine.length ? analyseBars(mine) : "") +
+        (mineB.length ? '<h4 class="muted small" style="margin:14px 0 6px;text-transform:uppercase;letter-spacing:.06em">Am Bett</h4>' + analyseBars(mineB) : "") +
+        (p.hinweise ? '<div class="notice" style="margin-top:12px">' + esc(p.hinweise) + '</div>' : "") +
+        '<a class="btn btn-soft btn-sm" style="margin-top:12px" href="#protokolle" data-pruefer="' + esc(p.name) + '">Protokolle ansehen</a></div>';
+    }).join("") + '</div>';
+
+    // Szenarien
     if (A.szenarien && A.szenarien.length) {
       html += '<div class="card"><h2 style="margin-bottom:12px">Szenarien</h2>' + A.szenarien.map(function (s) {
         return '<div class="qa"><div class="q">' + esc(s.titel || s) + '</div>' + (s.beschreibung ? '<div class="a">' + esc(s.beschreibung) + '</div>' : "") + '</div>';
       }).join("") + '</div>';
     }
     el.innerHTML = html;
+
+    $all("[data-afach]", el).forEach(function (b) { b.onclick = function () { analyseFach = b.getAttribute("data-afach"); rerender(); }; });
+    $all("[data-pruefer]", el).forEach(function (a) {
+      a.onclick = function () { protoFilter = { q: "", fach: "", pruefer: a.getAttribute("data-pruefer") }; };
+    });
   };
 
   // ================= SKRIPTE =================

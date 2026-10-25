@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "hinweis": "M3-Protokolle (3. Staatsexamen, mündlich-praktisch), Uniklinik Essen. Neue Runden werden als weitere Einträge angehängt (Feld 'runde').",
+  "pruefer": {
+    "willuweit": {"name": "Prof. Dr. Willuweit", "fach": "Innere Medizin", "schwerpunkt": "Gastroenterologie / Hepatologie", "ort": "Medizinisches Zentrum, Station Gastro 1 (Hepatologie), LLZ"},
+    "alesina": {"name": "Dr. Alesina", "fach": "Chirurgie", "schwerpunkt": "Allgemein- und Viszeralchirurgie (Huyssens-Stift)", "ort": "Essen, z. T. Herzzentrum"},
+    "griewank": {"name": "Prof. Dr. Klaus Georg Griewank", "fach": "Dermatologie", "schwerpunkt": "Dermatologie (Histodermatologe)", "ort": "Herzzentrum / Herz-Gefäßzentrum Essen"}
+  },
+  "protokolle": [
+    {
+      "id": "willuweit-2024-05", "runde": 1, "fach": "Innere Medizin", "pruefer_id": "willuweit",
+      "datum": "2024-05", "datum_text": "Mai 2024", "ort": "LLZ und Urostation", "quelle": "WILLUWEIT .pdf",
+      "vorgespraech": "Per Zoom, sehr freundlich. Grenzt Themen nicht wirklich ein: fragt die großen Themen, eher keine Kollagenosen.",
+      "muendlich": {
+        "themen": ["Obere GI-Blutung", "Hepatitis B (Serologie)", "Ikterus", "Chronisch entzündliche Darmerkrankungen", "STEMI"],
+        "fallbeispiele": ["Prüfling 1: GI-Blutung", "Prüfling 2: Serologie, aus der man eine Hepatitis B erkennen und erklären soll, dazu Ikterus", "Prüfling 3: CED", "Prüfling 4: STEMI"],
+        "fragen": []
+      },
+      "praktisch": {
+        "patienten": [],
+        "untersuchung": ["Herz", "Lunge"],
+        "fragen": ["Aortenvitien"]
+      },
+      "ausgefallene_frage": "Warum hat das Stethoskop zwei Seiten?",
+      "buecher": [], "atmosphaere": "Sehr angenehm.",
+      "kommission": ["Kesch (Urologie) – Vorsitz", "Brenner (Anästhesie)", "Willuweit (Innere)", "Saipic (Chirurgie)"],
+      "tipps": "Es ist wirklich gut zu schaffen.", "note": "1, 2, 2, 3 (4 Prüflinge)", "vollstaendig": true
+    },
+    {
+      "id": "willuweit-2025-12", "runde": 1, "fach": "Innere Medizin", "pruefer_id": "willuweit",
+      "datum": "2025-12-02", "datum_text": "02.+03.12.2025", "ort": "Med. Zentrum (Station Gastro 1)", "quelle": "3.pdf",
+      "vorgespraech": "Termin per Mail, Treffen in ihrem Büro, sehr freundlich. Rheumatologie und Onkologie explizit ausgeschlossen. Für die KU: alles, was zur internistischen Untersuchung gehört.",
+      "muendlich": {
+        "themen": ["Ikterus", "Biliäre Pankreatitis", "Leberzirrhose (Ursachen, Therapie)", "Obere GI-Blutung (Management, alle Therapiemöglichkeiten)", "TIPS"],
+        "fallbeispiele": [],
+        "fragen": []
+      },
+      "praktisch": {
+        "patienten": ["Leberzirrhose", "Morbus Osler", "Abstoßungsreaktion nach Lebertransplantation (seit 20 J.)"],
+        "untersuchung": ["Allgemeiner Eindruck (Orientierung, AZ)", "Herz (alle Auskultationspunkte, z. B. Aortenstenose)", "Pulsstatus (alle außer A. poplitea)", "Ödeme", "Klinische TVT-Zeichen (Payr, Meyer, Homans)", "Abdomen", "Leberhautzeichen", "Lunge"],
+        "fragen": ["Sternchenfragen möglich, nicht verunsichern lassen"]
+      },
+      "ablauf": "8:30 auf Station, Assistenzärzte suchen Patienten aus, jeder hat einen eigenen Assistenzarzt. Bis ca. 13 Uhr Anamnese, Untersuchung, Arztbrief (Zeit wird knapp). Vorstellung vor dem Zimmer, dann Untersuchung ~40–45 min. Tag 2: Fächer abwechselnd (Innere, Chirurgie, Neurochirurgie, HNO).",
+      "ausgefallene_frage": null, "buecher": [], "atmosphaere": "Freundlich, wenig Rückfragen, man soll selbst erzählen.",
+      "kommission": ["Willuweit (Innere)", "Schmitz (Chirurgie)", "HNO", "Neurochirurgie"],
+      "tipps": "Basics reichen, nur Gastro detaillierter. Untersuchung kurz halten, Zeit läuft davon. Alles von selbst erzählen.", "note": null, "vollstaendig": false
+    },
+    {
+      "id": "willuweit-2026-06-a", "runde": 1, "fach": "Innere Medizin", "pruefer_id": "willuweit",
+      "datum": "2026-06-01", "datum_text": "01.+02.06.2026", "ort": "Medizinisches Zentrum und LLZ", "quelle": "6.pdf (Seite 1 zusätzlich als Duplikat in 5.pdf)",
+      "vorgespraech": "Spontan vorgezogen, super nett. Auf die großen internistischen Krankheitsbilder konzentrieren (Herold ist groß). Bisher nur Gastro-Fälle in Protokollen. Gruppe hat trotzdem Top-100 Innere gelernt (ACS, MI, Pneumonie, KHK, TVT, LAE, COPD, Asthma, Diabetes, Schilddrüse, Elektrolyte, Anämien, ANV, CNV).",
+      "muendlich": {
+        "themen": ["Diffuse Oberbauchschmerzen", "Biliäre Pankreatitis (Diagnostik, Therapie)", "DD SpO2-Abfall: Sepsis, Pneumonie, LAE", "Chronische Pankreatitis", "Inoperables Pankreaskarzinom"],
+        "fallbeispiele": ["Diffuse Oberbauchschmerzen → biliäre Pankreatitis → im Verlauf SpO2-Abfall (DD)"],
+        "fragen": ["Wie diagnostiziert/schließt man Sepsis, Pneumonie, LAE aus?"]
+      },
+      "praktisch": {
+        "patienten": ["Leberzirrhose (alle Prüflinge)", "Patientin mit Aszites und Umbilikalhernie"],
+        "untersuchung": ["Allgemeiner Eindruck von Kopf bis Fuß (Haltung, AZ, EZ)", "Lunge", "Abdomen (Inspektion: Dehnungsstreifen, Aszites)", "Oberflächliche Palpation", "Untersuchung Umbilikalhernie", "Milzpalpation"],
+        "fragen": ["Atemverschieblichkeit", "Bronchophonie: wann hört man was?", "Was spürt man bei der oberflächlichen Palpation des Abdomens?"]
+      },
+      "ablauf": "8:30 Hepatologie (Gastro 1), Patientenvergabe per Zettel. Befunde ausdrucken lassen. Prüfung je 30–45 min, Vorstellung 1 min vor dem Zimmer. Hände desinfizieren nicht vergessen!",
+      "ausgefallene_frage": "Was kann man bei der oberflächlichen Palpation des Abdomens am besten spüren?",
+      "buecher": ["Elsevier Lernkarten mündliches Stex", "Amboss", "KI zum Abfragen"], "atmosphaere": "Sehr sehr nett, nickt bei richtigen Antworten, max. ~7 Fragen.",
+      "kommission": ["Willuweit (Innere) – Vorsitz", "Gonzalez-Abel (Chirurgie)", "Ahrweiler-Habeck (HNO)", "Dammann (Neurochirurgie)"],
+      "tipps": "Arztbrief ist ihr nicht so wichtig. Aufenthalt beim Patienten kurz halten. Für Ruhe im Zimmer sorgen (Schild an die Tür).", "note": "2", "vollstaendig": true
+    },
+    {
+      "id": "willuweit-2026-06-b", "runde": 1, "fach": "Innere Medizin", "pruefer_id": "willuweit",
+      "datum": "2026-06-01", "datum_text": "01.+02.06.2026", "ort": "LLZ", "quelle": "5.pdf",
+      "vorgespraech": "Im Büro, erklärt Ablauf beider Tage. Nur Rheuma ausgeschlossen. Erwartet die großen internistischen Themen, fragt in ihrem Gebiet (Gastro) tiefer. Wechselt das Thema bei Sackgasse.",
+      "muendlich": {
+        "themen": ["Müdigkeit/Erschöpfung DD (Anämie u. a.)", "Pruritus DD", "Cholestase-/Leberlabor", "Autoimmunhepatitis vs. PBC (AMA, Overlap-Syndrome)", "PBC: Therapie, Ursodeoxycholsäure", "Onkologisches Risiko bei PBC und PSC", "Hashimoto (Diagnostik, Therapie unter TSH-Kontrolle)"],
+        "fallbeispiele": ["40-jährige Patientin mit Erschöpfung, Müdigkeit und Juckreiz → AP stark, AST/ALT leicht erhöht → PBC"],
+        "fragen": ["Warum nicht nur AMA bestimmen? (Overlap)", "Wie wirkt UDCA auf den Juckreiz, stoppt sie den Verlauf? (nein)", "Welche Autoimmunerkrankung ist mit PBC assoziiert? (Hashimoto)"]
+      },
+      "praktisch": {
+        "patienten": ["Leberzirrhose (alle Prüflinge)", "Patientin mit Nabelhernie"],
+        "untersuchung": ["Lunge", "Abdomen", "Nabelhernie (im Liegen und Stehen, Bauchpresse, Bruchpforte)"],
+        "fragen": ["Welche Appendizitiszeichen kennen Sie? Welches bei atypischer Lage? (Psoas-Zeichen)", "Wie entstehen die Ödeme? (hydrostatischer/kolloidosmotischer Druck)", "Chirurg: Fragen zu Nebendiagnosen im Brief", "Chirurg: Lymphödem erkennen (Stemmer-Zeichen)", "Was noch zur Hernie? (Sono)"]
+      },
+      "ablauf": "8:30 Station, Patienten ab ~9 Uhr. Bis 12:30/13:30 Brief + Untersuchung, 30 min Pause, ab 14 Uhr Prüfung einzeln am Patienten. Übergabe vor dem Zimmer. Vitalwerte über Medico/Pflege. Schema für Untersuchung ohne viel Umlagern vorbereiten, Klemmbrett mit Anamnesebogen.",
+      "ausgefallene_frage": null, "buecher": [], "atmosphaere": "Fragen zur Pathophysiologie.",
+      "kommission": ["Willuweit (Innere)", "Gonzalez-Abel (Chirurgie)"],
+      "tipps": "Nebendiagnosen im Brief nur aufschreiben, wenn man sie erklären kann. Beim Untersuchen viel erzählen (warum, Normalbefund, Pathologien).", "note": null, "vollstaendig": false
+    },
+    {
+      "id": "willuweit-2026-06-c", "runde": 1, "fach": "Innere Medizin", "pruefer_id": "willuweit",
+      "datum": "2026-06", "datum_text": "06.2026", "ort": "UK Essen", "quelle": "4.pdf",
+      "vorgespraech": "Als Gastroenterologin mit Fokus Hepatologie prüft sie hauptsächlich ihr Fach, aber jeder soll z. B. Diabetes und STEMI erkennen und behandeln können. Sehr angenehm.",
+      "muendlich": {
+        "themen": ["Chronische Diarrhö (Anamnese)", "Morbus Crohn vs. Colitis ulcerosa (Befallsmuster, extraintestinale Manifestationen)", "Anämiediagnostik (mikrozytär vs. makrozytär)", "MR-Sellink", "Zöliakie (Zottenatrophie, Kryptenhyperplasie, tTG-IgA, IgA-Mangel, HLA-DQ2/DQ8, glutenfreie Getreide)", "Dermatitis herpetiformis Duhring"],
+        "fallbeispiele": ["Patient mit rezidivierenden unblutigen Durchfällen, oralen Aphthen, Effloreszenzen an den Beinen, Blässe → V. a. CED → Koloskopie blande, mikrozytäre Anämie, Zottenatrophie → Zöliakie"],
+        "fragen": ["Wie entsteht Zöliakie? HLA-Assoziation?", "Welche Getreidesorten darf der Patient essen?", "Was sind die Effloreszenzen an den Beinen? (Duhring)"]
+      },
+      "praktisch": {
+        "patienten": ["Zweifach lebertransplantiert, akutes Nierenversagen mit metabolischer Azidose und Hyperkaliämie (Station: Zirrhotiker und LTx-Patienten)"],
+        "untersuchung": ["Hirnnerven", "Herz", "Lunge", "Abdomen"],
+        "fragen": ["Dialyseindikationen (Chirurg)", "Häufigste Klappenvitien", "Stimmfremitus und Bronchophonie bei Pneumothorax vs. Pneumonie", "Periphere vs. zentrale Fazialisparese", "Bei welchen OPs N. vagus/N. laryngeus recurrens verletzt, wie äußert sich das?", "Aszites klinisch untersuchen", "Chirurg: Nebendiagnosen (Technik der Leistenhernien-OP, Zielzucker bei Typ-3-Diabetes, Basis-Bolus)"]
+      },
+      "ablauf": "8:30 Station Gastro 1, Patientenzuteilung 9 Uhr, ~1 h für Anamnese/Untersuchung, Brief bis 12:30, Mittag bis 13 Uhr, dann ~40 min pro Person. Übergabe wie bei Visite.",
+      "ausgefallene_frage": "8 Getreidesorten und ihre Verträglichkeit bei Zöliakie.",
+      "buecher": ["Amboss", "Fallbuch Innere Medizin (Thieme)"], "atmosphaere": "Angenehm.",
+      "kommission": ["Willuweit (Innere/Gastro) – Vorsitz", "Gonzales-Abel (Allgemeinchirurgie)", "Ahrweiler-Habeck (HNO)", "Dammann (Neurochirurgie)"],
+      "tipps": "Nebendiagnosen des Patienten vorbereiten, Chirurg fragt dort nach.", "note": "2 (Gesamtnote)", "vollstaendig": true
+    },
+    {
+      "id": "alesina-2016-05", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2016-05-23", "datum_text": "23.+24.05.2016", "ort": "Uniklinik Essen (Dermatologie / Innere-Endokrinologie)", "quelle": "AS 2.pdf",
+      "vorgespraech": "Keins.",
+      "muendlich": {"themen": ["Kolorektales Karzinom vs. Sigmakarzinom", "Leistenhernien (welche OPs)", "Ikterus DD", "Whipple-OP"], "fallbeispiele": [], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": null, "buecher": ["Amboss", "Fallsammlungen Thieme/Elsevier"],
+      "atmosphaere": "Alle Prüfer beruhigen, entspannt, bei Unklarheit wird anders nachgefragt oder Thema gewechselt.",
+      "kommission": ["Prof. Führer (Innere) – Vorsitz", "Dr. Alesina (Chirurgie)", "Dr. Körber (Derma)", "Dr. Holle-Lee (Neurologie)"],
+      "tipps": "Nicht verunsichern lassen, die bringen einen durch.", "note": "2 (beide Prüflinge)", "vollstaendig": true
+    },
+    {
+      "id": "alesina-2017-05-a", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2017-05-03", "datum_text": "3./4.05.2017", "ort": "Essen", "quelle": "4 3.pdf",
+      "vorgespraech": "Prof. Walz (Alesina als Vertretung): Thorax- und Unfallchirurgie ausgeschlossen. Themen aus Altprotokollen (Leistenhernien, Cholezystitis, Pankreas-Ca/Papillen-Ca).",
+      "muendlich": {"themen": ["Schilddrüsenknoten (Sono-Kriterien, Punktion, Szintigraphie, OP)", "Cholezystitis", "Schmerzloser Ikterus → Pankreaskopfkarzinom"], "fallbeispiele": ["Patient mit Schilddrüsenknoten – Procedere", "Patient mit rechtsseitigem Oberbauchschmerz (Cholezystitis)", "Schmerzloser Ikterus"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": null, "buecher": ["MEX", "Amboss"], "atmosphaere": null,
+      "kommission": ["Prof. Dr. Kribben (Innere/Nephrologie) – Vorsitz", "Dr. Alesina (Chirurgie)", "Dr. Römer (Allgemeinmedizin)", "Prof. Dr. Metz (Pathologie)"],
+      "tipps": null, "note": "2", "vollstaendig": true
+    },
+    {
+      "id": "alesina-2017-05-b", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2017-05-04", "datum_text": "4./5.5.2017", "ort": "Essen", "quelle": "5 3.pdf",
+      "vorgespraech": "Vorgespräch bei Prof. Walz, Alesina erschien als Vertretung. Nur Allgemein- und Viszeralchirurgie.",
+      "muendlich": {"themen": ["Magenkarzinom", "Staging", "OP-Planung", "Billroth I / II / Roux-Y-Anastomose"], "fallbeispiele": ["Patient kommt in die Sprechstunde mit Magen-Ca: OP-Planung, Staging, Untersuchungsmethoden, OP-Ablauf"], "fragen": ["Was gehört zum Staging, was soll erkannt/ausgeschlossen werden?", "Unterschied Billroth I/II/Roux-Y"]},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "Keine.", "buecher": [], "atmosphaere": "Ruhig und entspannt, leitet Stück für Stück zu dem, was er hören möchte.",
+      "kommission": ["Kribben (Innere) – Vorsitz", "Alesina (Chirurgie)", "Römer (Allgemeinmedizin)", "Metz (Pathologie)"],
+      "tipps": "Als Vertreter hält er sich an das Vorgespräch.", "note": null, "vollstaendig": true
+    },
+    {
+      "id": "alesina-2018-12", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2018-12-10", "datum_text": "10./11.12.2018", "ort": "Uni Essen", "quelle": "6 3.pdf",
+      "vorgespraech": "Sehr nett, 5 min. Prüft als Viszeralchirurg nur diese und maximal große/wichtige chirurgische Krankheitsbilder des Patienten.",
+      "muendlich": {"themen": ["Ikterus: chirurgisch vs. internistisch (Schmerzen?)", "DD Ikterus intra- vs. extrahepatisch (Labor, Stuhl, Urin, Courvoisier)", "Cholangiozelluläres Karzinom (CCC), Klatskin-Tumor (Bismuth)", "Therapieoptionen und medianes Überleben CCC", "Whipple-OP, Komplikation Pankreasfistel"], "fallbeispiele": [], "fragen": ["Wie unterscheidet man, ob ein Ikterus chirurgisch oder internistisch ist?", "Schlimmste Komplikation nach Whipple?"]},
+      "praktisch": {"patienten": ["Endokrinologischer, polytoxikomaner Patient mit vielen Krankheitsbildern"], "untersuchung": [], "fragen": ["Chronische Pankreatitis: wann/wieso OP? (bei Sepsis)"]},
+      "ausgefallene_frage": "Wann tritt Diabetes bei Pankreasteilentfernung auf? (Wenn der Schwanz entfernt wird.)",
+      "buecher": ["Amboss"], "atmosphaere": "Sehr nett, springt manchmal zwischen Themen.",
+      "kommission": ["Dr. Reger-Tan (Endokrinologie) – Vorsitz", "Dr. Alesina (Viszeralchirurgie Huyssens-Stift)", "Prof. Dr. Hartmann (Anästhesie)", "Dr. Felderhoff-Müser (Pädiatrie)"],
+      "tipps": "Hält sich wirklich an die Viszeralchirurgie. Unterbrechen ist nicht schlimm.", "note": "1", "vollstaendig": true
+    },
+    {
+      "id": "alesina-2019-11", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2019-11-11", "datum_text": "11./12.11.2019", "ort": "Herzzentrum Uni Essen", "quelle": "7 2.pdf",
+      "vorgespraech": "Per Mail über Sekretariat Huyssens-Stift. Beruhigt, grenzt auf Allgemein-/Viszeralchirurgie ein.",
+      "muendlich": {"themen": ["Dysphagie: Anamnese, Gewichtsverlust, DD (Achalasie, Struma, HNO/LK, Divertikel, Refluxösophagitis, Gastritis, Ösophagus-/Magen-Ca)", "Ösophagusdivertikel", "Ösophaguskarzinom (Plattenepithel-/Adeno-Ca)", "AEG-Klassifikation", "Staging (Endosono, CT)", "Risikofaktoren AEG (Reflux, Hiatushernie)", "Zwerchfellhernien"], "fallbeispiele": ["45-jährige Patientin mit Schluckbeschwerden"], "fragen": ["Warum ist Gewichtsverlust wichtig?", "Welche Diagnostik? Welche Staginguntersuchungen?"]},
+      "praktisch": {"patienten": ["pAVK-Patient", "Patient mit Herzinsuffizienz"], "untersuchung": ["Fußpulse (A. dorsalis pedis, A. tibialis posterior), dann A. poplitea, A. femoralis", "Auskultation Aorta abdominalis und Nierenarterien", "Aszites-Untersuchung", "Leber: Kratzauskultation, Leberrand"], "fragen": ["Fontaine-Stadien", "Wo manifestiert sich pAVK noch? (Angina abdominalis, ischämische Kolitis)", "Teerstuhl vs. Hämatochezie, DD Hämorrhoiden", "Stauungsleber"]},
+      "ausgefallene_frage": "Keine.", "buecher": ["Amboss"],
+      "atmosphaere": "Möchte knappe Antworten, unterbricht sofort, wenn man etwas weiter erläutern soll.",
+      "kommission": [], "tipps": "Nicht verunsichern lassen, wenn man Diagnosen öfter nennen muss.", "note": null, "vollstaendig": false
+    },
+    {
+      "id": "alesina-2019-12", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2019-12-04", "datum_text": "4./5.12.2019", "ort": "Essen", "quelle": "8 2.pdf (Seite 1)",
+      "vorgespraech": "Bei Prof. Walz, Alesina als Vertretung. Beide prüfen nur AC und Viszeralchirurgie.",
+      "muendlich": {"themen": ["Divertikulose/Divertikulitis (OP-Indikation, gedeckte vs. freie Perforation, Fisteln)", "Leistenhernie (OP-Indikation, TAPP/TEP, Notfall vs. elektiv)"], "fallbeispiele": ["Patient vom ersten Tag mit Divertikulose als Nebenbefund", "Patient mit Leistenschwellung"], "fragen": ["Ab wann operiert man?", "Wo überall Fisteln? (über Anatomie hergeleitet)"]},
+      "praktisch": {"patienten": [], "untersuchung": ["Abdomen (warum erst auskultieren, dann palpieren?)"], "fragen": ["Sichtbar pulsierende Aorta: was erwarten? (Strömungsgeräusch)", "Ikterus DD und Labor, chirurgisch vs. internistisch", "Appendizitis-Zeichen, Murphy, Cullen"]},
+      "ausgefallene_frage": "Wie heißt Luft im Urin? (Pneumaturie bei kolovesikaler Fistel)",
+      "buecher": ["Amboss"], "atmosphaere": "Sehr ruhig, gibt Hilfestellung. Viel Theorie, wenig Untersuchung.",
+      "kommission": ["Ditschkowski (Innere) – Vorsitz", "Alesina (Chirurgie)", "Gesenhues (Allgemeinmedizin)", "Schildhaus (Pathologie)"],
+      "tipps": "Spricht leise. Nachfragen heißt nicht, dass die Antwort falsch war.", "note": "1", "vollstaendig": true
+    },
+    {
+      "id": "alesina-2020-05", "runde": 1, "fach": "Chirurgie", "pruefer_id": "alesina",
+      "datum": "2020-05-20", "datum_text": "20.05.2020", "ort": "Herzzentrum", "quelle": "8 2.pdf (Seite 2)",
+      "vorgespraech": "Sehr nett und entspannt. AC-Chirurg, prüft das. Schilddrüse sei möglich, wurde aber nicht gefragt.",
+      "muendlich": {"themen": ["Linksseitige Unterbauchschmerzen in der Notaufnahme (Vorgehen)", "Divertikulitis: Stadien, Diagnostik (CT), Therapie (Antibiose)", "DD Schmerzen linker Unterbauch"], "fallbeispiele": ["Patient mit linksseitigen Bauchschmerzen in der Notaufnahme"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": ["Corona-bedingt kein praktischer Teil"]},
+      "ausgefallene_frage": "Keine.", "buecher": ["Amboss", "50 Fälle Chirurgie"], "atmosphaere": "Sehr nett, hilft auf den richtigen Weg.",
+      "kommission": ["Wakili (Innere) – Vorsitz", "Alesina (Chirurgie)", "Römer (Allgemeinmedizin)", "Schildhaus (Pathologie)"],
+      "tipps": "Die wichtigsten Fälle der AC.", "note": "2", "vollstaendig": true
+    },
+    {
+      "id": "griewank-2015-05", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2015-05-27", "datum_text": "27./28.05.2015", "ort": "Essen", "quelle": "ASI.pdf",
+      "vorgespraech": "Wollte nicht treffen, dann doch kurz 5 min.",
+      "muendlich": {"themen": ["Blickdiagnose mit DD", "Hauttumoren", "Psoriasis", "Neurodermitis", "Bullöse Erkrankungen", "Allergietests (Prick, RAST)"], "fallbeispiele": ["Je ein Bild + DD, dann ein großes Thema"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": null, "buecher": [], "atmosphaere": "Sehr angenehm.",
+      "kommission": ["Reinhardt (Nephrologie) – Vorsitz", "Treckmann (AC)", "PD Müller (Pädiatrie)", "Griewank (Derma)"],
+      "tipps": null, "note": "2", "vollstaendig": true
+    },
+    {
+      "id": "griewank-2024-05", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2024-05-07", "datum_text": "07./08.05.2024", "ort": "Herz-Gefäßzentrum", "quelle": "5 2.pdf",
+      "vorgespraech": "Keins, macht er nie.",
+      "muendlich": {"themen": ["Offene Stellen Unterschenkel DD (Pemphigus vulgaris, bullöses Pemphigoid, Kontaktekzem, phototoxische Reaktion, Herpes)", "Pemphigus vulgaris: Diagnostik (DIF, IIF), Blasenbildung", "Aktinische Keratose und PEK (Diagnostik, Therapie)", "Keratoakanthom"], "fallbeispiele": ["45-jährige Frau mit offenen Stellen an beiden Unterschenkeln", "Älterer Herr mit Schuppen auf der Glatze"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "PV oder BP häufiger? (BP viel häufiger)",
+      "buecher": ["Blickdiagnose Dermatologie", "Amboss"], "atmosphaere": "Sehr nett, lächelt, lässt ausreden.",
+      "kommission": ["Dr. Pohl (Innere) – Vorsitz", "Dr. Hinrichs (Chirurgie)", "Prof. Dr. Griewank (Dermatologie)", "Dr. Kebir (Neurologie)"],
+      "tipps": "Histodermatologe, fragt aber keine Histologie und zeigte keine Bilder. Nur Basics.", "note": "1", "vollstaendig": true
+    },
+    {
+      "id": "griewank-2024-12", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2024-12-10", "datum_text": "10./11.12.2024", "ort": "Kardiologie", "quelle": "6 2.pdf",
+      "vorgespraech": "Keins, führt nie Vorgespräche durch.",
+      "muendlich": {"themen": ["Insektenstichallergie", "Allergietypen I–IV", "Typ-I-Allergie: Testung, typische Allergene", "Typ IV: Berufsgruppen, Epikutantestung (Ablesezeitpunkt)", "Typ III: leukozytoklastische Vaskulitis", "Notfallset", "Hyposensibilisierung (Wespengift, Pollen)", "Malignes Melanom: ABCDE, Auflichtmikroskopie, Einteilung, Tumordicke nach Breslow, Sicherheitsabstand, Sentinel"], "fallbeispiele": ["Patient vor einigen Wochen wegen Insektenstich mit Cortison behandelt", "Patient mit auffälligem Nävus"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "Welche Tiere verursachen am häufigsten Typ-1-Allergien bei Stichen? (Biene und Wespe)",
+      "buecher": ["Blickdiagnose Dermatologie", "Altmeyer"], "atmosphaere": "Nett, stellt Fragen manchmal komisch.",
+      "kommission": ["Dykun (Innere) – Vorsitz", "Hinrichs (Chirurgie)", "Griewank (Derma)", "Kebir (Neuro)"],
+      "tipps": null, "note": "1", "vollstaendig": true
+    },
+    {
+      "id": "griewank-2025-05-a", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2025-05", "datum_text": "Mai 2025", "ort": "Herzzentrum", "quelle": "7.pdf (Seite 1)",
+      "vorgespraech": "Mega nett, grenzt aber nichts ein.",
+      "muendlich": {"themen": ["Schuppende Hauterscheinung beim Säugling: DD seborrhoisches Ekzem vs. atopische Dermatitis", "Atopische Dermatitis: altersabhängige Klinik, Filaggrin-Gen, atopische Trias", "Therapie AD: Glukokortikoid-Klassen (Kinder max. Klasse II), Dupilumab (ab 6 Monaten)", "Elternsorge Nahrungsmittelallergie", "Mycosis fungoides (kutanes T-Zell-Lymphom): Diagnostik, Diagnoseverzögerung"], "fallbeispiele": ["Eltern mit 6 Monate altem Säugling mit schuppender Hauterscheinung", "Älterer Patient mit juckenden Hauterscheinungen ohne Besserung unter Kortison"], "fragen": ["Was ist zuerst da? (seb. Ekzem Monat 1–2)"]},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "Wie lange dauert es, bis eine Mycosis fungoides diagnostiziert wird? (5–7 Jahre)",
+      "buecher": ["Altprotokolle", "praxisorientiert lernen"], "atmosphaere": "Unfassbar nett.",
+      "kommission": [], "tipps": "Häufiges ist häufig. Andere Prüflinge: Lichen ruber, Röschenflechte (Pityriasis rosea).", "note": null, "vollstaendig": true
+    },
+    {
+      "id": "griewank-2025-05-b", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2025-05-14", "datum_text": "14./15.05.2025", "ort": "Herzzentrum", "quelle": "7.pdf (Seite 2)",
+      "vorgespraech": "Kein Vorgespräch.",
+      "muendlich": {"themen": ["Makulopapulöses Exanthem → Psoriasis guttata (nach Streptokokken-A-Infekt)", "Psoriasis-Formen (vulgaris, pustulosa, Nagelbefall)", "Psoriasis als Systemerkrankung, Psoriasis-Arthritis", "Schweregrad: Rule of Ten, PASI, DLQI, BSA", "Therapie topisch (Kortikosteroide, Vitamin-D-Derivate) und systemisch (Biologika: TNF-α-, IL-Hemmer)"], "fallbeispiele": ["Patient mit makulopapulösem Exanthem"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "Keine.", "buecher": ["Blickdiagnosen Dermatologie"], "atmosphaere": "Sehr entspannt, lässt lange reden, freut sich über Antworten.",
+      "kommission": ["PD Dr. F. Al-Rashid (Kardiologie) – Vorsitz", "OA Dr. Hinrichs (Allgemeinchirurgie)", "Prof. Dr. Griewank (Dermatologie)", "PD Dr. Kebir (Neurologie)"],
+      "tipps": null, "note": "2", "vollstaendig": true
+    },
+    {
+      "id": "griewank-2025-herbst", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2025-10", "datum_text": "Herbst 2025", "ort": "Herzzentrum Essen", "quelle": "8.pdf",
+      "vorgespraech": "Macht nie welche.",
+      "muendlich": {"themen": ["Papulöses, leicht schuppendes Exanthem → Psoriasis guttata", "Ätiologie und Trigger", "Diagnostik und Therapie der Psoriasis allgemein"], "fallbeispiele": ["Junge Patientin mit papulösem Exanthem"], "fragen": []},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": null, "buecher": [],
+      "atmosphaere": "Sehr nett, aber Fragestil etwas durcheinander (Trigger → Symptome → wieder Trigger). Er weiß, dass Prüflinge ihn manchmal nicht verstehen.",
+      "kommission": ["Mincu (Innere) – Vorsitz", "Hinrichs (Chirurgie)", "Griewank (Derma)", "Kebir (Neuro)"],
+      "tipps": null, "note": null, "vollstaendig": true
+    },
+    {
+      "id": "griewank-2025-11", "runde": 1, "fach": "Dermatologie", "pruefer_id": "griewank",
+      "datum": "2025-11-26", "datum_text": "26./27.11.2025", "ort": "Herzzentrum", "quelle": "9.pdf",
+      "vorgespraech": "Es gab keins.",
+      "muendlich": {"themen": ["Urtikaria (Bild): Trigger, Klinik, Flüchtigkeit der Quaddeln (<24 h), Lebenszeitprävalenz (~25 %)", "Urtikaria-Therapie: Stufentherapie Antihistaminika, Cortison, Omalizumab", "Hautkrebs allgemein: weißer und schwarzer Hautkrebs", "Melanom-Typen inkl. Lentigo-maligna-Melanom", "Melanom-Diagnostik"], "fallbeispiele": ["Bild einer Urtikaria"], "fragen": ["Was sind Trigger?", "Wie lange halten Quaddeln an?", "Wie viel Prozent der Menschen bekommen eine Urtikaria?", "Was ist Omalizumab?"]},
+      "praktisch": {"patienten": [], "untersuchung": [], "fragen": []},
+      "ausgefallene_frage": "Wie viel Prozent der entfernten auffälligen Nävi sind tatsächlich maligne? Wie viel Prozent bekommen im Leben eine Urtikaria?",
+      "buecher": ["Amboss", "Blickdiagnosen"], "atmosphaere": "Freundlich, aber speziell; Fragestellung wird nicht klarer, wenn man nicht versteht.",
+      "kommission": ["Fr. Dr. Mincu (Innere) – Vorsitz", "Hr. Dr. Hinrichs (Chirurgie)", "Hr. Dr. Griewank (Dermatologie)", "Hr. Dr. Kebir (Neurologie)"],
+      "tipps": "Basics absolut sicher können. Zu zweit lernen und gegenseitig untersuchen. An Tag 2 nur ca. 12 min pro Fach.", "note": "2", "vollstaendig": true
+    }
+  ]
+}

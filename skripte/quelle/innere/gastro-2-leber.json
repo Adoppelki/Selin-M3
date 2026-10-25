@@ -1,0 +1,99 @@
+[
+  {
+    "id": "innere-pbc-psc-aih",
+    "titel": "PBC, PSC und Autoimmunhepatitis",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2026-06-b: PBC vs. AIH, AMA, Overlap, UDCA, onkologisches Risiko PBC/PSC, Hashimoto",
+    "quellen": [
+      "EASL Clinical Practice Guidelines: Cholestatic liver diseases / PBC / PSC (Titel bekannt; aktuelle Therapieoptionen bitte prüfen)",
+      "S2k-Leitlinie AIH/PBC/PSC (DGVS): Titel bekannt, Volltext nicht abrufbar"
+    ],
+    "status": "Standardwissen. Zweitlinientherapien der PBC ändern sich schnell (Zulassungen/Rücknahmen): vor der Prüfung gegenlesen.",
+    "kurz": "- **PBC:** Frauen 40–60, AP ↑, IgM ↑, **AMA (M2)**, Juckreiz/Müdigkeit, Therapie **UDCA**\n- **PSC:** meist Männer, oft mit **Colitis ulcerosa**, p-ANCA, Perlschnurbild in MRCP, Cholangiokarzinomrisiko\n- **AIH:** Frauen, Transaminasen ↑, IgG ↑, ANA/SMA/LKM, Interface-Hepatitis, Therapie Steroid + Azathioprin\n- Overlap-Syndrome beachten: nicht nur AMA bestimmen",
+    "fragen": [
+      {"frage": "Patientin, 40 Jahre, Müdigkeit und Juckreiz, AP stark erhöht, AST/ALT leicht erhöht. Woran denken Sie, was veranlassen Sie?", "antwort": "Primär biliäre Cholangitis (PBC).\n- Sono (Gallenwege unauffällig, Ausschluss Obstruktion)\n- **AMA** (Anti-mitochondriale AK, v. a. M2; in ca. 90–95 % positiv), IgM\n- Bei AMA-Positivität plus cholestatischer Konstellation ist eine Biopsie meist nicht nötig\n- Bei AMA-negativ: Anti-gp210, Anti-sp100, ggf. Biopsie; ANA, SMA, IgG zum Ausschluss einer AIH/Overlap"},
+      {"frage": "Warum bestimmen Sie nicht nur AMA?", "antwort": "Wegen **Overlap-Syndromen** (PBC/AIH). Dann Transaminasen und IgG deutlich erhöht, ANA/SMA positiv, Interface-Hepatitis in der Biopsie (Paris-Kriterien). Therapie dann UDCA plus Immunsuppression. Außerdem: AMA-negative PBC gibt es, und AMA kommen auch bei Gesunden vor."},
+      {"frage": "Wie therapieren Sie die PBC? Wie wirkt UDCA?", "antwort": "- **UDCA** 13–15 mg/kg/Tag lebenslang; verbessert Cholestaseparameter und verzögert den Verlauf\n- Ansprechen nach 12 Monaten prüfen (z. B. Paris-II-, Barcelona-Kriterien)\n- UDCA wirkt **choleretisch** und zytoprotektiv, verdrängt toxische Gallensäuren. Der **Juckreiz** wird dadurch meist **nicht** gebessert, der Verlauf wird nicht komplett gestoppt\n- Bei unzureichendem Ansprechen: Zweitlinie (z. B. PPAR-Agonisten wie Fibrate, Elafibranor, Seladelpar; Obeticholsäure ist wegen Sicherheitsproblemen in der EU nicht mehr verfügbar), Stand prüfen\n- Endstadium: Lebertransplantation"},
+      {"frage": "Welche Erkrankungen sind mit PBC assoziiert?", "antwort": "Autoimmunerkrankungen: **Hashimoto-Thyreoiditis**, Sjögren-Syndrom, Sklerodermie (CREST), Zöliakie, rheumatoide Arthritis. Folgen der Cholestase: Osteoporose, Fettlöslicher-Vitamin-Mangel, Hypercholesterinämie, Xanthelasmen."},
+      {"frage": "Wie unterscheiden Sie PSC von PBC?", "antwort": "- PSC: eher **Männer** (30–50), **CED** (v. a. Colitis ulcerosa) in 60–80 %, p-ANCA, **MRCP/ERCP**: perlschnurartige Stenosen und Dilatationen der intra- und extrahepatischen Gallenwege\n- PBC: Frauen, AMA, kleine intrahepatische Gallengänge, in der Bildgebung unauffällig\n- PSC: UDCA verbessert die Prognose **nicht** sicher (Hochdosis schädlich)"},
+      {"frage": "Welches onkologische Risiko haben PBC- und PSC-Patienten?", "antwort": "- **PSC:** Cholangiokarzinom (Lebenszeitrisiko etwa 10–15 %), Gallenblasen- und **Kolonkarzinom** (bei CED: jährliche Koloskopie), HCC bei Zirrhose\n- **PBC:** HCC bei fortgeschrittener Fibrose/Zirrhose (Surveillance alle 6 Monate); sonst kein stark erhöhtes Cholangiokarzinomrisiko\nBei plötzlicher Verschlechterung der PSC an Cholangiokarzinom denken (CA 19-9, Bildgebung)."},
+      {"frage": "Diagnostik und Therapie der Autoimmunhepatitis?", "antwort": "- Frauen, Transaminasen ↑, **IgG ↑**, ANA/SMA (Typ 1), LKM-1 (Typ 2), SLA\n- **Leberbiopsie:** Interface-Hepatitis, Plasmazellen\n- Therapie: **Prednisolon**, zur Erhaltung **Azathioprin** (Steroidsparend); Ausschluss anderer Ursachen (Viren, Medikamente, Wilson)\n- Rückfälle beim Absetzen häufig"}
+    ]
+  },
+  {
+    "id": "innere-leberzirrhose",
+    "titel": "Leberzirrhose, Komplikationen und TIPS",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2025-12: Leberzirrhose (Ursachen, Therapie), TIPS",
+    "quellen": [
+      "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018, teilweise abgerufen)",
+      "Baveno VII (2022): Ergebnis der Suche, Volltext nicht abgerufen",
+      "S2k-Leitlinie Komplikationen der Leberzirrhose (DGVS): Titel bekannt, Volltext nicht abrufbar"
+    ],
+    "status": "Standardwissen nach EASL/DGVS; Details wie Albumindosen vor der Prüfung kontrollieren.",
+    "kurz": "- Ursachen: Alkohol, Virushepatitis B/C, **MASLD/NASH**, AIH, PBC/PSC, Hämochromatose, Wilson, α1-Antitrypsin-Mangel\n- Schweregrad: **Child-Pugh** (Bilirubin, Albumin, INR, Aszites, Enzephalopathie) und **MELD**\n- Komplikationen: Aszites, SBP, hepatorenales Syndrom, hepatische Enzephalopathie, Ösophagusvarizenblutung, HCC\n- **TIPS:** portosystemischer Shunt, v. a. bei refraktärem Aszites und Rezidivblutung",
+    "fragen": [
+      {"frage": "Ursachen und Diagnostik der Leberzirrhose?", "antwort": "- Ursachen: Alkohol, HBV/HCV, MASLD/NASH, AIH, PBC/PSC, Hämochromatose, Morbus Wilson, α1-Antitrypsin-Mangel, Budd-Chiari, Herzinsuffizienz (kardiale Zirrhose)\n- Klinik: Spider naevi, Palmarerythem, Caput medusae, Aszites, Gynäkomastie, Leberhautzeichen\n- Diagnostik: Sono (knotige Oberfläche, Aszites, Splenomegalie), Elastographie, Labor (Albumin, INR, Thrombozyten ↓), Gastroskopie auf Varizen, ggf. Biopsie"},
+      {"frage": "Wie ordnen Sie die Prognose ein (Child-Pugh, MELD)?", "antwort": "- **Child-Pugh:** Bilirubin, Albumin, INR (Quick), Aszites, Enzephalopathie; Klassen A (5–6), B (7–9), C (10–15)\n- **MELD:** Bilirubin, INR, Kreatinin (± Natrium); bestimmt die Dringlichkeit auf der Transplantationsliste\n- Dekompensation (Aszites, Blutung, Enzephalopathie, Ikterus) verschlechtert die Prognose deutlich"},
+      {"frage": "Wie behandeln Sie Aszites?", "antwort": "- Natriumarme Kost (ca. 5–6 g Kochsalz/Tag), keine Flüssigkeitsrestriktion außer bei schwerer Hyponatriämie\n- **Spironolacton** (± Furosemid), Kontrolle von Natrium, Kalium und Kreatinin\n- Großvolumenpunktion bei Spannungsaszites mit **Albuminsubstitution** (ca. 6–8 g pro entferntem Liter bei > 5 l)\n- Therapierefraktär: **TIPS** oder Transplantationsevaluation\n- Diagnostische Punktion: Zellzahl, Albumin, Eiweiß, Kultur; **SAAG ≥ 1,1 g/dl** spricht für portale Hypertension"},
+      {"frage": "Was ist eine spontan bakterielle Peritonitis (SBP)?", "antwort": "- Infektion des Aszites ohne chirurgische Ursache, Diagnose: **neutrophile Granulozyten ≥ 250/µl** im Aszites\n- Klinik: Fieber, Bauchschmerz, aber oft diskret, Verschlechterung der Nierenfunktion/Enzephalopathie\n- Therapie: **Cefotaxim bzw. Ceftriaxon** plus **Albumin** (Nierenschutz, Tag 1 und Tag 3)\n- Sekundärprophylaxe (z. B. Norfloxacin/Ciprofloxacin oder Rifaximin je nach Leitlinie), bei Varizenblutung Antibiotikaprophylaxe"},
+      {"frage": "Hepatorenales Syndrom: Definition und Therapie?", "antwort": "- Funktionelles Nierenversagen bei Zirrhose durch splanchnische Vasodilatation und renale Vasokonstriktion, Ausschluss von Schock, Nephrotoxinen, Nierenerkrankung, Diuretika-Pause\n- Therapie: **Albumin plus Terlipressin** (alternativ Noradrenalin auf Intensiv), Transplantation als definitive Therapie"},
+      {"frage": "Hepatische Enzephalopathie: Stadien und Therapie?", "antwort": "- West-Haven-Stadien I–IV (Schlafumkehr, Verwirrtheit, Somnolenz, Koma), Flapping Tremor\n- Auslöser suchen: GI-Blutung, Infektion, Elektrolyte (Hypokaliämie), Obstipation, Sedativa, Diuretika, TIPS\n- Therapie: **Lactulose**, Rifaximin als Zusatz/Prophylaxe; Ammoniak diagnostisch von begrenztem Wert"},
+      {"frage": "Wie verhindern Sie Varizenblutungen?", "antwort": "- Screening-Gastroskopie bei Zirrhose, Primärprophylaxe bei mittleren/großen Varizen: **nicht-selektiver Betablocker (Carvedilol, Propranolol)** oder Gummibandligatur\n- Sekundärprophylaxe nach Blutung: Betablocker + Ligatur\n- Ziel HVPG-Senkung; klinisch signifikante portale Hypertension: HVPG ≥ 10 mmHg"},
+      {"frage": "Was ist ein TIPS, wann setzen Sie ihn ein und wann nicht?", "antwort": "- **Transjugulärer intrahepatischer portosystemischer Shunt:** Stent von einem Pfortaderast in eine Lebervene, senkt den Portaldruck\n- Indikationen: **refraktärer/rezidivierender Aszites**, Rezidivblutung trotz Therapie, Notfall bei nicht beherrschbarer Varizenblutung, hohes Rezidivrisiko (frühzeitiger „Pre-emptive“-TIPS bei Child-Pugh C 10–13 oder B mit aktiver Blutung)\n- Kontraindikationen: schwere/rezidivierende hepatische Enzephalopathie, Rechtsherzinsuffizienz, pulmonale Hypertonie, ausgeprägte Leberinsuffizienz (z. B. Bilirubin > 5 mg/dl), unkontrollierte Infektion\n- Nebenwirkung: **Enzephalopathie**, Shunt-Stenose/-Thrombose"},
+      {"frage": "Was gehört zur HCC-Surveillance?", "antwort": "- Bei Zirrhose: **Sonographie alle 6 Monate** (± AFP)\n- Befund unklar: Multiphasen-CT/MRT; typische Zeichen: Arterielle Kontrastierung und Washout\n- Therapie nach BCLC-Stadium: Resektion, Ablation, TACE, Transplantation (Mailand-Kriterien), systemisch (Atezolizumab + Bevacizumab, Sorafenib/Lenvatinib)"}
+    ]
+  },
+  {
+    "id": "innere-hepatitiden",
+    "titel": "Virushepatitiden, Hepatitis B Serologie",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2024-05: Serologie, aus der man eine Hepatitis B erkennen und erklären soll",
+    "quellen": [
+      "EASL Clinical Practice Guidelines on the management of hepatitis B virus infection (2017/2025, Serologie-Tabelle gesucht, Details nicht geprüft)",
+      "RKI-Ratgeber Hepatitis B (Standardwissen)"
+    ],
+    "status": "Serologie-Konstellationen sind Standardwissen und sicher; Therapiedetails bitte gegen aktuelle Leitlinie prüfen.",
+    "kurz": "- **HBsAg:** Infektion (akut oder chronisch)\n- **Anti-HBc IgM:** akute Infektion; **Anti-HBc gesamt:** Kontakt mit dem Virus (bleibt lebenslang)\n- **Anti-HBs:** Immunität (geimpft oder ausgeheilt)\n- **HBeAg und HBV-DNA:** Replikation/Infektiosität\n- Chronisch = HBsAg-positiv > 6 Monate",
+    "fragen": [
+      {"frage": "Wie interpretieren Sie HBsAg +, Anti-HBc IgM +, Anti-HBs −?", "antwort": "**Akute Hepatitis B.** HBsAg zeigt Infektion, Anti-HBc IgM die Frischinfektion, Anti-HBs fehlt noch. Zeitlich folgt: HBsAg verschwindet, Anti-HBs steigt (Serokonversion)."},
+      {"frage": "Chronische Hepatitis B: Serologie und Definition?", "antwort": "- HBsAg + > 6 Monate, **Anti-HBc IgG +**, Anti-HBc IgM −/niedrig, Anti-HBs −\n- HBeAg + und hohe HBV-DNA: replikative Phase, hohe Infektiosität\n- Chronifizierungsrate: Erwachsene etwa 5–10 %, Neugeborene und Säuglinge bis ca. 90 %"},
+      {"frage": "Was bedeutet HBsAg −, Anti-HBc +, Anti-HBs +?", "antwort": "**Ausgeheilte Hepatitis B** mit Immunität. Wichtig: bei Immunsuppression (Rituximab, hochdosierte Steroide, Chemotherapie) kann das Virus **reaktivieren** (cccDNA in der Leber) — deshalb vor Immunsuppression Anti-HBc/HBsAg bestimmen."},
+      {"frage": "Und nur Anti-HBs +?", "antwort": "**Geimpft.** Impferfolg bei Anti-HBs ≥ 100 IE/l (≥ 10 IE/l gilt als Schutzgrenze, Auffrischung dann nach Leitlinie)."},
+      {"frage": "Was bedeutet isoliertes Anti-HBc?", "antwort": "Mögliche Erklärungen: Immunitätsfenster der akuten Infektion (HBsAg bereits negativ, Anti-HBs noch nicht nachweisbar, Anti-HBc IgM +), ausgeheilte Infektion mit abgefallenem Anti-HBs, okkulte Hepatitis B (HBV-DNA +), falsch positiv. Abklärung mit Anti-HBc IgM, HBV-DNA, Kontrolle."},
+      {"frage": "Wie therapieren Sie die chronische Hepatitis B?", "antwort": "- Nukleos(t)id-Analoga mit hoher Resistenzbarriere: **Entecavir, Tenofovir (TDF/TAF)**; meist langfristig\n- PEG-Interferon in ausgewählten Fällen (zeitlich begrenzt)\n- Ziel: HBV-DNA supprimieren, ALT normalisieren, HCC und Zirrhose verhindern; HBsAg-Verlust selten\n- Indikation nach Viruslast, ALT, Fibrose, Familien-/HCC-Anamnese\n- Neugeborenen HBsAg-positiver Mütter: **aktive und passive Impfung** innerhalb von 12 h"},
+      {"frage": "Was ist Hepatitis D?", "antwort": "Defektes RNA-Virus, benötigt **HBsAg** (nur bei HBV-Infektion): Simultaninfektion oder Superinfektion. Schlechtere Prognose. Diagnostik: Anti-HDV, HDV-RNA. Therapie: PEG-Interferon, Bulevirtid (Eintrittshemmer)."},
+      {"frage": "Hepatitis A, C und E im Überblick?", "antwort": "- **HAV:** fäkal-oral, Reise, selbstlimitierend, Anti-HAV IgM, Impfung, nie chronisch\n- **HCV:** parenteral, oft chronisch (ca. 70–80 %), Anti-HCV + HCV-RNA, Therapie mit **DAA (z. B. Sofosbuvir/Velpatasvir)** über 8–12 Wochen, Heilungsrate (SVR) > 95 %\n- **HEV:** fäkal-oral/Zoonose (Genotyp 3, Schwein), selbstlimitierend, bei Immunsuppression chronisch; schwerer Verlauf bei Schwangeren (Genotyp 1)"}
+    ]
+  },
+  {
+    "id": "innere-gi-blutung",
+    "titel": "Obere gastrointestinale Blutung",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2024-05 und 2025-12: obere GI-Blutung (Management, alle Therapiemöglichkeiten)",
+    "quellen": [
+      "ESGE Guideline: Endoscopic management of acute non-variceal upper GI haemorrhage (2021, vollständig gelesen)",
+      "Baveno VII (2022) für Varizenblutung: Titel bekannt, Volltext nicht abgerufen",
+      "Glasgow-Blatchford-Score (mdcalc)"
+    ],
+    "status": "Nicht-variköser Teil an ESGE 2021 geprüft; variköser Teil Standardwissen.",
+    "kurz": "- Ursachen: **Ulkus** (häufigste), Varizen, Erosionen, Mallory-Weiss, Tumor, Angiodysplasie, Dieulafoy\n- Sofortmaßnahmen: Kreislauf stabilisieren, Zugänge, Labor/Kreuzblut, **Endoskopie innerhalb 24 h**\n- **Forrest-Klassifikation** bestimmt die endoskopische Therapie\n- Varizenblutung: **Terlipressin, Antibiose, Ligatur**; bei Versagen Ballon/Stent und TIPS",
+    "fragen": [
+      {"frage": "Wie gehen Sie bei Hämatemesis und Teerstuhl vor?", "antwort": "1. ABC, 2 großlumige Zugänge, Volumen, Monitoring; Labor (Hb, Gerinnung, Kreuzblut, Kreatinin/Harnstoff)\n2. Risikostratifizierung (**Glasgow-Blatchford-Score**)\n3. Transfusion **restriktiv**: Zielwert Hb etwa 7–8 g/dl (höher bei KHK)\n4. **Gastroskopie innerhalb 24 h** nach Stabilisierung\n5. Antikoagulation/Antithrombotika anpassen; bei Verdacht auf Varizen **sofort** Terlipressin und Antibiotikum"},
+      {"frage": "Erläutern Sie die Forrest-Klassifikation und die Konsequenz.", "antwort": "- **Ia** spritzend, **Ib** sickernd: aktive Blutung → endoskopische Therapie\n- **IIa** sichtbarer Gefäßstumpf, **IIb** Koagel: Therapie (Koagel abtragen und behandeln)\n- **IIc** Hämatin auf Ulkusgrund, **III** Ulkusgrund sauber: keine endoskopische Therapie nötig, PPI\nHochrisikostigmata: Ia, Ib, IIa, IIb."},
+      {"frage": "Welche endoskopischen Verfahren kennen Sie?", "antwort": "- Adrenalininjektion (nie als Monotherapie, sondern mit zweitem Verfahren)\n- **Mechanisch:** Hämoclips (Over-the-scope-Clips bei Therapieversagen)\n- **Thermisch:** Kontaktkoagulation, Argon-Plasma-Koagulation\n- Hämostatische Pulver (als Rescue)\n- Interventionelle Radiologie (Embolisation) oder Chirurgie bei Versagen"},
+      {"frage": "Welche medikamentöse Therapie gilt?", "antwort": "- **PPI** hochdosiert nach erfolgreicher Endoskopie (ESGE: intravenös hochdosiert über etwa 72 h, danach oral); PPI vor Endoskopie kann gegeben werden, ersetzt sie aber nicht\n- **Helicobacter pylori** testen und eradizieren\n- Tranexamsäure wird nicht empfohlen (HALT-IT)\n- ASS zur Sekundärprophylaxe nach Möglichkeit rasch fortsetzen; Marcumar: PPSB/Vitamin K; DOAC pausieren, Antidot bei lebensbedrohlicher Blutung"},
+      {"frage": "Wie behandeln Sie eine Ösophagusvarizenblutung?", "antwort": "- Stabilisierung, restriktive Transfusion\n- **Terlipressin** (oder Somatostatin/Octreotid) so früh wie möglich, 2–5 Tage\n- **Antibiotikaprophylaxe** (z. B. Ceftriaxon bis zu 7 Tage)\n- Endoskopie: **Gummibandligatur** (Varizen), bei Fundusvarizen Histoacryl-Injektion\n- Bei Versagen: Ballonsonde (Sengstaken-Blakemore/Linton-Nachlas) oder selbstexpandierender Metallstent als Überbrückung, dann **TIPS**\n- Zusätzlich: Lactulose zur Enzephalopathieprophylaxe\n- Sekundärprophylaxe: Betablocker + Ligatur"},
+      {"frage": "Welche Ursachen kennen Sie für eine Blutung ohne Ulkus und Varizen?", "antwort": "- Mallory-Weiss-Läsion (Riss nach Erbrechen), Boerhaave bei Ruptur (Mackler-Trias)\n- Erosive Gastritis/Ösophagitis (NSAR, Alkohol, Stress)\n- Dieulafoy-Läsion, Angiodysplasie/GAVE, Tumor\n- Aortoenterale Fistel (nach Aortenprothese)\n- Hämobilie, Hämosuccus pancreaticus"},
+      {"frage": "Wie senken Sie das Ulkusrisiko bei Patienten unter ASS/NSAR?", "antwort": "PPI-Prophylaxe bei Risikofaktoren (Alter > 65, Ulkusanamnese, Antikoagulation, Kortikosteroide, duale Plättchenhemmung), H. pylori testen und behandeln, NSAR möglichst vermeiden."}
+    ]
+  }
+]

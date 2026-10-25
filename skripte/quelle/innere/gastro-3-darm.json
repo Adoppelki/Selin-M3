@@ -1,0 +1,49 @@
+[
+  {
+    "id": "innere-ced",
+    "titel": "Chronisch entzündliche Darmerkrankungen",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2024-05 (CED) und 2026-06-c: Crohn vs. Colitis ulcerosa, Befallsmuster, extraintestinale Manifestationen, MR-Sellink",
+    "quellen": [
+      "S3-Leitlinie Colitis ulcerosa (DGVS 2023) und S3-Leitlinie Morbus Crohn (DGVS 2021): Titel bekannt, Volltext nicht abrufbar",
+      "ECCO-Leitlinien (Standardwissen)"
+    ],
+    "status": "Standardwissen. Neue Substanzen (JAK-Inhibitoren, IL-23-Hemmer) und Zulassungen vor der Prüfung gegenlesen.",
+    "kurz": "- **Crohn:** gesamter GI-Trakt (v. a. terminales Ileum), diskontinuierlich, transmural, Fisteln/Stenosen, Granulome\n- **Colitis ulcerosa:** Rektum beginnend, kontinuierlich aufsteigend, nur Mukosa/Submukosa, blutig-schleimige Durchfälle\n- Diagnostik: **Ileokoloskopie mit Stufenbiopsien**, Calprotectin, CRP, bei Crohn Dünndarm: MR-Enterographie (MR-Sellink)\n- Extraintestinale Manifestationen: Gelenke, Haut, Augen, PSC",
+    "fragen": [
+      {"frage": "Unterschiede Morbus Crohn und Colitis ulcerosa?", "antwort": "**Crohn:** Mund bis Anus, diskontinuierlich („skip lesions“), transmural, terminales Ileum, Fisteln, Stenosen, Abszesse, Granulome, Pflastersteinrelief, Aphthen, oft Perianalbefall, Rauchen verschlechtert\n**CU:** nur Kolon, Rektum immer betroffen, kontinuierlich, mukosal, Kryptenabszesse, Pseudopolypen, blutig-schleimige Diarrhö, Tenesmen, Rauchen eher protektiv, PSC-Assoziation\nBeide: schubweiser Verlauf, Alter 20–40."},
+      {"frage": "Welche extraintestinalen Manifestationen kennen Sie?", "antwort": "- Gelenke: periphere/axiale Arthritis, Sakroiliitis, Spondylitis\n- Haut: **Erythema nodosum** (Unterschenkel), **Pyoderma gangraenosum**, orale Aphthen\n- Augen: Uveitis, Iritis, Episkleritis\n- Leber/Galle: **PSC** (v. a. CU), Cholelithiasis\n- Sonstige: Nierensteine (Oxalat bei Crohn), Thrombosen, Anämie, Osteoporose, Amyloidose"},
+      {"frage": "Wie sichern Sie die Diagnose?", "antwort": "- Anamnese (Stuhlfrequenz, Blut, Gewicht, Fieber, Familie, Reisen), Untersuchung (Perianalbereich!)\n- Labor: CRP, Blutbild, Eisen/Ferritin, Albumin, **Calprotectin im Stuhl** (Entzündung vs. Reizdarm)\n- **Stuhl auf Erreger** (Salmonellen, Campylobacter, C. difficile) vor Diagnose CED\n- **Ileokoloskopie mit Stufenbiopsien** (Histologie)\n- Dünndarm: MR-Enterographie/MR-Sellink, Sonographie; Kapselendoskopie nur nach Stenoseausschluss"},
+      {"frage": "Was ist MR-Sellink, wann nutzen Sie es?", "antwort": "MR-Enterographie/-Enteroklysma mit Kontrastierung des Dünndarms zur Beurteilung von Wandverdickung, Stenosen, Fisteln und Abszessen **ohne Strahlenbelastung**. Einsatz: Morbus Crohn bei Dünndarmbefall, Komplikationen, Verlauf."},
+      {"frage": "Wie therapieren Sie einen Schub der Colitis ulcerosa?", "antwort": "- Leicht bis mittelschwer, distal: **5-ASA (Mesalazin)** rektal (Suppositorien/Klysma) ± oral\n- Ausgedehnt/mittelschwer: Mesalazin oral, Budesonid MMX, systemische Steroide bei fehlendem Ansprechen\n- Schwer: stationär, intravenöse Steroide, bei Steroidversagen **Infliximab** oder Ciclosporin (Rescue); toxisches Megakolon beachten\n- Erhaltung: Mesalazin, Azathioprin, Biologika (TNF-Antikörper, Vedolizumab, Ustekinumab) oder JAK-Inhibitoren (Sicherheitswarnungen beachten)\n- Kolektomie bei Therapieversagen, Karzinom, Megakolon"},
+      {"frage": "Wie therapieren Sie Morbus Crohn?", "antwort": "- Schub: Steroide (Budesonid bei ileozökalem Befall), bei komplizierten Verläufen früh Biologika (TNF-Antikörper, Ustekinumab, Vedolizumab)\n- Erhaltung: Azathioprin/Methotrexat, Biologika; **Rauchstopp**\n- Mesalazin hat bei Crohn nur begrenzten Nutzen\n- Operativ bei Stenosen, Fisteln, Abszessen: Resektion sparsam, Strikturoplastik; Rezidiv bei Anastomose häufig\n- Ernährung: Eisen-, B12-Substitution, ggf. enterale Ernährung"},
+      {"frage": "Was müssen Sie vor Beginn eines Biologikums/Immunsuppression abklären?", "antwort": "- **Tuberkulose** (IGRA, Röntgen Thorax)\n- Hepatitis B (und C), HIV\n- Impfstatus (Varizellen, Pneumokokken, Influenza, HPV), Lebendimpfstoffe vorher\n- Ausschluss aktiver Infektionen und Abszessen; Tumoranamnese\n- Thiopurine: TPMT-Aktivität (Myelosuppression)"},
+      {"frage": "Welches Tumorrisiko besteht?", "antwort": "Colitis ulcerosa (und Crohn-Kolitis): kolorektales Karzinom, Risiko steigt mit Dauer (ab etwa 8 Jahre nach Erstdiagnose), Ausdehnung, PSC. Überwachungskoloskopien in festen Intervallen (Chromoendoskopie/Stufenbiopsien). Dünndarmkarzinom bei Crohn, Lymphom unter Thiopurinen, Hautkrebs unter Immunsuppression."},
+      {"frage": "Patient mit rezidivierenden unblutigen Durchfällen, oralen Aphthen, Effloreszenzen an den Beinen, Blässe. Wie gehen Sie vor?", "antwort": "Verdacht CED (Crohn) und Alternativen (Zöliakie, Infektion, Reizdarm, Laktoseintoleranz).\n- Anämie: mikrozytär = Eisenmangel (Blutverlust, Malabsorption), makrozytär = B12-/Folatmangel (terminales Ileum, Zöliakie)\n- Labor, Calprotectin, Stuhl auf Erreger, Zöliakie-Serologie (tTG-IgA + Gesamt-IgA)\n- Koloskopie mit Ileumintubation und Biopsien, **Gastroskopie mit Duodenalbiopsien**, MR-Sellink\n- Beinbefunde: Erythema nodosum (CED) oder Dermatitis herpetiformis (Zöliakie)"}
+    ]
+  },
+  {
+    "id": "innere-zoeliakie",
+    "titel": "Zöliakie",
+    "fach": "Innere Medizin",
+    "bereich": "Gastro/Hepatologie",
+    "prio": "A",
+    "protokoll_bezug": "Willuweit 2026-06-c: Zöliakie (Zottenatrophie, Kryptenhyperplasie, tTG-IgA, IgA-Mangel, HLA-DQ2/DQ8, glutenfreie Getreide), Dermatitis herpetiformis Duhring",
+    "quellen": [
+      "S2k-Leitlinie Zöliakie (DGVS 2021): Titel bekannt, Volltext nicht abrufbar",
+      "ESPGHAN 2020 Zöliakie-Leitlinie (Kinder, Standardwissen)"
+    ],
+    "status": "Standardwissen.",
+    "kurz": "- Immunvermittelte Enteropathie auf **Gluten** bei genetischer Veranlagung (**HLA-DQ2/DQ8**)\n- Autoantigen: **Gewebstransglutaminase (tTG)**\n- Diagnostik: **tTG-IgA + Gesamt-IgA** unter glutenhaltiger Kost, Duodenalbiopsie (Zottenatrophie, Kryptenhyperplasie, intraepitheliale Lymphozyten)\n- Therapie: **lebenslang glutenfrei**",
+    "fragen": [
+      {"frage": "Wie entsteht die Zöliakie? Welche HLA-Assoziation?", "antwort": "Gliadin (Glutenanteil) wird durch **tTG deamidiert**, bindet an **HLA-DQ2 (> 90 %) oder HLA-DQ8** auf APC; CD4-T-Zellen lösen eine Entzündung der Dünndarmmukosa aus, mit Zottenatrophie und Kryptenhyperplasie. Der HLA-Typ ist notwendig, aber nicht hinreichend: negatives HLA-DQ2/DQ8 schließt Zöliakie praktisch aus (hoher negativer Vorhersagewert), ein positiver Befund beweist sie nicht."},
+      {"frage": "Wie diagnostizieren Sie die Zöliakie?", "antwort": "1. Serologie **unter glutenhaltiger Ernährung**: **tTG-IgA** plus **Gesamt-IgA** (ggf. Endomysium-AK, deamidierte Gliadin-Peptid-AK)\n2. Bei **IgA-Mangel**: tTG-IgG bzw. DGP-IgG\n3. **Duodenalbiopsie** (mehrere, auch Bulbus): Marsh-Klassifikation: intraepitheliale Lymphozyten, Kryptenhyperplasie, Zottenatrophie\n4. Kinder: bei tTG-IgA ≥ 10× oberer Normwert und positivem EMA kann in definierten Fällen auf die Biopsie verzichtet werden (ESPGHAN)\n5. Vorher keine glutenfreie Diät beginnen"},
+      {"frage": "Welche Getreide darf der Patient essen, welche nicht?", "antwort": "- **Verboten:** Weizen (inkl. Dinkel, Kamut, Grünkern), Roggen, Gerste (auch Malz); Hafer nur als zertifiziert glutenfreier Hafer\n- **Erlaubt:** Mais, Reis, Hirse, Buchweizen, Amaranth, Quinoa, Teff; Kartoffeln, Hülsenfrüchte\n- Auf versteckte Gluten in Fertigprodukten, Soßen, Medikamenten achten; Kontamination"},
+      {"frage": "Welche Symptome und Assoziationen kennen Sie?", "antwort": "- Klassisch: Diarrhö, Steatorrhö, Gewichtsverlust, Blähungen; oft oligosymptomatisch\n- Extraintestinal: Eisenmangelanämie, Osteoporose, erhöhte Transaminasen, Aphthen, Zahnschmelzdefekte, Infertilität, Neuropathie, Müdigkeit\n- Assoziiert: **Typ-1-Diabetes, Hashimoto**, Autoimmunhepatitis, PBC, selektiver IgA-Mangel, Down-Syndrom, Turner-Syndrom\n- Haut: **Dermatitis herpetiformis Duhring**"},
+      {"frage": "Was ist die Dermatitis herpetiformis Duhring?", "antwort": "Intensiv juckende, gruppierte Bläschen und Papeln, v. a. an **Streckseiten** (Ellenbogen, Knie, Gesäß), mit Zöliakie assoziiert. Diagnostik: Hautbiopsie, **IgA-Ablagerungen in den dermalen Papillenspitzen** (direkte Immunfluoreszenz). Therapie: **glutenfreie Diät** und Dapson (schnelle Juckreizlinderung; Methämoglobin und Hämolyse beachten, G6PD prüfen)."},
+      {"frage": "Welche Komplikationen drohen?", "antwort": "- Refraktäre Zöliakie (Beschwerden trotz strikter Diät > 12 Monate)\n- **EATL** (Enteropathie-assoziiertes T-Zell-Lymphom), Dünndarmadenokarzinom\n- Ulzerative Jejunoileitis, Hyposplenismus\n- Mangelzustände (Eisen, Folat, B12, Vitamin D, Calcium, Zink), Osteoporose\nKontrollen: Serologie (Diätcompliance), DEXA, Vitamine."}
+    ]
+  }
+]

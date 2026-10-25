@@ -533,3 +533,11 @@ details.fall[open] > summary::after { transform: rotate(90deg); }
 .prose .md-h { font-family: var(--serif, inherit); font-size: 1.02rem; margin: 18px 0 6px; color: var(--accent-strong); }
 .prose .md-h:first-child { margin-top: 4px; }
 .prose.skript { line-height: 1.6; max-width: 70ch; }
+
+/* Spezialwissen: aufklappbarer Zusatzabschnitt in den Skripten */
+details.spezial { margin: 14px 0; border: 1px solid var(--line); border-radius: 12px; background: var(--bg, transparent); }
+details.spezial > summary { cursor: pointer; padding: 12px 14px; font-weight: 600; list-style: none; }
+details.spezial > summary::-webkit-details-marker { display: none; }
+details.spezial > summary::after { content: "›"; float: right; color: var(--soft); transition: transform .2s; }
+details.spezial[open] > summary::after { transform: rotate(90deg); }
+details.spezial > .prose { padding: 0 14px 12px; }

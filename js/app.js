@@ -1185,6 +1185,7 @@
         var r = !!S.skripteRead[k.id];
         return '<details class="proto"><summary><button class="check' + (r ? " on" : "") + '" data-read="' + esc(k.id) + '" aria-label="Durchgearbeitet"></button><strong>' + esc(k.titel) + '</strong>' + (k.fach ? '<span class="tag">' + esc(k.fach) + '</span>' : "") + '</summary>' +
           '<div class="proto-body"><div style="margin-top:12px"><a class="btn btn-soft btn-sm" href="#karten" data-cards="' + esc(k.id) + '">🃏 Dazu abfragen</a></div>' + (k.kurz ? '<h4>Skript</h4><div class="prose skript">' + simpleMd(k.kurz) + '</div>' : "") +
+          (k.spezial ? '<details class="spezial"><summary>🎓 Spezialwissen auf Facharzt-Niveau: das Warum hinter Diagnostik und Therapie</summary><div class="prose skript">' + simpleMd(k.spezial) + '</div></details>' : "") +
           ((k.fragen || []).length ? '<h4>Typische Fragen</h4>' + k.fragen.map(function (f) {
             return '<div class="qa"><div class="q">' + esc(f.frage) + '</div>' + (f.antwort ? '<div class="a prose">' + simpleMd(f.antwort) + '</div>' : "") + '</div>';
           }).join("") : "") + '</div></details>';

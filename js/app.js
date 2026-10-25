@@ -790,30 +790,69 @@
     if (e.g) return 1;
     return 0;
   }
-  function figureSVG(seite, regions) {
+  // Körper als Halbfigur (linke Seite, Achse bei x = 100); die rechte Seite entsteht durch Spiegeln.
+  var HALF = {
+    arm: "M60 90 C47 93 42 108 41 124 C40 144 37 160 35 174 C32 196 29 216 27 234 L41 238 C43 218 48 196 52 176 C55 158 58 140 62 120 Z",
+    hand: "M27 234 C22 250 20 266 22 280 C23 288 30 290 32 284 L34 272 L36 286 C37 292 43 291 43 285 L42 268 L45 280 C46 285 51 283 50 278 L47 258 C46 250 44 244 41 238 Z",
+    body: "M100 64 L92 64 C91 72 88 77 80 80 C70 83 63 86 60 91 C61 108 62 120 65 134 C68 150 72 164 72 180 C72 198 66 214 64 234 C62 262 63 292 67 326 C69 346 66 362 66 380 C66 394 70 402 72 410 L86 410 C86 396 86 380 87 366 C88 350 88 340 89 326 C91 296 96 272 100 254 Z",
+    foot: "M72 406 L86 406 C89 414 89 422 85 427 C78 432 66 432 62 427 C60 422 65 416 72 412 Z"
+  };
+  var HEAD = "M100 7 C88 7 79 17 79 32 C79 44 84 56 91 60 C95 62 105 62 109 60 C116 56 121 44 121 32 C121 17 112 7 100 7 Z";
+  function mirrored(inner) { return '<g>' + inner + '</g><g transform="translate(200,0) scale(-1,1)">' + inner + '</g>'; }
+
+  function figureSVG(seite, regions, fachId) {
     var front = seite === "vorne";
-    var body =
-      '<g>' +
-      // Arme
-      '<path class="body-part" d="M62 92 C46 98 44 120 44 140 L40 205 L34 262 C33 274 46 276 48 264 L58 206 L64 150 Z"/>' +
-      '<path class="body-part" d="M138 92 C154 98 156 120 156 140 L160 205 L166 262 C167 274 154 276 152 264 L142 206 L136 150 Z"/>' +
-      // Hände
-      '<ellipse class="body-part" cx="40" cy="272" rx="9" ry="13"/><ellipse class="body-part" cx="160" cy="272" rx="9" ry="13"/>' +
-      // Beine
-      '<path class="body-part" d="M70 240 L72 330 L76 408 C77 418 92 418 92 408 L96 330 L99 252 Z"/>' +
-      '<path class="body-part" d="M130 240 L128 330 L124 408 C123 418 108 418 108 408 L104 330 L101 252 Z"/>' +
-      // Füße
-      '<ellipse class="body-part" cx="' + (front ? 82 : 84) + '" cy="420" rx="13" ry="7"/><ellipse class="body-part" cx="' + (front ? 118 : 116) + '" cy="420" rx="13" ry="7"/>' +
-      // Rumpf
-      '<path class="body-part" d="M64 88 C78 82 122 82 136 88 C146 94 144 112 140 140 C136 170 134 200 136 232 C136 252 120 260 100 260 C80 260 64 252 64 232 C66 200 64 170 60 140 C56 112 54 94 64 88 Z"/>' +
-      // Hals
-      '<rect class="body-part" x="89" y="58" width="22" height="30" rx="8"/>' +
-      // Kopf
-      '<ellipse class="body-part" cx="100" cy="36" rx="23" ry="27"/>' +
-      (front
-        ? '<path class="body-line" d="M80 112 C90 118 96 118 99 112 M101 112 C104 118 110 118 120 112"/><path class="body-line" d="M100 150 L100 225"/><circle cx="100" cy="200" r="1.8" fill="#d6cbb8"/>'
-        : '<path class="body-line" d="M100 92 L100 238"/><path class="body-line" d="M76 110 C84 124 86 136 82 146 M124 110 C116 124 114 136 118 146"/>') +
-      '</g>';
+    var gid = "sk" + (front ? "f" : "b");
+    var skin = 'fill="url(#' + gid + ')" stroke="#cdb79d" stroke-width="1.2" stroke-linejoin="round"';
+    var fine = 'fill="none" stroke="#d3bfa6" stroke-width="1.1" stroke-linecap="round"';
+    var defs = '<defs>' +
+      '<linearGradient id="' + gid + '" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8d5bf"/><stop offset=".5" stop-color="#f4e6d5"/><stop offset="1" stop-color="#e8d5bf"/></linearGradient>' +
+      '<filter id="sh' + gid + '" x="-10%" y="-5%" width="120%" height="115%"><feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#6b5a45" flood-opacity=".18"/></filter></defs>';
+
+    // Körper
+    var body = '<g filter="url(#sh' + gid + ')">' +
+      mirrored('<path ' + skin + ' d="' + HALF.arm + '"/><path ' + skin + ' d="' + HALF.hand + '"/><path ' + skin + ' d="' + HALF.foot + '"/>') +
+      mirrored('<path ' + skin + ' d="' + HALF.body + '"/>') +
+      '<ellipse ' + skin + ' cx="79" cy="36" rx="3.2" ry="6.5"/><ellipse ' + skin + ' cx="121" cy="36" rx="3.2" ry="6.5"/>' +
+      '<path ' + skin + ' d="' + HEAD + '"/></g>';
+    // verdeckt die Mittelnaht
+    body += '<rect x="99.2" y="65" width="1.6" height="188" fill="#f4e6d5"/>';
+
+    var detail = "";
+    if (front) {
+      detail += '<path d="M79 28 C78 14 88 6 100 6 C112 6 122 14 121 28 C117 19 109 15 100 15 C91 15 83 19 79 28 Z" fill="#8a6e58"/>';
+      detail += '<ellipse cx="91.5" cy="32" rx="3" ry="1.8" fill="#6b5646"/><ellipse cx="108.5" cy="32" rx="3" ry="1.8" fill="#6b5646"/>';
+      detail += '<path ' + fine + ' d="M87 27 C90 25 94 25 96 27 M104 27 C106 25 110 25 113 27 M100 33 L99 42 C100 44 101 44 102 42 M93 50 C97 53 103 53 107 50"/>';
+      detail += mirrored('<path ' + fine + ' d="M93 77 C86 81 76 82 66 90"/><path ' + fine + ' d="M97 98 C88 101 78 105 71 114 M97 108 C89 111 81 115 74 123 M97 118 C90 121 84 124 79 130"/><path ' + fine + ' d="M71 131 C80 142 92 142 98 135"/><path ' + fine + ' d="M89 162 L99 162 M88 180 L99 180 M89 198 L99 198"/><path ' + fine + ' d="M74 224 C82 238 92 248 100 254"/><ellipse ' + fine + ' cx="78" cy="336" rx="6.5" ry="8.5"/>') +
+      '<path ' + fine + ' d="M100 80 L100 146 M100 150 L100 224"/><circle cx="100" cy="198" r="1.8" fill="#d3bfa6"/>';
+    } else {
+      detail += '<path d="M79 32 C78 14 88 6 100 6 C112 6 122 14 121 32 C121 44 116 56 109 60 C105 62 95 62 91 60 C84 56 79 44 79 32 Z" fill="#8a6e58"/>';
+      detail += mirrored('<path ' + fine + ' d="M76 98 C71 112 73 128 81 138 C88 131 91 112 89 98 Z"/><path ' + fine + ' d="M68 228 C73 248 90 258 100 254"/><path ' + fine + ' d="M73 334 L86 334"/><path ' + fine + ' d="M66 134 C70 150 72 164 72 180"/>') +
+      '<path ' + fine + ' d="M100 64 L100 254"/><path d="M100 66 L100 236" stroke="#cdb79d" stroke-width="2.6" stroke-dasharray="1.4 4.2" stroke-linecap="round" fill="none"/>';
+    }
+
+    // Anatomische Hilfen passend zum Fach
+    var ov = "", violet = "rgba(138,124,194,", blue = "rgba(94,148,180,", red = "rgba(200,110,110,", brown = "rgba(190,140,100,";
+    if (fachId === "innere") {
+      if (front) {
+        ov += mirrored('<path d="M92 98 C84 94 74 100 72 114 C70 128 76 142 90 144 C94 138 94 112 92 98 Z" fill="' + blue + '.22)" stroke="' + blue + '.55)" stroke-width="1"/>');
+        ov += '<path d="M106 124 C112 119 121 123 121 131 C121 141 113 148 109 153 C104 147 99 139 100 131 C100 127 102 125 106 124 Z" fill="' + red + '.35)" stroke="' + red + '.7)" stroke-width="1"/>';
+        ov += '<path d="M92 68 C94 66 98 68 100 71 C102 68 106 66 108 68 C109 74 104 78 100 76 C96 78 91 74 92 68 Z" fill="' + brown + '.45)" stroke="' + brown + '.8)" stroke-width="1"/>';
+        ov += '<path d="M100 152 L100 234 M72 196 L128 196" stroke="' + blue + '.5)" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>';
+      } else {
+        ov += mirrored('<path d="M94 104 C84 100 76 108 74 122 C73 138 80 152 92 158 C96 142 96 118 94 104 Z" fill="' + blue + '.2)" stroke="' + blue + '.5)" stroke-width="1"/><ellipse cx="84" cy="196" rx="6.5" ry="11" fill="' + red + '.28)" stroke="' + red + '.6)" stroke-width="1"/>');
+      }
+    } else if (fachId === "neuro") {
+      ov += '<path d="M88 32 C86 20 93 13 100 13 C107 13 114 20 112 32 C112 40 106 44 100 44 C94 44 88 40 88 32 Z" fill="' + violet + '.22)" stroke="' + violet + '.6)" stroke-width="1"/><path d="M92 24 C96 28 98 22 100 27 C102 22 104 28 108 24 M91 33 C95 37 98 31 100 35 C102 31 105 37 109 33" stroke="' + violet + '.5)" stroke-width="1" fill="none"/>';
+      if (!front) ov += '<path d="M100 62 L100 238" stroke="' + violet + '.55)" stroke-width="3" stroke-linecap="round" fill="none"/>';
+      ov += mirrored('<path d="M62 100 C52 130 44 190 33 240" stroke="' + violet + '.5)" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M86 252 C82 300 80 350 80 406" stroke="' + violet + '.5)" stroke-width="1.8" fill="none" stroke-linecap="round"/>');
+    } else if (fachId === "chirurgie") {
+      var joints = front ? [[62, 96], [40, 172], [36, 236], [74, 232], [78, 336], [78, 406]] : [[62, 96], [40, 172], [74, 232], [78, 336]];
+      joints.forEach(function (j) {
+        ov += '<circle cx="' + j[0] + '" cy="' + j[1] + '" r="9" fill="' + brown + '.2)" stroke="' + brown + '.5)" stroke-width="1"/><circle cx="' + (200 - j[0]) + '" cy="' + j[1] + '" r="9" fill="' + brown + '.2)" stroke="' + brown + '.5)" stroke-width="1"/>';
+      });
+    }
+
     var spots = "";
     regions.forEach(function (r) {
       (r.punkte || []).forEach(function (p) {
@@ -821,11 +860,11 @@
         var st = regionState(r.id);
         spots += '<g class="hotspot st' + st + (examSel === r.id ? " selected" : "") + '" data-region="' + r.id + '" tabindex="0" role="button" aria-label="' + esc(r.name) + '">' +
           '<title>' + esc(r.name) + '</title>' +
-          '<circle class="halo" cx="' + p.x + '" cy="' + p.y + '" r="15"/>' +
-          '<circle class="dot" cx="' + p.x + '" cy="' + p.y + '" r="8.5"/></g>';
+          '<circle class="halo" cx="' + p.x + '" cy="' + p.y + '" r="14"/>' +
+          '<circle class="dot" cx="' + p.x + '" cy="' + p.y + '" r="7.5"/></g>';
       });
     });
-    return '<svg viewBox="0 -4 200 436" role="img" aria-label="Figur ' + (front ? "Vorderseite" : "Rückseite") + '">' + body + spots + '</svg>';
+    return '<svg viewBox="0 0 200 440" role="img" aria-label="Figur ' + (front ? "Vorderseite" : "Rückseite") + '">' + defs + body + detail + ov + spots + '</svg>';
   }
   function examRegions(fachId) { return REGIONS.filter(function (r) { return r.fach === fachId; }); }
   function examCounts(list) {
@@ -852,17 +891,16 @@
       var w = e.w || 0;
       var st = regionState(r.id);
       var sel = examSel === r.id ? " selected" : "";
-      if (!examEdit) {
-        return '<li class="exam-row st' + st + sel + '" data-region="' + r.id + '">' +
-          '<span class="exam-badge">' + (st === 0 ? "" : "✓") + '</span>' +
-          '<span class="region-name">' + esc(r.name) + (e.last ? '<small class="muted"> · zuletzt ' + esc(fmtShort(e.last)) + '</small>' : "") + '</span>' +
-          (st === 0 ? '<span class="exam-state open">noch offen</span>'
-            : '<span class="exam-state">' + (w ? '<strong>' + w + '×</strong> wiederholt' : 'geübt') + '</span>') + '</li>';
-      }
-      return '<li class="exam-row edit st' + st + sel + '" data-region="' + r.id + '">' +
-        '<button class="check' + (e.g ? " on" : "") + '" data-act="g" aria-label="Geübt"></button>' +
-        '<span class="region-name">' + esc(r.name) + '</span>' +
-        '<span class="rep-ctrl' + (w ? " on" : "") + '"><button data-act="w-" aria-label="weniger">−</button><span>' + (w ? w + "× wiederholt" : "0× wiederholt") + '</span><button data-act="w+" aria-label="mehr">+</button></span></li>';
+      return '<li class="exam-row st' + st + sel + (examEdit ? " edit" : "") + '" data-region="' + r.id + '">' +
+        '<button class="check' + (e.g ? " on" : "") + '" data-act="g" aria-label="Geübt" title="' + (e.g && !examEdit ? "Zum Entfernen erst auf Bearbeiten tippen" : "Als geübt abhaken") + '"></button>' +
+        '<span class="region-name">' + esc(r.name) +
+          '<small class="muted">' + (st === 0 ? "noch nicht geübt" : (e.last ? "zuletzt " + esc(fmtShort(e.last)) : "geübt")) + '</small></span>' +
+        '<span class="counter' + (w ? " on" : "") + '"><strong>' + w + '×</strong><span>wiederholt</span></span>' +
+        (examEdit
+          ? '<span class="edit-ctrl"><button class="icon-btn" data-act="w-" title="Eine Wiederholung weniger" aria-label="weniger">−</button><button class="icon-btn" data-act="w+" title="Eine Wiederholung mehr" aria-label="mehr">+</button>' +
+            (st ? '<button class="icon-btn danger" data-act="reset" title="Zurücksetzen" aria-label="Zurücksetzen">↺</button>' : "") + '</span>'
+          : '<button class="btn btn-soft btn-sm" data-act="w+">＋ wiederholt</button>') +
+        '</li>';
     }
 
     // Gesamtliste: alles, was bisher geübt wurde, nach Fach
@@ -878,12 +916,12 @@
 
     el.innerHTML =
       '<div class="page-head"><div class="eyebrow">Praktischer Teil</div><h1>Körperliche Untersuchung</h1>' +
-      '<p>Wähle oben das Fach. Mit „Bearbeiten“ kannst du abhaken, was du geübt hast, und mitzählen, wie oft du es wiederholt hast.</p></div>' +
+      '<p>Wähle oben das Fach. Haken setzen und mit „＋ wiederholt“ mitzählen geht immer. Korrigieren oder Entfernen nur über „Bearbeiten“.</p></div>' +
       '<div class="exam-tabs">' + tabs + '</div>' +
       '<div class="exam-layout">' +
         '<div class="card">' +
-          '<div class="figures"><div class="figure-wrap">' + figureSVG("vorne", list) + '<div class="figure-label">Vorne</div></div>' +
-          '<div class="figure-wrap">' + figureSVG("hinten", list) + '<div class="figure-label">Hinten</div></div></div>' +
+          '<div class="figures"><div class="figure-wrap">' + figureSVG("vorne", list, fach.id) + '<div class="figure-label">Vorne</div></div>' +
+          '<div class="figure-wrap">' + figureSVG("hinten", list, fach.id) + '<div class="figure-label">Hinten</div></div></div>' +
           '<div class="legend" style="justify-content:center;margin-top:14px">' +
             '<span><i style="background:#fff;border:2px solid #b9b09f"></i>offen</span>' +
             '<span><i style="background:var(--amber)"></i>geübt</span>' +
@@ -895,7 +933,7 @@
             '<div class="card-head"><div><h2>' + esc(fach.name) + '</h2><div class="muted small">' + c.geuebt + ' von ' + c.total + ' geübt · ' + c.summe + ' Wiederholungen insgesamt</div></div>' +
               (examEdit ? '<button class="btn" id="editToggle">✓ Fertig</button>' : '<button class="btn btn-soft" id="editToggle">✎ Bearbeiten</button>') + '</div>' +
             '<div class="progress" style="margin-bottom:14px"><div class="p-rep" style="width:' + (c.wiederholt / (c.total || 1) * 100) + '%"></div><div class="p-learned" style="width:' + ((c.geuebt - c.wiederholt) / (c.total || 1) * 100) + '%"></div></div>' +
-            (examEdit ? '<div class="notice" style="margin-bottom:12px">Bearbeiten ist an: Häkchen setzen für „geübt“, mit + und − die Wiederholungen zählen.</div>' : "") +
+            (examEdit ? '<div class="notice" style="margin-bottom:12px">Bearbeiten ist an: Du kannst Häkchen entfernen, Wiederholungen mit − und + korrigieren oder einen Bereich mit ↺ zurücksetzen.</div>' : "") +
             '<ul class="exam-list">' + list.map(row).join("") + '</ul>' +
           '</div>' +
           '<div class="card"><h3 style="margin-bottom:12px">Was ich schon geübt habe</h3>' +
@@ -905,13 +943,19 @@
 
     function act(id, a) {
       var e = S.exam[id] = S.exam[id] || { g: false, w: 0 };
-      if (a === "g") e.g = !e.g;
+      if (a === "g") {
+        if (e.g && !examEdit) { toast("Zum Entfernen tippe oben auf „Bearbeiten“."); if (!S.exam[id].w && !S.exam[id].g) delete S.exam[id]; return false; }
+        e.g = !e.g;
+        if (!e.g) e.w = 0;
+      }
       if (a === "w+") { e.w = (e.w || 0) + 1; e.g = true; }
       if (a === "w-") e.w = Math.max(0, (e.w || 0) - 1);
+      if (a === "reset") { e.g = false; e.w = 0; }
       if ((a === "g" && e.g) || a === "w+") e.last = todayKey();
       if (!e.g && !e.w) delete S.exam[id];
       if (a === "w+" && e.w === 3) toast("Schon dreimal wiederholt. Das sitzt! 💪");
       save();
+      return true;
     }
     $all("[data-tab]", el).forEach(function (b) {
       b.onclick = function () { examTab = b.getAttribute("data-tab"); examSel = null; rerender(); };
@@ -923,7 +967,7 @@
       if (!target) return;
       var id = target.getAttribute("data-region");
       var a = e.target.closest("[data-act]");
-      if (a && examEdit) act(id, a.getAttribute("data-act"));
+      if (a) { if (act(id, a.getAttribute("data-act")) === false) { if (!S.exam[id]) return; } }
       else examSel = examSel === id ? null : id;
       rerender();
     };

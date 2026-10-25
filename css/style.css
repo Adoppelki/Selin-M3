@@ -462,3 +462,18 @@ details.proto[open] > summary::after { transform: rotate(90deg); }
   .exam-tab { padding: 10px 4px; font-size: 13px; }
   .exam-row.edit { flex-wrap: wrap; }
 }
+
+/* Untersuchung: Zähler und Bearbeiten */
+.figure-wrap svg { max-width: 250px; }
+.hotspot circle.dot { stroke-width: 2.2; }
+.counter { display: inline-flex; align-items: baseline; gap: 5px; padding: 4px 11px; border-radius: 999px; background: #f1ede5; color: var(--soft); font-size: 12px; white-space: nowrap; }
+.counter strong { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.counter.on { background: var(--accent-soft); color: var(--accent-strong); }
+.exam-row .region-name { display: flex; flex-direction: column; line-height: 1.3; }
+.exam-row .region-name small { font-size: 12px; }
+.edit-ctrl { display: inline-flex; gap: 2px; }
+.edit-ctrl .icon-btn { border: 1px solid var(--line); background: #fff; width: 30px; height: 30px; font-size: 16px; color: var(--text); }
+.edit-ctrl .icon-btn:hover { background: #f1ede5; }
+.edit-ctrl .icon-btn.danger { color: var(--danger); }
+.exam-row.edit { background: #fff; border-color: var(--line); }
+@media (max-width: 560px) { .exam-row { flex-wrap: wrap; } .exam-row .region-name { flex-basis: calc(100% - 44px); } .exam-row .counter { margin-left: 34px; } }

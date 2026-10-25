@@ -1088,23 +1088,25 @@
   }
   views.analyse = function (el) {
     var A = window.SELIN_ANALYSE || {};
-    var head = '<div class="page-head"><div class="eyebrow">Auswertung</div><h1>Analyse</h1><p>Was wird am häufigsten gefragt? Welche Fälle kommen immer wieder? Wähle oben dein Fach.</p></div>';
+    var head = '<div class="page-head"><div class="eyebrow">Auswertung</div><h1>Analyse</h1><p>Was wird am häufigsten gefragt? Welche Fälle kommen immer wieder? Wähle oben dein Fach. Dr. Hinrichs ist nur Reserve und steht deshalb getrennt unter „Reserve“.</p></div>';
     if (!(A.themen && A.themen.length) || !A.pruefer) {
       el.innerHTML = head + placeholder("📊", "Die Analyse ist in Arbeit", "Sobald die Protokolle ausgewertet sind, siehst du hier die häufigsten Prüfungsthemen je Prüfer:in, typische Fallbeispiele und Szenarien.");
       return;
     }
     var fid = analyseFach;
-    var fachOk = function (x) { return fid === "alle" || x.fach === fid; };
-    var tabs = [{ id: "alle", kurz: "Alle", farbe: "var(--text)" }].concat(FAECHER).map(function (f) {
-      var n = f.id === "alle" ? (A.faelle || []).length : (A.faelle || []).filter(function (x) { return x.fach === f.id; }).length;
+    var isRes = function (x) { return x.reserve || x.rolle === "reserve"; };
+    var fachOk = function (x) { return fid === "reserve" ? isRes(x) : !isRes(x) && (fid === "alle" || x.fach === fid); };
+    var tabs = [{ id: "alle", kurz: "Alle", farbe: "var(--text)" }].concat(FAECHER, [{ id: "reserve", kurz: "Reserve", farbe: "#8a8578" }]).map(function (f) {
+      var n = (A.faelle || []).filter(function (x) { return !isRes(x) && (f.id === "alle" || x.fach === f.id); }).length;
       var on = f.id === fid;
-      return '<button class="exam-tab' + (on ? " active" : "") + '" data-afach="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '"><span>' + esc(f.kurz) + '</span><small>' + (f.id === "alle" ? A.anzahlProtokolle + " Protokolle" : n + " Fallmuster") + '</small></button>';
+      var sub = f.id === "alle" ? A.anzahlProtokolle + " Protokolle" : f.id === "reserve" ? "Hinrichs · " + (A.anzahlReserve || 0) + " Protokolle" : n + " Fallmuster";
+      return '<button class="exam-tab' + (on ? " active" : "") + '" data-afach="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '"><span>' + esc(f.kurz) + '</span><small>' + sub + '</small></button>';
     }).join("");
 
     var themen = mergeThemen(A.themen.filter(fachOk));
     var bett = mergeThemen((A.bett || []).filter(fachOk));
     var faelle = (A.faelle || []).filter(fachOk);
-    var pruefer = A.pruefer.filter(fachOk).sort(function (a, b) { return (a.rolle === "reserve") - (b.rolle === "reserve"); });
+    var pruefer = A.pruefer.filter(fachOk);
     var fachName = function (id) { var f = fachById(id); return f ? f.kurz : id; };
     var fachColor = function (id) { var f = fachById(id); return f ? f.farbe : "#999"; };
 
@@ -1113,7 +1115,7 @@
       '<div class="notice" style="margin-bottom:18px">📌 ' + esc(A.hinweis || "") + ' <span class="muted">Priorität: <b>A</b> = mindestens 3 Protokolle (oder 2 neuere), <b>B</b> = 2, <b>C</b> = 1.</span></div>';
 
     // Häufigste Themen
-    html += '<div class="card" style="margin-bottom:18px"><div class="card-head"><h2>Häufigste Themen' + (fid === "alle" ? "" : " in " + esc(fachName(fid))) + '</h2><span class="muted small">mündliche Prüfung, Anzahl Protokolle</span></div>' +
+    html += '<div class="card" style="margin-bottom:18px"><div class="card-head"><h2>Häufigste Themen' + (fid === "alle" ? "" : fid === "reserve" ? " bei der Reserve (Hinrichs)" : " in " + esc(fachName(fid))) + '</h2><span class="muted small">mündliche Prüfung, Anzahl Protokolle</span></div>' +
       analyseBars(themen.slice(0, 14)) + '</div>';
 
     // Fallbeispiele
@@ -1121,7 +1123,7 @@
     if (!faelle.length) html += '<div class="empty">Keine Fallbeispiele erfasst.</div>';
     faelle.forEach(function (f) {
       html += '<details class="fall"><summary><span class="fall-count">' + f.anzahl + '×</span><span class="fall-title">' + esc(f.muster) + '</span>' +
-        (fid === "alle" ? '<span class="tag" style="background:' + fachColor(f.fach) + '22;color:' + fachColor(f.fach) + '">' + esc(fachName(f.fach)) + '</span>' : "") + '</summary><div class="fall-body">' +
+        (fid === "alle" || fid === "reserve" ? '<span class="tag" style="background:' + fachColor(f.fach) + '22;color:' + fachColor(f.fach) + '">' + esc(fachName(f.fach)) + '</span>' : "") + '</summary><div class="fall-body">' +
         f.beispiele.map(function (b) { return '<div class="fall-ex"><div class="fall-meta">' + esc(b.pruefer) + ' · ' + esc(b.datum) + '</div><div>' + esc(b.text) + '</div></div>'; }).join("") + '</div></details>';
     });
     html += '</div>';

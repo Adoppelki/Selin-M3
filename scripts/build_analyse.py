@@ -19,6 +19,7 @@ texte = json.loads((root / "scripts" / "analyse-texte.json").read_text(encoding=
 P = db["protokolle"]
 PR = db["pruefer"]
 RECENT = "2024-10"
+RESERVE = {pid for pid, v in PR.items() if v["rolle"].lower().startswith("reserve")}
 
 # ---------- Suchmuster ----------
 # (Bezeichnung, Muster); pro Prüfer, damit gleiche Namen bei zwei Chirurgen zusammengefasst werden können.
@@ -187,7 +188,7 @@ def zaehle(pid, regeln, textfn, art):
         daten = [p.get("datum") for p in treffer]
         out.append({
             "thema": name, "art": art, "fach": FACH_ID[PR[pid]["fach"]], "pruefer": pid,
-            "anzahl": len(treffer), "protokolle": [p["id"] for p in treffer],
+            "reserve": pid in RESERVE, "anzahl": len(treffer), "protokolle": [p["id"] for p in treffer],
             "zuletzt": max([d for d in daten if d] or [""]) or None,
             "prio": prio(len(treffer), daten),
         })
@@ -202,12 +203,12 @@ for pid in PR:
 
 # Fallmuster je Fach
 faelle = []
-for fid, regeln in FAELLE.items():
+for res, fid, regeln in [(r, f, g) for r in (False, True) for f, g in FAELLE.items()]:
     compiled = [(n, re.compile(rx, re.I)) for n, rx in regeln]
     gruppen = {n: [] for n, _ in compiled}
     uebrig = []
     for p in P:
-        if FACH_ID[p["fach"]] != fid:
+        if FACH_ID[p["fach"]] != fid or (p["pruefer_id"] in RESERVE) != res:
             continue
         for f in p["muendlich"]["fallbeispiele"]:
             ziel = next((n for n, r in compiled if r.search(f)), None)
@@ -217,10 +218,10 @@ for fid, regeln in FAELLE.items():
         if not bsp:
             continue
         ids = sorted({b["protokoll"] for b in bsp})
-        faelle.append({"muster": n, "fach": fid, "anzahl": len(ids), "beispiele": bsp})
+        faelle.append({"muster": n, "fach": fid, "anzahl": len(ids), "reserve": res, "beispiele": bsp})
     if uebrig:
         ids = sorted({b["protokoll"] for b in uebrig})
-        faelle.append({"muster": "Weitere Fälle", "fach": fid, "anzahl": len(ids), "beispiele": uebrig, "sonstige": True})
+        faelle.append({"muster": "Weitere Fälle", "fach": fid, "anzahl": len(ids), "reserve": res, "beispiele": uebrig, "sonstige": True})
 faelle.sort(key=lambda f: (f.get("sonstige", False), -f["anzahl"], f["muster"]))
 
 # Prüferkarten
@@ -239,7 +240,8 @@ for pid, v in PR.items():
 
 out = {
     "stand": "25.10.2026",
-    "anzahlProtokolle": len(P),
+    "anzahlProtokolle": len([p for p in P if p["pruefer_id"] not in RESERVE]),
+    "anzahlReserve": len([p for p in P if p["pruefer_id"] in RESERVE]),
     "hinweis": "Gezählt wird, in wie vielen Protokollen ein Thema vorkam (einmal pro Protokoll). Protokolle sind Berichte von Prüflingen und können Fehler enthalten.",
     "pruefer": pruefer,
     "themen": themen,

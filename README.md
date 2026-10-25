@@ -98,3 +98,5 @@ Fortschritt bleibt also bei Textänderungen an den Antworten erhalten (nicht abe
 
 In `index.html` hängt an CSS und Skripten `?v=...`. Wer Dateien ändert und sofort überall die neue Version sehen will,
 erhöht diese Version (z. B. `20261025b`). Ohne das kann der Browser bis zu ca. 10 Minuten die alte Fassung zeigen.
+
+Reserve-Prüfer (Rolle „Reserve“ in den Protokolldaten, derzeit Hinrichs) werden in keiner Fach-Auswertung mitgezählt, sondern erscheinen nur im Reiter „Reserve“ (Felder `reserve: true`, `anzahlReserve`).

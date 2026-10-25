@@ -2,7 +2,8 @@
 // Aufbau und Zählregeln siehe README.md.
 window.SELIN_ANALYSE = {
  "stand": "25.10.2026",
- "anzahlProtokolle": 41,
+ "anzahlProtokolle": 28,
+ "anzahlReserve": 13,
  "hinweis": "Gezählt wird, in wie vielen Protokollen ein Thema vorkam (einmal pro Protokoll). Protokolle sind Berichte von Prüflingen und können Fehler enthalten.",
  "pruefer": [
   {
@@ -62,6 +63,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "willuweit-2024-05",
@@ -76,6 +78,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "willuweit-2026-06-b",
@@ -89,6 +92,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "willuweit-2024-05",
@@ -102,6 +106,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "willuweit-2025-12",
@@ -115,6 +120,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "willuweit-2024-05",
@@ -128,6 +134,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2026-06-b"
@@ -140,6 +147,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2026-06-a"
@@ -152,6 +160,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2026-06-b"
@@ -164,6 +173,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2026-06-c"
@@ -176,6 +186,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2025-12"
@@ -188,6 +199,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2024-05"
@@ -200,6 +212,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2024-05"
@@ -212,6 +225,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "alesina-2016-05",
@@ -226,6 +240,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "alesina-2016-05",
@@ -240,6 +255,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "alesina-2016-05",
@@ -254,6 +270,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "alesina-2019-12",
@@ -267,6 +284,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "alesina-2017-05-b",
@@ -280,6 +298,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2020-05"
@@ -292,6 +311,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2019-11"
@@ -304,6 +324,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2018-12"
@@ -316,6 +337,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2017-05-a"
@@ -328,6 +350,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2017-05-a"
@@ -340,6 +363,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2016-05"
@@ -352,6 +376,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 4,
    "protokolle": [
     "griewank-2015-05",
@@ -367,6 +392,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "griewank-2015-05",
@@ -381,6 +407,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "griewank-2015-05",
@@ -395,6 +422,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "griewank-2015-05",
@@ -408,6 +436,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "griewank-2015-05",
@@ -421,6 +450,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "griewank-2025-05-a"
@@ -433,6 +463,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "derma",
    "pruefer": "griewank",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "griewank-2025-11"
@@ -445,6 +476,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 5,
    "protokolle": [
     "hinrichs-2024-05",
@@ -461,6 +493,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 4,
    "protokolle": [
     "hinrichs-2021-11-18",
@@ -476,6 +509,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 2,
    "protokolle": [
     "hinrichs-undatiert-lind",
@@ -489,6 +523,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 2,
    "protokolle": [
     "hinrichs-2021-11-17",
@@ -502,6 +537,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 2,
    "protokolle": [
     "hinrichs-2021-11-17",
@@ -515,6 +551,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 2,
    "protokolle": [
     "hinrichs-2024-05",
@@ -528,6 +565,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 1,
    "protokolle": [
     "hinrichs-2025-11-26"
@@ -540,6 +578,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 1,
    "protokolle": [
     "hinrichs-2024-12"
@@ -552,6 +591,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 5,
    "protokolle": [
     "kebir-2023-12",
@@ -568,6 +608,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "kebir-2025-05-b",
@@ -582,6 +623,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "kebir-2024-05-a",
@@ -596,6 +638,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "kebir-2023-12",
@@ -610,6 +653,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2025-11",
@@ -623,6 +667,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2024-05-b",
@@ -636,6 +681,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2024-05-a",
@@ -649,6 +695,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2023-12",
@@ -662,6 +709,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2024-05-a",
@@ -675,6 +723,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "kebir-2024-05-a",
@@ -688,6 +737,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "kebir-2025-05-a"
@@ -700,6 +750,7 @@ window.SELIN_ANALYSE = {
    "art": "mündlich",
    "fach": "neuro",
    "pruefer": "kebir",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "kebir-2024-12"
@@ -714,6 +765,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 5,
    "protokolle": [
     "willuweit-2024-05",
@@ -730,6 +782,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 4,
    "protokolle": [
     "willuweit-2025-12",
@@ -745,6 +798,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "willuweit-2024-05",
@@ -759,6 +813,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 3,
    "protokolle": [
     "willuweit-2026-06-a",
@@ -773,6 +828,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "willuweit-2025-12",
@@ -786,6 +842,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "innere",
    "pruefer": "willuweit",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "willuweit-2026-06-c"
@@ -798,6 +855,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 2,
    "protokolle": [
     "alesina-2019-11",
@@ -811,6 +869,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2019-12"
@@ -823,6 +882,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2019-12"
@@ -835,6 +895,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "alesina",
+   "reserve": false,
    "anzahl": 1,
    "protokolle": [
     "alesina-2019-11"
@@ -847,6 +908,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 8,
    "protokolle": [
     "hinrichs-2022-11-03",
@@ -866,6 +928,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 7,
    "protokolle": [
     "hinrichs-2024-05",
@@ -884,6 +947,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 6,
    "protokolle": [
     "hinrichs-2024-12",
@@ -901,6 +965,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 6,
    "protokolle": [
     "hinrichs-2022-11-03",
@@ -918,6 +983,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 6,
    "protokolle": [
     "hinrichs-2022-11-03",
@@ -935,6 +1001,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 5,
    "protokolle": [
     "hinrichs-2024-12",
@@ -951,6 +1018,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 5,
    "protokolle": [
     "hinrichs-2024-12",
@@ -967,6 +1035,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 4,
    "protokolle": [
     "hinrichs-undatiert-lind",
@@ -982,6 +1051,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 4,
    "protokolle": [
     "hinrichs-2024-12",
@@ -997,6 +1067,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 4,
    "protokolle": [
     "hinrichs-2022-11-03",
@@ -1012,6 +1083,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 4,
    "protokolle": [
     "hinrichs-2024-12",
@@ -1027,6 +1099,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 3,
    "protokolle": [
     "hinrichs-undatiert-lind",
@@ -1041,6 +1114,7 @@ window.SELIN_ANALYSE = {
    "art": "am Bett",
    "fach": "chirurgie",
    "pruefer": "hinrichs",
+   "reserve": true,
    "anzahl": 3,
    "protokolle": [
     "hinrichs-2024-12",
@@ -1056,6 +1130,7 @@ window.SELIN_ANALYSE = {
    "muster": "Kolon-/Rektumkarzinom: Vorsorge bis OP",
    "fach": "chirurgie",
    "anzahl": 5,
+   "reserve": true,
    "beispiele": [
     {
      "protokoll": "hinrichs-2024-05",
@@ -1098,14 +1173,9 @@ window.SELIN_ANALYSE = {
   {
    "muster": "Hyperthyreose, Struma, Schilddrüsenknoten",
    "fach": "chirurgie",
-   "anzahl": 4,
+   "anzahl": 3,
+   "reserve": true,
    "beispiele": [
-    {
-     "protokoll": "alesina-2017-05-a",
-     "pruefer": "Dr. Alesina",
-     "datum": "3./4.05.2017",
-     "text": "Patient mit Schilddrüsenknoten – Procedere"
-    },
     {
      "protokoll": "hinrichs-2021-11-18",
      "pruefer": "Dr. Hinrichs",
@@ -1130,6 +1200,7 @@ window.SELIN_ANALYSE = {
    "muster": "Notaufnahme: zwei Patienten priorisieren",
    "fach": "neuro",
    "anzahl": 3,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2023-12",
@@ -1152,53 +1223,10 @@ window.SELIN_ANALYSE = {
    ]
   },
   {
-   "muster": "Oberbauchschmerz, Gallenwege",
-   "fach": "chirurgie",
-   "anzahl": 3,
-   "beispiele": [
-    {
-     "protokoll": "alesina-2017-05-a",
-     "pruefer": "Dr. Alesina",
-     "datum": "3./4.05.2017",
-     "text": "Patient mit rechtsseitigem Oberbauchschmerz (Cholezystitis)"
-    },
-    {
-     "protokoll": "hinrichs-2025-11-11",
-     "pruefer": "Dr. Hinrichs",
-     "datum": "11./12.11.2025",
-     "text": "47-jährige Patientin mit Oberbauchschmerzen"
-    },
-    {
-     "protokoll": "hinrichs-2025-herbst",
-     "pruefer": "Dr. Hinrichs",
-     "datum": "Herbst 2025",
-     "text": "Patientin mit Cholezystolithiasis"
-    }
-   ]
-  },
-  {
-   "muster": "Akutes Abdomen in der Notaufnahme",
-   "fach": "chirurgie",
-   "anzahl": 2,
-   "beispiele": [
-    {
-     "protokoll": "alesina-2020-05",
-     "pruefer": "Dr. Alesina",
-     "datum": "20.05.2020",
-     "text": "Patient mit linksseitigen Bauchschmerzen in der Notaufnahme"
-    },
-    {
-     "protokoll": "hinrichs-undatiert-lind",
-     "pruefer": "Dr. Hinrichs",
-     "datum": "unbekannt (Seite 1 fehlt)",
-     "text": "84-jährige Patientin kommt mit Erbrechen in die Notaufnahme (kolikartige Bauchschmerzen, sonorer Klopfschall)"
-    }
-   ]
-  },
-  {
    "muster": "Auffälliger Nävus, Schuppen am Kopf (Hauttumor)",
    "fach": "derma",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2024-05",
@@ -1218,6 +1246,7 @@ window.SELIN_ANALYSE = {
    "muster": "Blickdiagnose: Bild und Differenzialdiagnose",
    "fach": "derma",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2015-05",
@@ -1237,6 +1266,7 @@ window.SELIN_ANALYSE = {
    "muster": "Chronische Durchfälle, V. a. CED, Zöliakie",
    "fach": "innere",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2024-05",
@@ -1256,6 +1286,7 @@ window.SELIN_ANALYSE = {
    "muster": "Exanthem, Psoriasis guttata",
    "fach": "derma",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2025-05-b",
@@ -1275,6 +1306,7 @@ window.SELIN_ANALYSE = {
    "muster": "Krampfender Patient (Status epilepticus)",
    "fach": "neuro",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2025-11",
@@ -1294,6 +1326,7 @@ window.SELIN_ANALYSE = {
    "muster": "Magenkarzinom, Dysphagie (Onkologie-Fall)",
    "fach": "chirurgie",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "alesina-2017-05-b",
@@ -1310,9 +1343,30 @@ window.SELIN_ANALYSE = {
    ]
   },
   {
+   "muster": "Oberbauchschmerz, Gallenwege",
+   "fach": "chirurgie",
+   "anzahl": 2,
+   "reserve": true,
+   "beispiele": [
+    {
+     "protokoll": "hinrichs-2025-11-11",
+     "pruefer": "Dr. Hinrichs",
+     "datum": "11./12.11.2025",
+     "text": "47-jährige Patientin mit Oberbauchschmerzen"
+    },
+    {
+     "protokoll": "hinrichs-2025-herbst",
+     "pruefer": "Dr. Hinrichs",
+     "datum": "Herbst 2025",
+     "text": "Patientin mit Cholezystolithiasis"
+    }
+   ]
+  },
+  {
    "muster": "Plötzliche Sprach- oder Gedächtnisstörung (Schlaganfall)",
    "fach": "neuro",
    "anzahl": 2,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2024-12",
@@ -1329,9 +1383,38 @@ window.SELIN_ANALYSE = {
    ]
   },
   {
+   "muster": "Akutes Abdomen in der Notaufnahme",
+   "fach": "chirurgie",
+   "anzahl": 1,
+   "reserve": false,
+   "beispiele": [
+    {
+     "protokoll": "alesina-2020-05",
+     "pruefer": "Dr. Alesina",
+     "datum": "20.05.2020",
+     "text": "Patient mit linksseitigen Bauchschmerzen in der Notaufnahme"
+    }
+   ]
+  },
+  {
+   "muster": "Akutes Abdomen in der Notaufnahme",
+   "fach": "chirurgie",
+   "anzahl": 1,
+   "reserve": true,
+   "beispiele": [
+    {
+     "protokoll": "hinrichs-undatiert-lind",
+     "pruefer": "Dr. Hinrichs",
+     "datum": "unbekannt (Seite 1 fehlt)",
+     "text": "84-jährige Patientin kommt mit Erbrechen in die Notaufnahme (kolikartige Bauchschmerzen, sonorer Klopfschall)"
+    }
+   ]
+  },
+  {
    "muster": "Gangunsicherheit, Adduktionsschwäche (GBS, Miller-Fisher)",
    "fach": "neuro",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2024-05-a",
@@ -1345,6 +1428,7 @@ window.SELIN_ANALYSE = {
    "muster": "Gastrointestinale Blutung",
    "fach": "innere",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2024-05",
@@ -1355,9 +1439,24 @@ window.SELIN_ANALYSE = {
    ]
   },
   {
+   "muster": "Hyperthyreose, Struma, Schilddrüsenknoten",
+   "fach": "chirurgie",
+   "anzahl": 1,
+   "reserve": false,
+   "beispiele": [
+    {
+     "protokoll": "alesina-2017-05-a",
+     "pruefer": "Dr. Alesina",
+     "datum": "3./4.05.2017",
+     "text": "Patient mit Schilddrüsenknoten – Procedere"
+    }
+   ]
+  },
+  {
    "muster": "Insektenstich, Allergie",
    "fach": "derma",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2024-12",
@@ -1371,6 +1470,7 @@ window.SELIN_ANALYSE = {
    "muster": "Juckreiz und Müdigkeit, PBC",
    "fach": "innere",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2026-06-b",
@@ -1384,6 +1484,7 @@ window.SELIN_ANALYSE = {
    "muster": "Leistenschwellung, Divertikulose",
    "fach": "chirurgie",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "alesina-2019-12",
@@ -1400,9 +1501,24 @@ window.SELIN_ANALYSE = {
    ]
   },
   {
+   "muster": "Oberbauchschmerz, Gallenwege",
+   "fach": "chirurgie",
+   "anzahl": 1,
+   "reserve": false,
+   "beispiele": [
+    {
+     "protokoll": "alesina-2017-05-a",
+     "pruefer": "Dr. Alesina",
+     "datum": "3./4.05.2017",
+     "text": "Patient mit rechtsseitigem Oberbauchschmerz (Cholezystitis)"
+    }
+   ]
+  },
+  {
    "muster": "Oberbauchschmerzen, Pankreatitis, Notfall-DD",
    "fach": "innere",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2026-06-a",
@@ -1416,6 +1532,7 @@ window.SELIN_ANALYSE = {
    "muster": "Offene Stellen am Unterschenkel",
    "fach": "derma",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2024-05",
@@ -1429,6 +1546,7 @@ window.SELIN_ANALYSE = {
    "muster": "STEMI",
    "fach": "innere",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2024-05",
@@ -1442,6 +1560,7 @@ window.SELIN_ANALYSE = {
    "muster": "Schluckstörung, Zungenzuckungen (Myasthenia)",
    "fach": "neuro",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2025-05-a",
@@ -1455,6 +1574,7 @@ window.SELIN_ANALYSE = {
    "muster": "Schmerzloser Ikterus",
    "fach": "chirurgie",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "alesina-2017-05-a",
@@ -1468,6 +1588,7 @@ window.SELIN_ANALYSE = {
    "muster": "Sehstörung bei jungem Patienten (MS)",
    "fach": "neuro",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "kebir-2024-12",
@@ -1481,6 +1602,7 @@ window.SELIN_ANALYSE = {
    "muster": "Serologie lesen, Hepatitis B, Ikterus",
    "fach": "innere",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "willuweit-2024-05",
@@ -1494,6 +1616,7 @@ window.SELIN_ANALYSE = {
    "muster": "Säugling mit schuppender Haut (Ekzem)",
    "fach": "derma",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2025-05-a",
@@ -1507,6 +1630,7 @@ window.SELIN_ANALYSE = {
    "muster": "Älterer Patient, Juckreiz ohne Besserung (Mycosis fungoides)",
    "fach": "derma",
    "anzahl": 1,
+   "reserve": false,
    "beispiele": [
     {
      "protokoll": "griewank-2025-05-a",

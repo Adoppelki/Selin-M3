@@ -284,7 +284,7 @@
     };
   }
 
-  var heuteKey = null;
+  var heuteKey = null, pickerOpen = false, pickerFach = null, pickerQuery = "";
   views.heute = function (el) {
     var tk = todayKey();
     if (!heuteKey) heuteKey = tk;
@@ -294,11 +294,27 @@
     var list = S.todos[k] || [];
     var open = list.filter(function (t) { return !t.done; }).length;
 
-    var topicOptions = FAECHER.map(function (f) {
-      var opts = topicsOf(f).filter(function (t) { return (S.topicStatus[t.id] || 0) < 2; })
-        .map(function (t) { return '<option value="' + esc(f.id + "|" + t.name) + '">' + esc(t.name) + '</option>'; }).join("");
-      return opts ? '<optgroup label="' + esc(f.name) + '">' + opts + '</optgroup>' : "";
-    }).join("");
+    if (!pickerFach) pickerFach = FAECHER[0].id;
+    var pf = fachById(pickerFach) || FAECHER[0];
+    var planned = (S.todos[k] || []).map(function (t) { return t.text; });
+    var pickQ = pickerQuery.toLowerCase();
+    var pickTopics = topicsOf(pf).filter(function (t) { return !pickQ || t.name.toLowerCase().indexOf(pickQ) >= 0; });
+    var picker = '<div class="picker">' +
+      '<button type="button" class="picker-toggle' + (pickerOpen ? " open" : "") + '" id="pickerToggle"><span>📚 Thema aus den Fächern wählen</span><span class="picker-arrow">›</span></button>' +
+      (pickerOpen ? '<div class="picker-panel">' +
+        '<div class="picker-tabs">' + FAECHER.map(function (f) {
+          var on = f.id === pf.id;
+          return '<button type="button" class="picker-tab' + (on ? " active" : "") + '" data-pf="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '"><i style="background:' + f.farbe + '"></i>' + esc(f.kurz) + '</button>';
+        }).join("") + '</div>' +
+        '<input class="input picker-search" id="pickerSearch" placeholder="Thema suchen …" value="' + esc(pickerQuery) + '" autocomplete="off">' +
+        '<div class="picker-grid">' + (pickTopics.length ? pickTopics.map(function (t) {
+          var stt = S.topicStatus[t.id] || 0, inPlan = planned.indexOf(t.name) >= 0;
+          return '<button type="button" class="topic-pill' + (inPlan ? " added" : "") + (stt === 2 ? " rep" : stt === 1 ? " lern" : "") + '" data-name="' + esc(t.name) + '">' +
+            '<span class="pill-name">' + esc(t.name) + '</span>' +
+            '<span class="pill-meta">' + (inPlan ? "✓ im Plan" : stt === 2 ? "wiederholt" : stt === 1 ? "gelernt" : "＋") + '</span></button>';
+        }).join("") : '<div class="muted small" style="grid-column:1/-1;padding:8px">Nichts gefunden.</div>') + '</div>' +
+        '<div class="muted small">Tippe auf ein Thema, um es zum Tagesplan hinzuzufügen.</div>' +
+      '</div>' : "") + '</div>';
 
     el.innerHTML =
       '<div class="page-head"><div class="eyebrow">Tagesplan</div><h1>Was steht heute an?</h1>' +
@@ -315,7 +331,7 @@
             '<select class="select" id="todoFach"><option value="">Fach (optional)</option>' +
               FAECHER.map(function (f) { return '<option value="' + f.id + '">' + esc(f.kurz) + '</option>'; }).join("") +
             '</select><button class="btn" type="submit">Hinzufügen</button></form>' +
-          (topicOptions ? '<div class="row" style="margin-bottom:14px"><select class="select" id="topicPick" style="flex:1;min-width:200px"><option value="">… oder ein Thema aus der Fächer-Übersicht wählen</option>' + topicOptions + '</select></div>' : "") +
+          picker +
           '<ul class="todo-list" id="todoList"></ul>' +
           (open && list.length ? '<div class="row" style="margin-top:14px"><span class="muted small">' + open + ' offen</span><span class="spacer"></span><button class="btn btn-ghost btn-sm" id="moveOpen">Offenes auf morgen schieben</button></div>' : "") +
         '</div>' +
@@ -340,12 +356,22 @@
       $("#todoFach").value = keepFach;
       $("#todoInput").focus();
     };
-    if ($("#topicPick", el)) $("#topicPick", el).onchange = function () {
-      if (!this.value) return;
-      var p = this.value.split("|");
-      addTodo(k, p.slice(1).join("|"), p[0]);
-      rerender();
-    };
+    $("#pickerToggle", el).onclick = function () { pickerOpen = !pickerOpen; rerender(); };
+    if (pickerOpen) {
+      $all("[data-pf]", el).forEach(function (b) { b.onclick = function () { pickerFach = b.getAttribute("data-pf"); pickerQuery = ""; rerender(); }; });
+      $("#pickerSearch", el).oninput = function () {
+        pickerQuery = this.value;
+        var pos = this.selectionStart;
+        rerender();
+        var si = $("#pickerSearch"); si.focus(); si.setSelectionRange(pos, pos);
+      };
+      $(".picker-grid", el).onclick = function (e) {
+        var b = e.target.closest("[data-name]");
+        if (!b || b.classList.contains("added")) return;
+        addTodo(k, b.getAttribute("data-name"), pf.id);
+        rerender();
+      };
+    }
     if ($("#moveOpen", el)) $("#moveOpen", el).onclick = function () {
       var arr = S.todos[k] || [], next = addDays(k, 1);
       var moving = arr.filter(function (t) { return !t.done; });
@@ -751,7 +777,11 @@
   });
 
   // ================= KÖRPERLICHE UNTERSUCHUNG =================
-  var examSel = null;
+  var examSel = null, examTab = "neuro", examEdit = false;
+  var EXAM_ORDER = ["neuro", "chirurgie", "innere", "derma"];
+  function examFaecher() {
+    return EXAM_ORDER.map(fachById).filter(Boolean);
+  }
   function regionState(id) {
     var e = S.exam[id];
     if (!e) return 0;
@@ -760,7 +790,7 @@
     if (e.g) return 1;
     return 0;
   }
-  function figureSVG(seite) {
+  function figureSVG(seite, regions) {
     var front = seite === "vorne";
     var body =
       '<g>' +
@@ -785,7 +815,7 @@
         : '<path class="body-line" d="M100 92 L100 238"/><path class="body-line" d="M76 110 C84 124 86 136 82 146 M124 110 C116 124 114 136 118 146"/>') +
       '</g>';
     var spots = "";
-    REGIONS.forEach(function (r) {
+    regions.forEach(function (r) {
       (r.punkte || []).forEach(function (p) {
         if (p.seite !== seite) return;
         var st = regionState(r.id);
@@ -797,49 +827,79 @@
     });
     return '<svg viewBox="0 -4 200 436" role="img" aria-label="Figur ' + (front ? "Vorderseite" : "Rückseite") + '">' + body + spots + '</svg>';
   }
+  function examRegions(fachId) { return REGIONS.filter(function (r) { return r.fach === fachId; }); }
+  function examCounts(list) {
+    var g = 0, w = 0, sum = 0;
+    list.forEach(function (r) { var st = regionState(r.id); if (st > 0) g++; if (st > 1) w++; sum += (S.exam[r.id] && S.exam[r.id].w) || 0; });
+    return { total: list.length, geuebt: g, wiederholt: w, summe: sum };
+  }
   views.untersuchung = function (el) {
-    var done = REGIONS.filter(function (r) { return regionState(r.id) > 0; }).length;
-    var rep = REGIONS.filter(function (r) { return regionState(r.id) >= 2; }).length;
-    var groups = [];
-    REGIONS.forEach(function (r) { if (groups.indexOf(r.gruppe) < 0) groups.push(r.gruppe); });
+    var fach = fachById(examTab) || FAECHER[0];
+    examTab = fach.id;
+    var list = examRegions(fach.id);
+    var c = examCounts(list);
+    if (examSel && !list.some(function (r) { return r.id === examSel; })) examSel = null;
 
-    function regionRow(r) {
+    var tabs = examFaecher().map(function (f) {
+      var cc = examCounts(examRegions(f.id));
+      var on = f.id === fach.id;
+      return '<button class="exam-tab' + (on ? " active" : "") + '" data-tab="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '">' +
+        '<span>' + esc(f.kurz) + '</span><small>' + cc.geuebt + ' / ' + cc.total + '</small></button>';
+    }).join("");
+
+    function row(r) {
       var e = S.exam[r.id] || {};
       var w = e.w || 0;
-      return '<li class="region' + (examSel === r.id ? " selected" : "") + '" data-region="' + r.id + '">' +
+      var st = regionState(r.id);
+      var sel = examSel === r.id ? " selected" : "";
+      if (!examEdit) {
+        return '<li class="exam-row st' + st + sel + '" data-region="' + r.id + '">' +
+          '<span class="exam-badge">' + (st === 0 ? "" : "✓") + '</span>' +
+          '<span class="region-name">' + esc(r.name) + (e.last ? '<small class="muted"> · zuletzt ' + esc(fmtShort(e.last)) + '</small>' : "") + '</span>' +
+          (st === 0 ? '<span class="exam-state open">noch offen</span>'
+            : '<span class="exam-state">' + (w ? '<strong>' + w + '×</strong> wiederholt' : 'geübt') + '</span>') + '</li>';
+      }
+      return '<li class="exam-row edit st' + st + sel + '" data-region="' + r.id + '">' +
+        '<button class="check' + (e.g ? " on" : "") + '" data-act="g" aria-label="Geübt"></button>' +
         '<span class="region-name">' + esc(r.name) + '</span>' +
-        '<span class="mark g' + (e.g ? " on" : "") + '" data-act="g">' + (e.g ? "✓ " : "") + 'geübt</span>' +
-        '<span class="rep-ctrl' + (w ? " on" : "") + '"><button data-act="w-" aria-label="weniger">−</button><span>' + (w ? w + "× wiederholt" : "wiederholt") + '</span><button data-act="w+" aria-label="mehr">+</button></span>' +
-        '</li>';
+        '<span class="rep-ctrl' + (w ? " on" : "") + '"><button data-act="w-" aria-label="weniger">−</button><span>' + (w ? w + "× wiederholt" : "0× wiederholt") + '</span><button data-act="w+" aria-label="mehr">+</button></span></li>';
     }
-    var sel = examSel ? REGIONS.filter(function (r) { return r.id === examSel; })[0] : null;
-    var selE = sel ? (S.exam[sel.id] || {}) : null;
+
+    // Gesamtliste: alles, was bisher geübt wurde, nach Fach
+    var overall = examFaecher().map(function (f) {
+      var done = examRegions(f.id).filter(function (r) { return regionState(r.id) > 0; });
+      if (!done.length) return "";
+      return '<div class="done-group"><div class="done-title"><i style="background:' + f.farbe + '"></i>' + esc(f.name) + '</div>' +
+        done.map(function (r) {
+          var e = S.exam[r.id];
+          return '<div class="done-item"><span>' + esc(r.name) + '</span><span class="tag">' + (e.w ? e.w + "× wiederholt" : "geübt") + '</span></div>';
+        }).join("") + '</div>';
+    }).join("");
 
     el.innerHTML =
       '<div class="page-head"><div class="eyebrow">Praktischer Teil</div><h1>Körperliche Untersuchung</h1>' +
-      '<p>Tippe auf einen Punkt an der Figur oder in der Liste und hake ab, was du schon geübt und wie oft du es wiederholt hast.</p></div>' +
+      '<p>Wähle oben das Fach. Mit „Bearbeiten“ kannst du abhaken, was du geübt hast, und mitzählen, wie oft du es wiederholt hast.</p></div>' +
+      '<div class="exam-tabs">' + tabs + '</div>' +
       '<div class="exam-layout">' +
         '<div class="card">' +
-          '<div class="figures"><div class="figure-wrap">' + figureSVG("vorne") + '<div class="figure-label">Vorne</div></div>' +
-          '<div class="figure-wrap">' + figureSVG("hinten") + '<div class="figure-label">Hinten</div></div></div>' +
+          '<div class="figures"><div class="figure-wrap">' + figureSVG("vorne", list) + '<div class="figure-label">Vorne</div></div>' +
+          '<div class="figure-wrap">' + figureSVG("hinten", list) + '<div class="figure-label">Hinten</div></div></div>' +
           '<div class="legend" style="justify-content:center;margin-top:14px">' +
             '<span><i style="background:#fff;border:2px solid #b9b09f"></i>offen</span>' +
             '<span><i style="background:var(--amber)"></i>geübt</span>' +
             '<span><i style="background:var(--accent)"></i>wiederholt</span>' +
             '<span><i style="background:var(--accent-strong)"></i>3× und öfter</span></div>' +
         '</div>' +
-        '<div class="card">' +
-          '<div class="row" style="margin-bottom:10px"><h2>Fortschritt</h2><span class="spacer"></span><span class="muted small">' + done + ' / ' + REGIONS.length + ' geübt · ' + rep + ' wiederholt</span></div>' +
-          '<div class="progress" style="margin-bottom:14px"><div class="p-rep" style="width:' + (rep / REGIONS.length * 100) + '%"></div><div class="p-learned" style="width:' + ((done - rep) / REGIONS.length * 100) + '%"></div></div>' +
-          (sel ? '<div class="selected-panel"><div class="row"><strong>' + esc(sel.name) + '</strong><span class="spacer"></span>' +
-            (selE.last ? '<span class="muted small">zuletzt ' + esc(fmtShort(selE.last)) + '</span>' : "") + '</div>' +
-            '<div class="row" style="margin-top:10px" data-region="' + sel.id + '">' +
-              '<span class="mark g' + (selE.g ? " on" : "") + '" data-act="g">' + (selE.g ? "✓ " : "") + 'geübt</span>' +
-              '<span class="rep-ctrl' + (selE.w ? " on" : "") + '"><button data-act="w-" aria-label="weniger">−</button><span>' + (selE.w ? selE.w + "× wiederholt" : "wiederholt") + '</span><button data-act="w+" aria-label="mehr">+</button></span>' +
-            '</div></div>' : "") +
-          '<ul class="region-list">' + groups.map(function (g) {
-            return '<li class="region-group">' + esc(g) + '</li>' + REGIONS.filter(function (r) { return r.gruppe === g; }).map(regionRow).join("");
-          }).join("") + '</ul>' +
+        '<div class="stack">' +
+          '<div class="card">' +
+            '<div class="card-head"><div><h2>' + esc(fach.name) + '</h2><div class="muted small">' + c.geuebt + ' von ' + c.total + ' geübt · ' + c.summe + ' Wiederholungen insgesamt</div></div>' +
+              (examEdit ? '<button class="btn" id="editToggle">✓ Fertig</button>' : '<button class="btn btn-soft" id="editToggle">✎ Bearbeiten</button>') + '</div>' +
+            '<div class="progress" style="margin-bottom:14px"><div class="p-rep" style="width:' + (c.wiederholt / (c.total || 1) * 100) + '%"></div><div class="p-learned" style="width:' + ((c.geuebt - c.wiederholt) / (c.total || 1) * 100) + '%"></div></div>' +
+            (examEdit ? '<div class="notice" style="margin-bottom:12px">Bearbeiten ist an: Häkchen setzen für „geübt“, mit + und − die Wiederholungen zählen.</div>' : "") +
+            '<ul class="exam-list">' + list.map(row).join("") + '</ul>' +
+          '</div>' +
+          '<div class="card"><h3 style="margin-bottom:12px">Was ich schon geübt habe</h3>' +
+            (overall || '<div class="empty" style="padding:14px"><span class="em">🩺</span>Noch nichts abgehakt. Starte mit „Bearbeiten“.</div>') + '</div>' +
         '</div>' +
       '</div>';
 
@@ -848,18 +908,23 @@
       if (a === "g") e.g = !e.g;
       if (a === "w+") { e.w = (e.w || 0) + 1; e.g = true; }
       if (a === "w-") e.w = Math.max(0, (e.w || 0) - 1);
-      if (a === "g" && e.g || a === "w+") e.last = todayKey();
+      if ((a === "g" && e.g) || a === "w+") e.last = todayKey();
       if (!e.g && !e.w) delete S.exam[id];
       if (a === "w+" && e.w === 3) toast("Schon dreimal wiederholt. Das sitzt! 💪");
       save();
     }
+    $all("[data-tab]", el).forEach(function (b) {
+      b.onclick = function () { examTab = b.getAttribute("data-tab"); examSel = null; rerender(); };
+    });
+    $("#editToggle", el).onclick = function () { examEdit = !examEdit; rerender(); };
     el.onclick = function (e) {
+      if (e.target.closest("[data-tab],#editToggle")) return;
       var target = e.target.closest("[data-region]");
       if (!target) return;
       var id = target.getAttribute("data-region");
       var a = e.target.closest("[data-act]");
-      if (a) act(id, a.getAttribute("data-act"));
-      else examSel = examSel === id && target.classList.contains("hotspot") ? null : id;
+      if (a && examEdit) act(id, a.getAttribute("data-act"));
+      else examSel = examSel === id ? null : id;
       rerender();
     };
     el.onkeydown = function (e) {

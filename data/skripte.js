@@ -1,5 +1,5 @@
 // Innere Medizin: durchgehende Lernskripte mit Prüferfragen, Antworten und aufklappbarem Spezialwissen.
-window.SELIN_SKRIPTE = (
+window.SELIN_SKRIPTE = ([
   {
     "id": "innere-akute-pankreatitis",
     "titel": "Akute (biliäre) Pankreatitis",
@@ -1192,4 +1192,4 @@ window.SELIN_SKRIPTE = (
       }
     ]
   }
-);
+]);

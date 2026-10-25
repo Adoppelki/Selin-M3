@@ -66,6 +66,9 @@
       focus: { work: 25, brk: 5, sound: true, task: "", log: {} }, // log: { dateKey: {min, sessions} }
       timer: null,        // { mode, endAt, remaining, total, running }
       skripteRead: {},
+      cards: {},          // { kartenId: {s: 1 nochmal | 2 gewusst, last: "YYYY-MM-DD", n: Anzahl Abfragen} }
+      cardSel: {},        // { skriptId: true } ausgewählte Karteikarten-Themen
+      cardOpts: { openOnly: false, shuffle: true },
       lastBackup: null
     };
   }
@@ -1121,12 +1124,22 @@
       list.map(function (k) {
         var r = !!S.skripteRead[k.id];
         return '<details class="proto"><summary><button class="check' + (r ? " on" : "") + '" data-read="' + esc(k.id) + '" aria-label="Durchgearbeitet"></button><strong>' + esc(k.titel) + '</strong>' + (k.fach ? '<span class="tag">' + esc(k.fach) + '</span>' : "") + '</summary>' +
-          '<div class="proto-body">' + (k.kurz ? '<h4>Kurzfassung</h4><div class="prose">' + simpleMd(k.kurz) + '</div>' : "") +
+          '<div class="proto-body"><div style="margin-top:12px"><a class="btn btn-soft btn-sm" href="#karten" data-cards="' + esc(k.id) + '">🃏 Dazu abfragen</a></div>' + (k.kurz ? '<h4>Kurzfassung</h4><div class="prose">' + simpleMd(k.kurz) + '</div>' : "") +
           ((k.fragen || []).length ? '<h4>Typische Fragen</h4>' + k.fragen.map(function (f) {
             return '<div class="qa"><div class="q">' + esc(f.frage) + '</div>' + (f.antwort ? '<div class="a prose">' + simpleMd(f.antwort) + '</div>' : "") + '</div>';
           }).join("") : "") + '</div></details>';
       }).join("");
     $all("[data-f]", el).forEach(function (b) { b.onclick = function () { skriptFach = b.getAttribute("data-f"); rerender(); }; });
+    $all("[data-cards]", el).forEach(function (a) {
+      a.onclick = function () {
+        var id = a.getAttribute("data-cards");
+        S.cardSel = {}; S.cardSel[id] = true;
+        var t = kartenThemen().filter(function (x) { return x.id === id; })[0];
+        if (t && t.fach) kartenFach = t.fach;
+        kartenSession = null;
+        save();
+      };
+    });
     $all("[data-read]", el).forEach(function (b) {
       b.onclick = function (e) {
         e.preventDefault();
@@ -1137,6 +1150,189 @@
       };
     });
   };
+
+  // ================= KARTEIKARTEN =================
+  // Karten entstehen aus den Skripten (data/skripte*.js): jede "frage"/"antwort" eines Skripts ist eine Karte.
+  var kartenFach = null, kartenSession = null;
+  function hashStr(str) {
+    var h = 5381;
+    for (var i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+    return (h >>> 0).toString(36);
+  }
+  function skriptFachId(sk) {
+    var n = String(sk.fach || "").toLowerCase();
+    for (var i = 0; i < FAECHER.length; i++) {
+      if (FAECHER[i].name.toLowerCase() === n || FAECHER[i].kurz.toLowerCase() === n || FAECHER[i].id === n) return FAECHER[i].id;
+    }
+    for (var j = 0; j < FAECHER.length; j++) {
+      if (n.indexOf(FAECHER[j].kurz.toLowerCase().slice(0, 5)) === 0) return FAECHER[j].id;
+    }
+    return "";
+  }
+  function kartenThemen() {
+    return (window.SELIN_SKRIPTE || []).map(function (sk) {
+      var cards = (sk.fragen || []).filter(function (f) { return f && f.frage && f.antwort; }).map(function (f) {
+        return { id: sk.id + ":" + hashStr(f.frage), frage: f.frage, antwort: f.antwort, thema: sk.titel, themaId: sk.id };
+      });
+      return { id: sk.id, titel: sk.titel, fach: skriptFachId(sk), cards: cards };
+    }).filter(function (t) { return t.cards.length; });
+  }
+  function cardStatus(id) { return (S.cards[id] && S.cards[id].s) || 0; }
+  function themaStats(t) {
+    var k = 0, a = 0;
+    t.cards.forEach(function (c) { var st = cardStatus(c.id); if (st === 2) k++; else if (st === 1) a++; });
+    return { total: t.cards.length, gewusst: k, nochmal: a, neu: t.cards.length - k - a };
+  }
+  function shuffle(arr) {
+    arr = arr.slice();
+    for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; }
+    return arr;
+  }
+  function startSession(cards) {
+    kartenSession = { deck: cards.slice(), total: cards.length, i: 0, shown: false, again: {}, known: 0, repeat: 0, lastKnown: [], requeued: {} };
+  }
+
+  views.karten = function (el) {
+    if (kartenSession) return kartenLernen(el);
+    var themen = kartenThemen();
+    var head = '<div class="page-head"><div class="eyebrow">Selbst abfragen</div><h1>Karteikarten</h1>' +
+      '<p>Wähle ein Fach und ein oder mehrere Themen. Frage lesen, Antwort im Kopf sagen, aufdecken und ehrlich bewerten.</p></div>';
+    if (!themen.length) {
+      el.innerHTML = head + placeholder("🃏", "Die Karteikarten kommen bald", "Sobald die ersten Skripte fertig sind, findest du hier zu jedem Thema Karten zum Abfragen.");
+      return;
+    }
+    if (!kartenFach || !fachById(kartenFach)) {
+      var first = FAECHER.filter(function (f) { return themen.some(function (t) { return t.fach === f.id; }); })[0];
+      kartenFach = (first || FAECHER[0]).id;
+    }
+    var fach = fachById(kartenFach);
+    var selCount = function (fid) { return themen.filter(function (t) { return (!fid || t.fach === fid) && S.cardSel[t.id]; }).length; };
+
+    var tabs = FAECHER.map(function (f) {
+      var ts = themen.filter(function (t) { return t.fach === f.id; });
+      var n = ts.reduce(function (a, t) { return a + t.cards.length; }, 0);
+      var on = f.id === fach.id;
+      var sc = selCount(f.id);
+      return '<button class="exam-tab' + (on ? " active" : "") + '" data-ktab="' + f.id + '" style="' + (on ? "background:" + f.farbe + ";border-color:" + f.farbe : "") + '">' +
+        '<span>' + esc(f.kurz) + (sc ? ' <em class="tab-badge">' + sc + '</em>' : "") + '</span><small>' + (n ? n + " Karten" : "bald") + '</small></button>';
+    }).join("");
+
+    var list = themen.filter(function (t) { return t.fach === fach.id; });
+    var grid = list.length ? list.map(function (t) {
+      var st = themaStats(t), on = !!S.cardSel[t.id];
+      return '<button class="kthema' + (on ? " on" : "") + '" data-kthema="' + esc(t.id) + '" aria-pressed="' + on + '">' +
+        '<span class="kcheck">' + (on ? "✓" : "") + '</span>' +
+        '<span class="kt-body"><span class="kt-title">' + esc(t.titel) + '</span>' +
+        '<span class="kt-meta">' + st.total + ' Karten' + (st.gewusst ? ' · <b>' + st.gewusst + ' gewusst</b>' : "") + (st.nochmal ? ' · ' + st.nochmal + ' nochmal' : "") + '</span>' +
+        '<span class="progress"><span class="p-rep" style="width:' + (st.gewusst / st.total * 100) + '%"></span><span class="p-learned" style="width:' + (st.nochmal / st.total * 100) + '%"></span></span></span></button>';
+    }).join("") : '<div class="empty" style="grid-column:1/-1"><span class="em">🌱</span>Für ' + esc(fach.name) + ' kommen bald Karten dazu.</div>';
+
+    // Auswahl über alle Fächer
+    var chosen = themen.filter(function (t) { return S.cardSel[t.id]; });
+    var pool = [];
+    chosen.forEach(function (t) { pool = pool.concat(t.cards); });
+    var deckCount = S.cardOpts.openOnly ? pool.filter(function (c) { return cardStatus(c.id) !== 2; }).length : pool.length;
+
+    el.innerHTML = head +
+      '<div class="exam-tabs">' + tabs + '</div>' +
+      '<div class="card">' +
+        '<div class="card-head"><div><h2>' + esc(fach.name) + '</h2><div class="muted small">Tippe auf Themen, um sie auszuwählen. Du kannst auch Themen aus mehreren Fächern mischen.</div></div>' +
+          '<div class="row"><button class="btn btn-ghost btn-sm" id="kAll">Alle in ' + esc(fach.kurz) + '</button><button class="btn btn-ghost btn-sm" id="kNone">Keine</button></div></div>' +
+        '<div class="kgrid">' + grid + '</div>' +
+      '</div>' +
+      '<div class="kbar card">' +
+        '<div class="kbar-info"><strong>' + chosen.length + (chosen.length === 1 ? " Thema" : " Themen") + '</strong><span class="muted"> · ' + deckCount + ' Karten' + (S.cardOpts.openOnly && pool.length !== deckCount ? ' (von ' + pool.length + ')' : "") + '</span></div>' +
+        '<label class="switch"><input type="checkbox" id="kOpen"' + (S.cardOpts.openOnly ? " checked" : "") + '> Nur offene Karten</label>' +
+        '<label class="switch"><input type="checkbox" id="kShuffle"' + (S.cardOpts.shuffle ? " checked" : "") + '> Mischen</label>' +
+        '<button class="btn btn-lg" id="kStart"' + (deckCount ? "" : " disabled") + '>Lernen starten</button>' +
+      '</div>';
+
+    $all("[data-ktab]", el).forEach(function (b) { b.onclick = function () { kartenFach = b.getAttribute("data-ktab"); rerender(); }; });
+    $all("[data-kthema]", el).forEach(function (b) {
+      b.onclick = function () {
+        var id = b.getAttribute("data-kthema");
+        if (S.cardSel[id]) delete S.cardSel[id]; else S.cardSel[id] = true;
+        save(); rerender();
+      };
+    });
+    $("#kAll", el).onclick = function () { list.forEach(function (t) { S.cardSel[t.id] = true; }); save(); rerender(); };
+    $("#kNone", el).onclick = function () { list.forEach(function (t) { delete S.cardSel[t.id]; }); save(); rerender(); };
+    $("#kOpen", el).onchange = function () { S.cardOpts.openOnly = this.checked; save(); rerender(); };
+    $("#kShuffle", el).onchange = function () { S.cardOpts.shuffle = this.checked; save(); };
+    $("#kStart", el).onclick = function () {
+      var cards = S.cardOpts.openOnly ? pool.filter(function (c) { return cardStatus(c.id) !== 2; }) : pool;
+      if (!cards.length) return;
+      startSession(S.cardOpts.shuffle ? shuffle(cards) : cards);
+      rerender();
+    };
+  };
+
+  function kartenLernen(el) {
+    var ks = kartenSession;
+    var done = ks.i >= ks.deck.length;
+    if (done) {
+      var again = ks.deck.filter(function (c) { return cardStatus(c.id) === 1; });
+      // jede Karte nur einmal zählen
+      var seen = {}; again = again.filter(function (c) { if (seen[c.id]) return false; seen[c.id] = 1; return true; });
+      el.innerHTML = '<div class="page-head"><div class="eyebrow">Geschafft</div><h1>Runde beendet 🎉</h1><p>' + esc(spruchHeute()) + '</p></div>' +
+        '<div class="card placeholder" style="padding:36px 24px"><div class="grid grid-3" style="max-width:520px;margin:0 auto 24px">' +
+          '<div><div class="stat">' + ks.total + '</div><div class="muted small">Karten</div></div>' +
+          '<div><div class="stat" style="color:var(--accent-strong)">' + ks.known + '</div><div class="muted small">gewusst</div></div>' +
+          '<div><div class="stat" style="color:#b46a40">' + again.length + '</div><div class="muted small">noch offen</div></div></div>' +
+          '<div class="row" style="justify-content:center">' +
+            (again.length ? '<button class="btn" id="kRepeat">Offene wiederholen (' + again.length + ')</button>' : "") +
+            '<button class="btn btn-ghost" id="kBack">Zur Auswahl</button></div></div>';
+      var r = $("#kRepeat", el);
+      if (r) r.onclick = function () { startSession(shuffle(again)); rerender(); };
+      $("#kBack", el).onclick = function () { kartenSession = null; rerender(); };
+      return;
+    }
+    var c = ks.deck[ks.i];
+    var left = ks.deck.length - ks.i;
+    var pct = Math.round(ks.i / ks.deck.length * 100);
+    el.innerHTML =
+      '<div class="k-top"><button class="btn btn-ghost btn-sm" id="kEnd">← Beenden</button>' +
+        '<span class="muted small">' + (left === 1 ? "Letzte Karte" : "Noch " + left + " Karten") + '</span><span class="spacer"></span>' +
+        '<span class="muted small">' + ks.known + ' gewusst</span></div>' +
+      '<div class="progress" style="margin-bottom:18px"><div class="p-rep" style="width:' + pct + '%"></div></div>' +
+      '<div class="kcard' + (ks.shown ? " revealed" : "") + '">' +
+        '<div class="kcard-tag">' + esc(c.thema) + '</div>' +
+        '<div class="kcard-q">' + esc(c.frage) + '</div>' +
+        (ks.shown ? '<div class="kcard-a prose">' + simpleMd(c.antwort) + '</div>' : '<div class="kcard-hint">Überlege dir die Antwort, bevor du aufdeckst.</div>') +
+      '</div>' +
+      '<div class="k-actions">' +
+        (ks.shown
+          ? '<button class="btn btn-ghost btn-lg" id="kAgain">↺ Nochmal <small>(←)</small></button><button class="btn btn-lg" id="kKnown">✓ Wusste ich <small>(→)</small></button>'
+          : '<button class="btn btn-lg" id="kShow">Aufdecken <small>(Leertaste)</small></button>') +
+      '</div>';
+    $("#kEnd", el).onclick = function () { kartenSession = null; rerender(); };
+    if (!ks.shown) $("#kShow", el).onclick = kartenReveal;
+    else {
+      $("#kAgain", el).onclick = function () { kartenRate(false); };
+      $("#kKnown", el).onclick = function () { kartenRate(true); };
+    }
+  }
+  function kartenReveal() { if (kartenSession && !kartenSession.shown) { kartenSession.shown = true; rerender(); } }
+  function kartenRate(known) {
+    var ks = kartenSession;
+    if (!ks || !ks.shown) return;
+    var c = ks.deck[ks.i];
+    var rec = S.cards[c.id] = S.cards[c.id] || { s: 0, n: 0 };
+    rec.s = known ? 2 : 1; rec.n = (rec.n || 0) + 1; rec.last = todayKey();
+    if (known) ks.known++;
+    else if ((ks.requeued[c.id] || 0) < 2) { ks.requeued[c.id] = (ks.requeued[c.id] || 0) + 1; ks.deck.push(c); }
+    ks.i++; ks.shown = false;
+    save(); rerender();
+    window.scrollTo(0, 0);
+  }
+  document.addEventListener("keydown", function (e) {
+    if (current !== "karten" || !kartenSession || e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target && e.target.tagName) || "";
+    if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+    if (e.key === " " || e.key === "Enter") { if (!kartenSession.shown && kartenSession.i < kartenSession.deck.length) { e.preventDefault(); kartenReveal(); } }
+    else if (e.key === "ArrowRight" || e.key === "2") kartenRate(true);
+    else if (e.key === "ArrowLeft" || e.key === "1") kartenRate(false);
+  });
 
   // ================= SICHERUNG =================
   views.einstellungen = function (el) {

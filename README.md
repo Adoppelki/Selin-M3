@@ -89,3 +89,13 @@ window.SELIN_SKRIPTE = [
 python3 -m http.server 8000
 # dann http://localhost:8000 öffnen
 ```
+
+## Karteikarten
+
+Die Karteikarten werden automatisch aus den Skripten erzeugt: Jedes Skript (`data/skripte*.js`) ist ein Thema,
+jede `frage`/`antwort` darin eine Karte. Das Feld `fach` bestimmt den Reiter (Innere Medizin, Chirurgie, Dermatologie, Neurologie).
+
+Weitere Fächer oder Themen ergänzen: neue Datei `data/skripte-<fach>.js` mit
+`window.SELIN_SKRIPTE = (window.SELIN_SKRIPTE || []).concat([ ... ]);` anlegen und in `index.html`
+nach `data/skripte.js` einbinden. Die Karten-ID entsteht aus der Skript-`id` und dem Fragetext,
+Fortschritt bleibt also bei Textänderungen an den Antworten erhalten (nicht aber bei geänderten Fragen).

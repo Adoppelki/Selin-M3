@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Selin M3</title>
+  <meta name="description" content="Selins Lernbegleiter für das M3: Tagesplan, Fächer, Kalender, Fokus-Timer, Protokolle und mehr.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Selin M3">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#start">
+        <img src="icons/icon.svg" alt="" width="36" height="36">
+        <span><strong>Selin</strong> M3</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#start" data-view="start"><span class="ico">☀️</span>Start</a>
+        <a href="#heute" data-view="heute"><span class="ico">✅</span>Heute</a>
+        <a href="#faecher" data-view="faecher"><span class="ico">📚</span>Fächer</a>
+        <a href="#kalender" data-view="kalender"><span class="ico">📅</span>Kalender</a>
+        <a href="#fokus" data-view="fokus"><span class="ico">⏳</span>Fokus</a>
+        <div class="nav-sep">Lernstoff</div>
+        <a href="#protokolle" data-view="protokolle"><span class="ico">📝</span>Protokolle</a>
+        <a href="#analyse" data-view="analyse"><span class="ico">📊</span>Analyse</a>
+        <a href="#untersuchung" data-view="untersuchung"><span class="ico">🩺</span>Untersuchung</a>
+        <a href="#skripte" data-view="skripte"><span class="ico">📖</span>Skripte</a>
+        <div class="nav-sep"></div>
+        <a href="#einstellungen" data-view="einstellungen"><span class="ico">💾</span>Sicherung</a>
+      </nav>
+      <div class="side-clock">
+        <div class="side-time" data-clock></div>
+        <div class="side-date" data-date-short></div>
+      </div>
+    </aside>
+
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+
+  <a class="mini-timer" id="miniTimer" href="#fokus" hidden>
+    <span class="mini-dot"></span><span id="miniTimerText">25:00</span>
+  </a>
+
+  <div class="focus-overlay" id="focusOverlay" hidden>
+    <button class="overlay-close" id="overlayClose" aria-label="Ruhemodus verlassen">✕</button>
+    <div class="overlay-inner">
+      <div class="overlay-mode" id="overlayMode">Fokus</div>
+      <div class="overlay-time" id="overlayTime">25:00</div>
+      <div class="overlay-task" id="overlayTask"></div>
+      <div class="overlay-actions">
+        <button class="btn btn-ghost-light" id="overlayToggle">Pause</button>
+      </div>
+      <div class="overlay-quote" id="overlayQuote"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/sprueche.js"></script>
+  <script src="data/faecher.js"></script>
+  <script src="data/untersuchung.js"></script>
+  <script src="data/protokolle.js"></script>
+  <script src="data/analyse.js"></script>
+  <script src="data/skripte.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

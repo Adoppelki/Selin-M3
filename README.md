@@ -99,3 +99,8 @@ Weitere Fächer oder Themen ergänzen: entweder in `data/skripte.js` eintragen o
 `data/skripte-<fach>.js` mit `window.SELIN_SKRIPTE = (window.SELIN_SKRIPTE || []).concat([ ... ]);` anlegen und in `index.html`
 nach `data/skripte.js` einbinden. Die Karten-ID entsteht aus der Skript-`id` und dem Fragetext,
 Fortschritt bleibt also bei Textänderungen an den Antworten erhalten (nicht aber bei geänderten Fragen).
+
+## Zwischenspeicher (Cache)
+
+In `index.html` hängt an CSS und Skripten `?v=...`. Wer Dateien ändert und sofort überall die neue Version sehen will,
+erhöht diese Version (z. B. `20261025b`). Ohne das kann der Browser bis zu ca. 10 Minuten die alte Fassung zeigen.

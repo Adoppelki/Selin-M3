@@ -220,6 +220,7 @@
           '<div class="row"><div class="stat">' + flog.min + '</div><div class="muted">Minuten im Fokus</div></div>' +
           '<div class="row"><div class="stat">' + examDone + '</div><div class="muted">von ' + REGIONS.length + ' Untersuchungen geübt</div></div>' +
           '<a class="btn" href="#fokus" style="margin-top:6px">⏳ Fokus starten</a>' +
+          '<a class="btn btn-soft" href="#karten">🃏 Karteikarten üben</a>' +
         '</div>' +
       '</div>' +
 

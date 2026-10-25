@@ -6,31 +6,36 @@
       "name": "Prof. Dr. Willuweit",
       "fach": "Innere Medizin",
       "schwerpunkt": "Gastroenterologie / Hepatologie",
-      "ort": "Medizinisches Zentrum, Station Gastro 1 (Hepatologie), LLZ"
+      "ort": "Medizinisches Zentrum, Station Gastro 1 (Hepatologie), LLZ",
+      "rolle": "eingeteilt (Selin)"
     },
     "alesina": {
       "name": "Dr. Alesina",
       "fach": "Chirurgie",
       "schwerpunkt": "Allgemein- und Viszeralchirurgie (Huyssens-Stift)",
-      "ort": "Essen, z. T. Herzzentrum"
+      "ort": "Essen, z. T. Herzzentrum",
+      "rolle": "eingeteilt (Selin)"
     },
     "griewank": {
       "name": "Prof. Dr. Klaus Georg Griewank",
       "fach": "Dermatologie",
       "schwerpunkt": "Dermatologie (Histodermatologe)",
-      "ort": "Herzzentrum / Herz-Gefäßzentrum Essen"
+      "ort": "Herzzentrum / Herz-Gefäßzentrum Essen",
+      "rolle": "eingeteilt (Selin)"
     },
     "hinrichs": {
       "name": "Dr. Hinrichs",
       "fach": "Chirurgie",
       "schwerpunkt": "Allgemein- und Viszeralchirurgie (oft Vertretung für Prof. Walz), Orthopädie/Unfall ausgeschlossen",
-      "ort": "Herzzentrum / UK Essen"
+      "ort": "Herzzentrum / UK Essen",
+      "rolle": "Reserve (springt ein)"
     },
     "kebir": {
       "name": "PD Dr. Kebir",
       "fach": "Neurologie",
       "schwerpunkt": "Neurologische Notfälle (ZNA), Neuroonkologie/Hirntumore",
-      "ort": "Herzzentrum / UK Essen"
+      "ort": "Herzzentrum / UK Essen",
+      "rolle": "eingeteilt (Selin)"
     }
   },
   "protokolle": [

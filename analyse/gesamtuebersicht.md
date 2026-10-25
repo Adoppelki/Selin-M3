@@ -1,16 +1,18 @@
 # Gesamtübersicht nach Runde 1–3
 
+> **Korrektur (25.10.):** Selins Prüfer sind **Willuweit (Innere), Alesina (Chirurgie), Griewank (Derma) und Kebir (Neuro)**. Dr. Hinrichs ist Reserve und springt nur ein. Die Spalte „Relevanz“ und der Abschnitt zur Kommission unten wurden entsprechend angepasst, die Historie bleibt als Hintergrund.
+
 41 Protokolle, 6 Prüfer (alle Essen). Stand: Runde 3.
 
 | Fach | Prüfer | Protokolle | Zeitraum | Relevanz für Selin |
 |---|---|---|---|---|
-| Innere Medizin | Prof. Willuweit | 5 | 2024–2026 | Themenquelle, aber Prüfer der Kommission wechselt |
-| Chirurgie | Dr. Hinrichs | 13 | 2021–2026 | **Hoch** (in 6 von 7 Terminen der passenden Kommission seit 2023, daneben in der Lind-Gruppe) |
-| Chirurgie | Dr. Alesina | 7 | 2016–2020 | Gering (veraltet) |
-| Dermatologie | Prof. Griewank | 7 | 2015–2025 | **Hoch** (jede Kommission seit 2023) |
-| Neurologie | PD Dr. Kebir | 9 | 2023–2026 | **Hoch** (jede Kommission seit 2023) |
+| Innere Medizin | Prof. Willuweit | 5 | 2024–2026 | **Eingeteilt** (Gastro/Hepatologie) |
+| Chirurgie | Dr. Hinrichs | 13 | 2021–2026 | **Reserve**, springt ein; sein Themenkatalog ist Versicherung |
+| Chirurgie | Dr. Alesina | 7 | 2016–2020 | **Eingeteilt**, aber nur Protokolle bis 2020 (Lücke) |
+| Dermatologie | Prof. Griewank | 7 | 2015–2025 | **Eingeteilt** |
+| Neurologie | PD Dr. Kebir | 9 | 2023–2026 | **Eingeteilt** |
 
-## Die Kommission, auf die sich Selin wahrscheinlich einstellen muss
+## Historie: wie die Kommissionen in Essen seit 2023 zusammengesetzt waren (Hintergrund)
 
 Aus den Protokollen ergibt sich ein klares Muster für die Termine, die am ehesten Selins M3 am 30.11./01.12.2026 entsprechen:
 

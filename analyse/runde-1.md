@@ -9,7 +9,9 @@
 | Dermatologie | Prof. Griewank | 7 | 2015 – 11/2025 | 1–2 |
 | Neurologie | – | 0 | – | – |
 
-## Wichtigste Erkenntnis: welche Kommission hat Selin?
+## Hintergrund: Kommissionen (Stand Runde 1, überholt)
+
+> Inzwischen geklärt: Selins Prüfer sind Willuweit, Alesina, Griewank und Kebir, Hinrichs ist Reserve. Der folgende Abschnitt ist die frühere Einschätzung.
 
 In den Griewank-Protokollen 2024/2025 ist die Kommission immer gleich aufgebaut: **Innere (wechselnd: Pohl, Dykun, Al-Rashid, Mincu) + Dr. Hinrichs (Chirurgie) + Prof. Griewank (Derma) + PD Dr. Kebir (Neurologie)**, Ort Herzzentrum. Das passt genau zu Selins vier Fächern.
 

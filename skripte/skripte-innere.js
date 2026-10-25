@@ -407,5 +407,93 @@ window.SELIN_SKRIPTE = (window.SELIN_SKRIPTE || []).concat([
         "antwort": "- Refraktäre Zöliakie (Beschwerden trotz strikter Diät > 12 Monate)\n- **EATL** (Enteropathie-assoziiertes T-Zell-Lymphom), Dünndarmadenokarzinom\n- Ulzerative Jejunoileitis, Hyposplenismus\n- Mangelzustände (Eisen, Folat, B12, Vitamin D, Calcium, Zink), Osteoporose\nKontrollen: Serologie (Diätcompliance), DEXA, Vitamine."
       }
     ]
+  },
+  {
+    "id": "innere-stemi-acs",
+    "titel": "STEMI und akutes Koronarsyndrom",
+    "fach": "Innere Medizin",
+    "kurz": "- STEMI = ST-Hebung im EKG plus Klinik, Ziel ist **schnelle Reperfusion**\n- **Primäre PCI** wenn innerhalb 120 min nach Diagnose möglich, sonst Fibrinolyse\n- Medikamentös: ASS, P2Y12-Hemmer, Heparin; Sekundärprophylaxe lebenslang\n\n**Prüfstatus:** Nur die mit „Beleg: Leitlinie“ markierten Karten sind in einer abgerufenen Quelle gelesen. Rest ist Standardwissen und muss gegen die ESC-Leitlinie 2023 (Tabellen) geprüft werden.",
+    "fragen": [
+      {
+        "frage": "Wie stellen Sie die Diagnose STEMI?",
+        "antwort": "- Typische Angina-Pectoris-Klinik > 20 min, ggf. vegetative Symptome\n- **EKG:** ST-Hebung in mindestens 2 benachbarten Ableitungen (neuer Linksschenkelblock gilt als Äquivalent, ebenso posteriorer Infarkt/Okklusion der Zirkumflexa mit ST-Senkungen V1–V3)\n- Troponin (hs) darf bei klarem EKG nicht abgewartet werden\n\n*Beleg: Standardwissen*"
+      },
+      {
+        "frage": "Welcher Infarktlokalisation entsprechen die Ableitungen?",
+        "antwort": "- Vorderwand: V1–V4 (LAD), anterolateral I, aVL, V5–V6\n- Hinterwand/inferior: II, III, aVF (meist RCA)\n- Bei inferiorem Infarkt: rechtsventrikuläre Beteiligung ausschließen (V4R), Vorsicht mit Nitrat/Volumenabhängigkeit\n\n*Beleg: Standardwissen*"
+      },
+      {
+        "frage": "Wann PCI, wann Fibrinolyse?",
+        "antwort": "- **Primäre PCI** ist die bevorzugte Strategie, wenn sie innerhalb von **120 min** möglich ist\n- Ist das nicht möglich, **Fibrinolyse**, danach Verlegung zur Angiographie\n- Verlegung: Door-in-door-out-Zeit **≤ 30 min**\n\n*Beleg: Leitlinie (ESC ACS 2023, Einleitung und Abschnitt 4.1.2)*"
+      },
+      {
+        "frage": "Welche Akuttherapie geben Sie?",
+        "antwort": "- Monitor, i.v.-Zugang, Sauerstoff nur bei Hypoxie\n- **ASS** und **P2Y12-Hemmer** (Prasugrel/Ticagrelor bevorzugt), **Heparin**\n- Analgesie (Opioid titriert), Antiemetika; Nitrate bei Hypertonie/Lungenstauung (nicht bei Hypotonie oder RV-Infarkt)\n- Koronarangiographie mit PCI und Stent\nKonkrete Substanzen, Dosen und Zeitfenster bitte in der ESC-Leitlinie 2023 gegenlesen.\n\n*Beleg: Standardwissen*"
+      },
+      {
+        "frage": "Welche Komplikationen drohen in den ersten Tagen?",
+        "antwort": "- Rhythmusstörungen (Kammerflimmern, AV-Block)\n- Kardiogener Schock, akute Herzinsuffizienz\n- **Mechanisch:** Papillarmuskelabriss mit akuter Mitralinsuffizienz, Septumruptur, freie Wandruptur (Perikardtamponade) meist 3–7 Tage\n- Perikarditis (Dressler später), Ventrikelaneurysma, Thrombus\n\n*Beleg: Standardwissen*"
+      },
+      {
+        "frage": "Sekundärprophylaxe nach Infarkt?",
+        "antwort": "- Duale Plättchenhemmung für die in der Leitlinie vorgesehene Dauer (Verkürzung/Verlängerung sind eigene Leitlinienkapitel), danach ASS\n- Statin hochdosiert mit LDL-Zielwert nach Leitlinie, Betablocker, ACE-Hemmer/ARB (v. a. bei EF-Einschränkung)\n- Risikofaktoren, Rauchstopp, Reha\nZahlen (LDL-Ziel, Dauer) habe ich nicht aus der Quelle und nenne sie deshalb bewusst nicht.\n\n*Beleg: Standardwissen*"
+      }
+    ]
+  },
+  {
+    "id": "innere-lungenembolie",
+    "titel": "Lungenembolie",
+    "fach": "Innere Medizin",
+    "kurz": "- Klinische Wahrscheinlichkeit (Wells/Geneva) → D-Dimere nur bei niedriger/mittlerer Wahrscheinlichkeit → CT-Pulmonalisangiographie\n- Risikostratifizierung nach Hämodynamik, RV-Funktion, Troponin\n- Therapie: Antikoagulation (DOAC bevorzugt), bei instabilem Patienten Lyse\n\n**Prüfstatus:** Karten mit „Beleg: Leitlinie“ stammen aus der abgerufenen ESC-Zusammenfassung. Wells-Score und Details der Risikoklassen sind Standardwissen.",
+    "fragen": [
+      {
+        "frage": "Bei Patient mit SpO2-Abfall: Wie schließen Sie eine Lungenembolie aus?",
+        "antwort": "1. **Klinische Wahrscheinlichkeit** (Wells- oder Geneva-Score)\n2. Niedrig/mittel: **D-Dimere**; negativ schließt aus. Die Grenzwerte sollen **an Alter und Vortestwahrscheinlichkeit angepasst** werden, nicht fix gelten\n3. Hoch oder D-Dimer positiv: **CT-Pulmonalisangiographie**\n4. Instabil: sofort Echokardiographie (RV-Belastung)\n\n*Beleg: Leitlinie (D-Dimer altersadaptiert); Ablauf Standardwissen*"
+      },
+      {
+        "frage": "Wie definieren Sie die hämodynamische Instabilität?",
+        "antwort": "Herz-Kreislauf-Stillstand mit Reanimation, **obstruktiver Schock**, oder persistierende Hypotonie, die nicht anders erklärt ist. Das ist die Hochrisiko-Lungenembolie.\n\n*Beleg: Leitlinie (ESC 2019, Zusammenfassung)*"
+      },
+      {
+        "frage": "Wie stratifizieren Sie das Risiko bei stabilem Patienten?",
+        "antwort": "Risikoadaptiert nach **klinischem Schweregrad (z. B. PESI/sPESI), RV-Dysfunktion (Echo/CT) und Komorbiditäten**; Troponin als zusätzlicher Marker. Daraus folgt: niedriges Risiko, intermediär-niedrig, intermediär-hoch, hoch.\n\n*Beleg: Leitlinie (Prinzip); Scores Standardwissen*"
+      },
+      {
+        "frage": "Wie behandeln Sie?",
+        "antwort": "- **Antikoagulation:** DOAC sind gegenüber Vitamin-K-Antagonisten bevorzugt; bei Tumorpatienten Edoxaban oder Rivaroxaban als Alternative zu NMH (Vorsicht bei GI-Tumoren wegen Blutung); in der Schwangerschaft keine DOAC\n- **Systemische Lyse** bei hämodynamischer Verschlechterung (Rescue-Lyse ist Klasse I), interventionelle Thrombusentfernung als Alternative (IIa)\n\n*Beleg: Leitlinie (ESC 2019, Zusammenfassung)*"
+      },
+      {
+        "frage": "Wie lange antikoagulieren Sie?",
+        "antwort": "Mindestens 3 Monate, bei idiopathischer oder persistierender Risikokonstellation oft länger. Nach den ersten 6 Monaten kann eine **verlängerte Therapie mit reduzierter Dosis Apixaban oder Rivaroxaban** erwogen werden. **Nachsorge nach 3–6 Monaten**; bei Symptomen und V/Q-Mismatch > 3 Monate nach dem Ereignis Überweisung an ein CTEPH-Zentrum.\n\n*Beleg: Leitlinie (ESC 2019, Zusammenfassung)*"
+      }
+    ]
+  },
+  {
+    "id": "innere-sepsis",
+    "titel": "Sepsis und septischer Schock",
+    "fach": "Innere Medizin",
+    "kurz": "- Sepsis = lebensbedrohliche Organdysfunktion durch dysregulierte Wirtsantwort auf Infektion (Sepsis-3, SOFA-Anstieg ≥ 2)\n- **Antibiotika in Schock/hoher Wahrscheinlichkeit innerhalb 1 h**, Fokussuche und Sanierung\n- Kristalloide 30 ml/kg bei Hypotonie/Schock, Vasopressoren, Laktat\n\n**Prüfstatus:** Karten mit „Beleg: Leitlinie“ stammen aus der gelesenen SSC-2021-Zusammenfassung. Definitionen sind Standardwissen. Vasopressor-Wahl und MAP-Ziel standen in der gelesenen Quelle nicht und sind als Standardwissen markiert.",
+    "fragen": [
+      {
+        "frage": "Definieren Sie Sepsis und septischen Schock.",
+        "antwort": "- **Sepsis:** lebensbedrohliche Organdysfunktion durch eine dysregulierte Wirtsantwort auf eine Infektion (Anstieg des SOFA-Scores um ≥ 2)\n- **Septischer Schock:** Sepsis mit Vasopressorbedarf zur Aufrechterhaltung eines MAP ≥ 65 mmHg **und** Laktat > 2 mmol/l trotz ausreichender Volumengabe\n\n*Beleg: Standardwissen (Sepsis-3)*"
+      },
+      {
+        "frage": "Reicht der qSOFA zum Screening?",
+        "antwort": "Nein. Die SSC 2021 spricht eine **starke Empfehlung gegen qSOFA als einzelnes Screening-Instrument** aus; er ist weder ausreichend sensitiv noch spezifisch.\n\n*Beleg: Leitlinie (SSC 2021)*"
+      },
+      {
+        "frage": "Wann geben Sie Antibiotika?",
+        "antwort": "- Septischer Schock oder hohe Wahrscheinlichkeit einer Sepsis: **sofort, idealerweise innerhalb 1 h**\n- Mögliche Sepsis ohne Schock: zeitlich begrenzte rasche Abklärung, bei fortbestehendem Verdacht Antibiotika **innerhalb 3 h**\n- Niedrige Wahrscheinlichkeit einer Infektion ohne Schock: Zurückhalten und engmaschig beobachten (schwache Empfehlung)\nBlutkulturen vor Antibiose, wenn dadurch keine relevante Verzögerung entsteht.\n\n*Beleg: Leitlinie (SSC 2021); Blutkulturen Standardwissen*"
+      },
+      {
+        "frage": "Wie gehen Sie bei Hypotonie oder Schock mit Volumen und Katecholaminen vor?",
+        "antwort": "- Vorschlag: **30 ml/kg i.v. Kristalloide** (schwache Empfehlung, abgestuft)\n- Vasopressoren dürfen **peripher begonnen** werden, ohne auf den zentralen Zugang zu warten\n- Steuerung am **Laktat**; Kapillarfüllungszeit als Ergänzung\n- **Hydrocortison** bei septischem Schock mit anhaltendem Vasopressorbedarf (schwache Empfehlung)\n- Mittel der ersten Wahl: Noradrenalin (Standardwissen), MAP-Ziel 65 mmHg (Standardwissen)\n\n*Beleg: Leitlinie (SSC 2021) für Volumen, peripheren Beginn, Laktat, Hydrocortison; Rest Standardwissen*"
+      },
+      {
+        "frage": "Was gehört noch zur Sepsistherapie?",
+        "antwort": "**Fokussuche und Fokussanierung** so früh wie möglich: z. B. Cholangitis → ERCP-Drainage, infizierte Nekrose → Drainage, Abszess, Pneumonie, Harnwegsinfekt, Katheter entfernen. Organunterstützung nach Bedarf.\n\n*Beleg: Standardwissen*"
+      }
+    ]
   }
 ]);

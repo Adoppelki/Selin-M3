@@ -39,3 +39,7 @@ Datenbasis: 5 Protokolle Willuweit (2024-05 bis 2026-06), alle Gastro/Hepatologi
 
 - Phase 2: Kardiologie (STEMI/ACS, Herzinsuffizienz, Vorhofflimmern, Hypertonie, Endokarditis, Lungenembolie), Pneumologie (Pneumonie, COPD, Asthma), Nephro, Endokrinologie (Diabetes, Schilddrüse inkl. Hashimoto), Hämatologie/Onkologie (Anämie), Rheumatologie, Infektiologie/Sepsis, Notfälle. Zusätzlich Gastro-Rest: Reflux/Achalasie/Ösophaguskarzinom, Helicobacter/Ulkus, Divertikulitis, Kolonkarzinom/Polypen, Hämochromatose/Wilson, HCC, MASLD, Reizdarm/Malassimilation.
 - Abgleich der Themenliste mit `data/faecher.js` der Website.
+
+## Update Phase 2a
+
+Neu: STEMI/ACS, Lungenembolie, Sepsis (alle aus Willuweit-Protokollen). Jede Karte trägt jetzt eine Zeile „Beleg“: **Leitlinie** (in einer abgerufenen Quelle gelesen) oder **Standardwissen** (nicht gegen die Leitlinie geprüft). Die Primärtexte (ESC-Tabellen, AWMF) sind für mich nicht abrufbar; Zusammenfassungen von ESC PE 2019 und SSC 2021 und die Einleitung von ESC ACS 2023 konnte ich lesen. Anämie, Hashimoto und Pneumonie sind noch nicht geschrieben, weil ich dafür keine abrufbare Leitlinie hatte.

@@ -48,6 +48,29 @@ Blutkulturen vor Antibiose, wenn dadurch keine relevante Verzögerung entsteht.
 
 *Beleg: Standardwissen*
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum innerhalb einer Stunde Antibiotika?
+Bei septischem Schock steigt die Mortalität mit jeder Stunde Verzögerung der wirksamen Antibiotikagabe (Beobachtungsdaten, z. B. Kumar 2006). Deshalb in der SSC-Leitlinie 2021: bei Schock oder hoher Sepsiswahrscheinlichkeit sofort, bei möglicher Sepsis ohne Schock nach rascher Abklärung innerhalb von 3 Stunden (Quelle: SSC 2021).
+
+## Warum 30 ml/kg Kristalloide, aber nur noch als schwache Empfehlung?
+Der Wert stammt aus früheren Protokollen. Die Evidenz ist begrenzt, deshalb wurde die Empfehlung auf einen Vorschlag abgeschwächt. Nach der Anfangsgabe richtet sich weiteres Volumen nach dem Ansprechen (Kapillarfüllung, Laktat, Dynamik), um Überwässerung zu vermeiden (Quelle: SSC 2021).
+
+## Warum Laktat?
+Erhöhtes Laktat zeigt Gewebehypoperfusion (anaerobe Glykolyse), aber auch β2-adrenerge Stimulation und eingeschränkte Leberclearance. Die Normalisierung gilt als Therapieziel und Verlaufsparameter (Quelle: SSC 2021: Laktat-gesteuerte Therapie).
+
+## Warum Noradrenalin als Erstwahl?
+Noradrenalin steigert den Gefäßtonus über α1-Rezeptoren stark und die Herzfrequenz weniger als Dopamin; Dopamin führte in Vergleichsstudien zu mehr Rhythmusstörungen. MAP-Ziel 65 mmHg. Vasopressin als zweites Mittel zur Katecholaminersparnis (Standardwissen, nicht in der gelesenen Quelle).
+
+## Warum Hydrocortison bei anhaltendem Vasopressorbedarf?
+Bei septischem Schock besteht eine relative Nebenniereninsuffizienz und verminderte Katecholaminansprechbarkeit der Gefäße. Hydrocortison verkürzt die Zeit bis zur Katecholaminfreiheit (Quelle: SSC 2021: schwache Empfehlung).
+
+## Warum qSOFA nicht als einzige Screening-Methode?
+qSOFA (Atemfrequenz ≥ 22, Bewusstseinsänderung, systolischer Blutdruck ≤ 100) ist spezifisch, aber wenig sensitiv und erkennt Sepsis zu spät. SSC 2021 empfiehlt es deshalb stark nicht als Einzelinstrument.
+
+## Warum Fokussuche und Fokussanierung?
+Ohne Beseitigung der Infektionsquelle (Abszess, Cholangitis, Nekrose, infizierter Katheter) bleiben Antibiotika unzureichend. Source Control so früh wie möglich ist Teil der Basistherapie (Standardwissen).
+
 ## Quellen
 
 - Surviving Sepsis Campaign International Guidelines 2021: gelesen über eine Übersichtsarbeit (PMC10246868)

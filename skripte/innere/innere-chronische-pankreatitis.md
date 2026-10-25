@@ -79,6 +79,32 @@ Pseudozysten, Gangsteine, Stenosen von Duodenum oder Gallengang mit Ikterus, Mil
 
 Das ist schwierig. Warnzeichen für ein Karzinom sind neuer Ikterus, Gewichtsverlust, veränderter Schmerz und neuer Diabetes. Ich mache ein Multiphasen-CT oder MRT und bei unklarem Befund eine Endosonographie mit Feinnadelpunktion. CA 19-9 hilft nur begrenzt, weil es bei Cholestase falsch hoch sein kann.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum Steatorrhö erst bei Verlust von über 90 % der Funktion?
+Die Drüse hat eine große Funktionsreserve. Die Lipase fällt trotzdem zuerst aus, weil sie am empfindlichsten gegen Säure ist (bei pH unter 4 inaktiviert) und es keine ausreichende Ersatz-Lipase gibt, während Amylase auch aus den Speicheldrüsen stammt. Deshalb sind Fettverdauungsstörungen das erste und führende Zeichen.
+
+## Warum Enzyme zu den Mahlzeiten, in Pellets, und warum PPI?
+Die Enzyme müssen sich mit dem Speisebrei mischen und gleichzeitig im Duodenum wirken. Die Kapseln enthalten säurestabile Mikropellets, die sich erst bei höherem pH im Dünndarm lösen. Bleibt die Lipase trotz Substitution wirkungslos, senkt ein PPI den Säuregehalt im Duodenum und schützt die Lipase vor Inaktivierung.
+
+## Warum Elastase im Stuhl?
+Sie ist pankreasspezifisch, im Stuhl stabil und wird durch zugeführte Enzympräparate (vom Schwein) nicht verfälscht. Bei wässrigem Stuhl wird sie jedoch verdünnt und kann falsch niedrig sein.
+
+## Warum Diabetes Typ 3c anders ist als Typ 2
+Es fehlen Insulin **und** Glukagon (und pankreatisches Polypeptid). Damit ist die Gegenregulation bei Hypoglykämie eingeschränkt, Hypoglykämien sind häufig und schwer. Zusätzlich besteht oft eine Malabsorption und Mangelernährung. Deshalb wird meist Insulin mit vorsichtiger Zielsetzung eingesetzt.
+
+## Warum entsteht der Schmerz, und warum ist er so schwer zu behandeln?
+Gründe sind erhöhter Druck im Gang und im Parenchym, Entzündung der Nerven (perineurale Infiltration) und eine zentrale Sensibilisierung. Deshalb helfen Analgetika oft nur teilweise. Bei Obstruktion (Gangsteine, Stenosen) sind endoskopische Verfahren ursächlich, sonst die Operation.
+
+## Warum Beger- oder Frey-Operation?
+Der vergrößerte, entzündete Pankreaskopf gilt als „Schrittmacher“ der Erkrankung. Die duodenumerhaltende Kopfresektion nimmt den entzündlichen Kopf heraus und dekomprimiert den Gang, mit weniger Funktionsverlust als eine Whipple-Operation und ähnlich guter Schmerzkontrolle.
+
+## Warum Alkohol- und Nikotinkarenz so wichtig sind
+Beides beschleunigt das Fortschreiten, erhöht das Karzinomrisiko und verschlechtert den Schmerz. Es ist die einzige Maßnahme, die den Verlauf nachweislich beeinflusst.
+
+## Warum auf IgG4 achten?
+Die autoimmune Pankreatitis (Typ 1, IgG4-assoziiert) spricht auf Steroide an und kann einem Karzinom ähneln (Pseudotumor, Gangverengung). Eine Fehldiagnose führt zu unnötiger Whipple-OP. Hinweise: IgG4 im Serum, andere Organe betroffen (Gallenwege, Speicheldrüsen, Niere).
+
 ## Quellen
 
 - S3-Leitlinie Pankreatitis (DGVS 2021): Titel bekannt, Volltext nicht abrufbar

@@ -62,6 +62,28 @@ Zahlen (LDL-Ziel, Dauer) habe ich nicht aus der Quelle und nenne sie deshalb bew
 
 *Beleg: Standardwissen*
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum "Time is muscle" und warum 120 Minuten?
+Bei vollständigem Koronarverschluss stirbt Myokard von innen nach außen; je früher die Reperfusion, desto kleiner der Infarkt. Die primäre PCI ist der Fibrinolyse überlegen, aber nur, wenn sie rechtzeitig möglich ist. Wenn die PCI nicht innerhalb von 120 Minuten nach Diagnose durchgeführt werden kann, überwiegt der Zeitgewinn der Fibrinolyse (Quelle: ESC ACS 2023, Einleitung).
+
+## Warum Prasugrel oder Ticagrelor statt Clopidogrel?
+Sie wirken schneller und stärker plättchenhemmend (Clopidogrel ist ein Prodrug mit variabler CYP2C19-Aktivierung). Der Preis ist ein höheres Blutungsrisiko. Aus diesem Grund Auswahl nach Risiko; konkrete Auswahl und Dauer bitte in der Leitlinie nachlesen (Standardwissen).
+
+## Warum Nitrate nicht bei rechtsventrikulärem Infarkt?
+Der rechte Ventrikel ist bei RV-Infarkt vorlastabhängig. Nitrate senken die Vorlast und können zu schwerer Hypotonie führen. Therapie hier: Volumen, ggf. Katecholamine.
+
+## Warum mechanische Komplikationen nach einigen Tagen?
+Nach dem Infarkt wird die nekrotische Wand durch Entzündung und Proteolyse geschwächt, in der Regel um den 3. bis 7. Tag am schwächsten. Daher Papillarmuskelabriss, Septumruptur und freie Wandruptur typischerweise in diesem Zeitfenster. Neues Systolikum und Schock: sofort Echokardiographie.
+
+## Warum Sauerstoff nur bei Hypoxie?
+Hyperoxie führt zu Vasokonstriktion und kann den Infarkt vergrößern; ohne Hypoxie ist kein Nutzen belegt.
+
+## Warum posteriorer Infarkt im EKG gesucht wird
+Die Hinterwand wird in V1 bis V3 nur als ST-Senkung gespiegelt; zusätzliche Ableitungen V7 bis V9 zeigen die ST-Hebung. Ein Verschluss der A. circumflexa kann so übersehen werden.
+
+*Dieser Abschnitt ist Standardwissen; nur die 120-Minuten-Regel und die Door-in-door-out-Zeit sind in einer abgerufenen Quelle gelesen.*
+
 ## Quellen
 
 - 2023 ESC Guidelines for the management of acute coronary syndromes (Eur Heart J 2023;44:3720–3826): nur Einleitung/Gliederung abgerufen, Empfehlungstabellen nicht lesbar

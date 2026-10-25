@@ -14,10 +14,19 @@ seen = set()
 # Neues Format (durchgehendes Skript) hat Vorrang vor dem alten Kurzformat
 for d in (fach + "2", fach):
     for f in sorted(glob.glob(os.path.join(root, "quelle", d, "*.json"))):
+        if os.path.basename(f) == "spezialwissen.json":
+            continue
         for t in json.load(open(f, encoding="utf-8")):
             if t["id"] not in seen:
                 seen.add(t["id"])
                 topics.append(t)
+
+spez = {}
+sp = os.path.join(root, "quelle", fach + "2", "spezialwissen.json")
+if os.path.exists(sp):
+    spez = json.load(open(sp, encoding="utf-8"))
+missing = [t["id"] for t in topics if t["id"] not in spez]
+print("ohne Spezialwissen:", missing)
 
 def body(t):
     """Langtext einer Seite: neues Feld 'skript' (plus 'fakten'), sonst altes 'kurz'."""
@@ -42,13 +51,17 @@ for t in topics:
     L = [f"# {t['titel']}", "",
          f"Priorität {t['prio']} · {t['bereich']} · Prüfungsbezug: {t['protokoll_bezug']}", "",
          f"**Prüfstatus:** {t['status']}", "", body(t), "", "## Typische Prüferfragen mit Antwort", ""]
+    spezial_md = spez.get(t["id"])
     for i, q in enumerate(t["fragen"], 1):
         L += [f"### {i}. {q['frage']}", "", antwort(q), ""]
+    if spezial_md:
+        L += ["## Spezialwissen (Facharzt-Niveau)", "", spezial_md, ""]
     L += ["## Quellen", ""] + [f"- {s}" for s in t["quellen"]] + [""]
     open(os.path.join(root, fach, t["id"] + ".md"), "w", encoding="utf-8").write("\n".join(L))
 
 web = [{"id": t["id"], "titel": t["titel"], "fach": t["fach"],
         "kurz": body(t) + "\n\n## Prüfstatus\n" + t["status"],
+        "spezial": spez.get(t["id"], ""),
         "fragen": [{"frage": q["frage"], "antwort": antwort(q)} for q in t["fragen"]]} for t in topics]
 with open(os.path.join(root, f"skripte-{fach}.js"), "w", encoding="utf-8") as fh:
     fh.write("// Automatisch erzeugt von scripts/build_skripte.py, nicht von Hand ändern\n")

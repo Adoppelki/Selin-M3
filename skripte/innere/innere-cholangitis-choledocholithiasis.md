@@ -74,6 +74,35 @@ Nach ASGE 2019 liegt eine hohe Wahrscheinlichkeit vor, wenn ein Stein in der Bil
 
 Die Cholezystitis ist eine Entzündung der Gallenblase mit Dauerschmerz rechts, Fieber, Murphy-Zeichen und Wandverdickung in der Sono; die Therapie ist Antibiose und frühe Cholezystektomie. Die Cholangitis ist eine Infektion der Gallengänge bei Abflussstörung mit Ikterus und Cholestase; die Therapie ist Antibiose und Drainage.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum reichen Antibiotika allein nicht?
+Im verschlossenen Gang steigt der Druck, die Gallengänge sind schlecht durchblutet und Antibiotika erreichen kaum therapeutische Konzentrationen im infizierten Sekret. Der Druck presst Bakterien und Endotoxin über die Lebersinusoide in die Blutbahn (cholangiovenöser Reflux). Nur die Drainage senkt Druck und Keimlast.
+
+## Warum Blutkulturen?
+Bei einem relevanten Teil der Patienten ist die Cholangitis bakteriämisch; der Keimnachweis erlaubt die gezielte Therapie, besonders bei Resistenzen (ESBL).
+
+## Warum Piperacillin/Tazobactam oder Ceftriaxon plus Metronidazol?
+Das Spektrum deckt Enterobakterien (E. coli, Klebsiella), Enterokokken (Pip/Taz besser) und Anaerobier ab, die Galle penetrieren beide. Bei schwerer Cholangitis, Voroperationen mit Anastomose (Hepatikojejunostomie), Antibiotika-Vorbehandlung oder ESBL-Risiko wird breiter behandelt (z. B. Carbapenem).
+
+## Warum ERCP und nicht PTCD?
+Die ERCP ist weniger invasiv, kann den Stein direkt entfernen und die Papille eröffnen. PTCD (perkutan transhepatisch) kommt bei fehlender Papillenerreichbarkeit infrage, zum Beispiel nach Billroth II, bei Hepatikojejunostomie oder wenn die ERCP scheitert.
+
+## Warum Papillotomie, und wann nur ein Stent?
+Die Papillotomie (Sphinkterotomie) erweitert den Ausgang, erlaubt Steinextraktion (Körbchen, Ballon) und senkt das Rezidivrisiko. Bei Gerinnungsstörung oder instabilem Patienten kann zunächst ein Stent zur Entlastung genügen (Stein später entfernen), um die Blutungsgefahr zu vermeiden.
+
+## Warum EUS oder MRCP bei mittlerem Risiko?
+Beide sind nicht-invasiv bzw. wenig invasiv und vermeiden unnötige ERCP, deren Komplikationsrisiko (Pankreatitis, Blutung, Perforation) nicht gering ist. Die Endosonographie ist sensitiver für kleine Steine, die MRCP weniger invasiv.
+
+## Warum die Tokyo-Schweregrade?
+Grad III (schwer) bedeutet Organdysfunktion (Kreislauf, Bewusstsein, Niere, Lunge, Leber, Gerinnung) und verlangt sofortige Drainage und Intensivüberwachung; Grad II (mittelschwer) frühe Drainage; Grad I Ansprechen auf Antibiose abwarten. Die Einteilung bestimmt also Antibiotikaspektrum und Dringlichkeit.
+
+## Warum nach der Drainage meist die Cholezystektomie?
+Der Stein stammt in der Regel aus der Gallenblase. Bleibt sie, drohen erneute Steine, Cholangitis oder Pankreatitis.
+
+## Murphy und Mirizzi
+Das Mirizzi-Syndrom ist die Kompression des Ductus hepaticus communis durch einen Stein im Gallenblasenhals oder Zystikus, mit Ikterus bei Cholezystitis.
+
 ## Quellen
 
 - Tokyo Guidelines 2018, Diagnosekriterien der akuten Cholangitis (Kriterien abgerufen und geprüft)

@@ -104,6 +104,44 @@ Ein transjugulärer intrahepatischer portosystemischer Shunt: ein Stent zwischen
 
 Bei Zirrhose eine Sonographie alle sechs Monate, gegebenenfalls mit AFP. Bei unklarem Befund folgt ein Multiphasen-CT oder -MRT; typisch sind arterielle Anreicherung und Washout. Die Therapie richtet sich nach dem Stadium: Resektion, Ablation, TACE, Transplantation (Mailand-Kriterien) oder systemische Therapie.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum entsteht Aszites?
+Der Widerstand in der Leber steigt, der Portaldruck steigt. Splanchnische Vasodilatation (Stickstoffmonoxid) senkt das effektive Blutvolumen, RAAS und ADH werden aktiviert, die Niere hält Natrium und Wasser zurück. Dazu kommen Hypalbuminämie und erhöhter hydrostatischer Druck im Pfortadergebiet.
+
+## Warum Spironolacton als erstes Diuretikum?
+Bei Zirrhose besteht ein ausgeprägter sekundärer Hyperaldosteronismus. Spironolacton antagonisiert Aldosteron im distalen Tubulus und ist deshalb wirksamer als Schleifendiuretika allein. Furosemid wird ergänzt (üblicherweise im Verhältnis etwa 100:40 mg), weil die Kombination Kaliumverschiebungen ausgleicht.
+
+## Warum Albumin bei Parazentese?
+Großvolumenpunktion verschiebt Flüssigkeit, vermindert das effektive Blutvolumen und kann eine postparazentetische Kreislaufdysfunktion mit Nierenversagen auslösen. Albumin stabilisiert das Plasmavolumen und senkt dieses Risiko.
+
+## Warum Albumin bei SBP?
+In einer Studie (Sort et al., NEJM 1999) senkte Albumin zusätzlich zu Cefotaxim die Rate des Nierenversagens und die Mortalität. Die SBP löst über Entzündungsmediatoren eine systemische Vasodilatation aus, die zum HRS führt.
+
+## Warum Terlipressin beim HRS und bei Varizenblutung?
+Terlipressin wirkt über V1-Rezeptoren vasokonstriktorisch im Splanchnikusgebiet. Das senkt den Portaldruck (Blutung) und erhöht den arteriellen Druck bzw. die renale Perfusion (HRS). Albumin ergänzt durch Volumeneffekt. Nebenwirkungen: ischämische Ereignisse, Atemnot; Kontraindiziert bei Hypoxie.
+
+## Warum Carvedilol als Betablocker?
+Nicht-selektive Betablocker senken den Portaldruck über Senkung des Herzzeitvolumens (β1) und splanchnische Vasokonstriktion (β2-Blockade). Carvedilol blockiert zusätzlich α1 und senkt so den intrahepatischen Widerstand und ist wirksamer. Bei refraktärem Aszites, systolischem RR unter 90 mmHg oder Nierenversagen wird er reduziert oder pausiert („window hypothesis“).
+
+## Warum Lactulose bei Enzephalopathie?
+Lactulose wird im Kolon zu Säuren abgebaut. Das senkt den pH, wandelt Ammoniak (NH3) in schlecht resorbierbares NH4+ um, beschleunigt die Passage und reduziert ammoniakbildende Bakterien. Rifaximin (nicht resorbierbares Antibiotikum) reduziert die Darmflora zusätzlich und senkt Rezidive.
+
+## Warum keine Eiweißrestriktion?
+Zirrhotische Patienten sind katabol und sarkopen; Proteinmangel verschlechtert die Prognose und die Ammoniakentgiftung durch Muskulatur. Empfohlen werden ausreichend Kalorien und Protein, auch spät abends (Spätmahlzeit).
+
+## Warum ist der INR bei Zirrhose kein Blutungsmaß?
+Pro- und antikoagulatorische Faktoren sind gleichzeitig vermindert (Protein C und S, Antithrombin ↓; Faktor VIII und von-Willebrand-Faktor ↑). Die Gerinnung ist „rebalanciert“. Zirrhotische Patienten können deshalb Thrombosen (z. B. Pfortader) und Blutungen haben. INR allein rechtfertigt kein Plasma vor kleinen Eingriffen.
+
+## Warum Hyponatriämie?
+Hypervolämische Hyponatriämie durch ADH-Aktivierung (Wasserretention). Therapie: Wasserrestriktion bei sehr niedrigem Natrium, Albumin; Natrium nicht zu rasch anheben (osmotische Demyelinisierung).
+
+## Warum NSAR und Aminoglykoside meiden?
+Die Niere ist bei Zirrhose von der prostaglandinvermittelten Perfusion abhängig. NSAR hemmen sie und können akutes Nierenversagen und Aszites-Refraktärität auslösen; sie erhöhen auch die Blutungsgefahr.
+
+## Warum erhöht ein TIPS das Enzephalopathierisiko?
+Das Pfortaderblut mit Ammoniak umgeht die Leber. Deshalb vorher Enzephalopathie, Leberfunktion und Herz (Rechtsherz) prüfen. Ein kleinerer Stentdurchmesser (kontrollierte Shuntweite) kann das Risiko senken.
+
 ## Quellen
 
 - EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018, teilweise abgerufen)

@@ -86,6 +86,35 @@ Anämie und Eisenmangel, Hypothyreose (Hashimoto), eine cholestatische Lebererkr
 
 **Im Protokoll:** Willuweit 2026-06-b: Müdigkeit/Erschöpfung DD, Pruritus DD
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum ist der Urin bei posthepatischem Ikterus dunkel, der Stuhl hell?
+Konjugiertes Bilirubin ist wasserlöslich und wird bei Rückstau ins Blut und über die Niere ausgeschieden: Urin dunkel (Bilirubinurie). Es erreicht den Darm nicht mehr, dort entsteht kein Stercobilin, der Stuhl wird acholisch. Bei Hämolyse ist das Bilirubin unkonjugiert, an Albumin gebunden und nicht nierengängig: Urin bleibt hell.
+
+## Warum Quick niedrig? Cholestase oder Synthesestörung?
+Bei Cholestase fehlen Gallensäuren im Darm, damit wird Vitamin K (fettlöslich) nicht resorbiert und die Faktoren II, VII, IX, X sinken. **Test:** Gabe von Vitamin K i.v. Bessert sich der Quick, war es Vitamin-K-Mangel durch Cholestase. Bessert er sich nicht, liegt eine echte Synthesestörung der Leber vor (Koller-Test).
+
+## Warum AST größer als ALT bei Alkohol?
+Alkohol schädigt Mitochondrien, in denen mitochondriale AST vorkommt, und Pyridoxalphosphatmangel (Vitamin B6) senkt die ALT-Aktivität. Ein De-Ritis-Quotient über 2 spricht klassisch für alkoholische Hepatitis.
+
+## Warum erhöhte AP: Leber oder Knochen?
+γGT, 5'-Nukleotidase oder die Isoenzymtrennung der AP unterscheiden. γGT ist leberspezifisch; eine isolierte AP-Erhöhung mit normaler γGT spricht für Knochen (Wachstum, Frakturen, Metastasen, Morbus Paget), in der Schwangerschaft für plazentare AP.
+
+## Warum Morbus Meulengracht bei Fasten und Infekt auffällt
+Bei Gilbert-Syndrom ist die UGT1A1-Aktivität auf etwa ein Drittel reduziert. Fasten und Infekt steigern die Bilirubinbildung bzw. senken die Konjugation, das indirekte Bilirubin steigt. Diagnose: isoliert erhöhtes unkonjugiertes Bilirubin ohne Hämolyse und ohne Leberschaden; harmlos.
+
+## Warum Cholestyramin, Rifampicin, Naltrexon, Sertralin gegen Juckreiz?
+- Cholestyramin bindet Gallensäuren im Darm (Einnahme mit 4 Stunden Abstand zu anderen Medikamenten).
+- Rifampicin induziert über PXR den Gallensäure- und Pruritogenabbau; Kontrolle der Leberwerte, da selbst hepatotoxisch.
+- Naltrexon blockiert Opioidrezeptoren, weil bei Cholestase der endogene Opioidtonus erhöht ist (Entzugssymptome zu Beginn möglich).
+- Sertralin: serotonerger Mechanismus.
+
+## Warum MRCP statt ERCP als erste Wahl der Gangdarstellung?
+Die MRCP ist nicht invasiv. Die ERCP ist therapeutisch, birgt aber das Risiko der Post-ERCP-Pankreatitis (etwa 3 bis 5 %). Zur Prophylaxe: rektal Indometacin oder Diclofenac, Hydrierung, ggf. Pankreasgangstent bei Risikopatienten.
+
+## Warum immer zuerst die Sonographie?
+Sie erkennt die extrahepatische Gangerweiterung (Stein oder Tumor) schnell, ohne Strahlen und ohne Risiko, und lenkt den Weg: erweitert → Obstruktion, nicht erweitert → hepatische Ursache.
+
 ## Quellen
 
 - Standardwissen (Innere-Lehrbücher); Tokyo Guidelines 2018 für den Cholangitis-Anteil (Kriterien abgerufen)

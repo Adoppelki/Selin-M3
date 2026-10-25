@@ -92,6 +92,35 @@ Ein defektes RNA-Virus, das HBsAg zur Replikation braucht, also nur bei HBV-Infe
 
 HAV wird fäkal-oral übertragen, ist selbstlimitiert, wird nie chronisch und ist impfbar. HCV wird parenteral übertragen, wird in etwa 70 bis 80 Prozent chronisch und wird mit direkt antiviralen Substanzen über 8 bis 12 Wochen mit einer Heilungsrate über 95 Prozent behandelt. HEV wird fäkal-oral bzw. zoonotisch übertragen (Genotyp 3, Schwein), ist meist selbstlimitiert, kann aber bei Immunsuppression chronisch werden und verläuft bei Schwangeren schwer (Genotyp 1).
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum bleibt Anti-HBc lebenslang positiv und ist nach Impfung negativ?
+Der Impfstoff enthält nur rekombinantes HBsAg, es entsteht nur Anti-HBs. Bei natürlicher Infektion sieht das Immunsystem auch das Kernantigen HBc, Anti-HBc bleibt dauerhaft. Damit unterscheidet es geimpft (nur Anti-HBs) von ausgeheilt (Anti-HBs und Anti-HBc).
+
+## Warum kann Hepatitis B nach Ausheilung reaktivieren?
+In den Hepatozyten bleibt die kovalent geschlossene zirkuläre DNA (cccDNA) als Matrize erhalten. Unter Immunsuppression (Rituximab, hochdosierte Steroide, Chemotherapie, TNF-Hemmer) verliert das Immunsystem die Kontrolle, und die Replikation setzt wieder ein; Verläufe bis zum akuten Leberversagen. Deshalb Screening (HBsAg, Anti-HBc) und Prophylaxe mit Entecavir oder Tenofovir bei Risiko.
+
+## Warum Entecavir oder Tenofovir und nicht Lamivudin?
+Beide haben eine hohe Resistenzbarriere. Lamivudin selektiert rasch Resistenzmutationen. TAF ist gegenüber TDF schonender für Niere und Knochen. Das Ziel ist die dauerhafte Suppression der Replikation, nicht die Heilung (cccDNA bleibt).
+
+## Warum chronifiziert die Infektion bei Neugeborenen so oft?
+Das Immunsystem ist unreif und entwickelt eine Immuntoleranz gegenüber dem Virus, deshalb bis ca. 90 % Chronifizierung. Bei Erwachsenen mit voll ausgebildeter T-Zell-Antwort nur etwa 5 bis 10 %. Darum die Simultanimpfung (aktiv und passiv) innerhalb von 12 Stunden nach der Geburt bei HBsAg-positiver Mutter.
+
+## Warum können HBeAg-negative Patienten trotzdem hohe HBV-DNA haben?
+Bei Precore-/Core-Promotor-Mutanten wird kein HBeAg gebildet, das Virus repliziert aber weiter (HBeAg-negative chronische Hepatitis). Deshalb zählt für die Therapieentscheidung die HBV-DNA zusammen mit ALT und Fibrose, nicht das HBeAg allein.
+
+## Warum braucht HDV das HBsAg?
+HDV ist ein defektes Virus. Es besitzt kein eigenes Hüllprotein und nutzt die Hülle des HBV. Daher nur bei HBV-Infektion. Bulevirtid blockiert den Eintritt in die Hepatozyten über den NTCP-Rezeptor.
+
+## Warum heilt man HCV, aber nicht HBV?
+HCV ist ein RNA-Virus ohne Integration in das Genom und ohne cccDNA. Direkt antivirale Substanzen (Protease-, NS5A- und NS5B-Hemmer, z. B. Sofosbuvir/Velpatasvir) unterbinden die Replikation; nach 8 bis 12 Wochen bleibt das Virus negativ (SVR). HBV bildet cccDNA und integriert teils in das Genom, dadurch wird es nur supprimiert.
+
+## Warum HAV-Impfung und Schwere bei Erwachsenen?
+HAV wird fäkal-oral übertragen; Kinder verlaufen oft symptomlos, Erwachsene häufiger mit Ikterus. Eine Impfung schützt Reisende und Risikogruppen; chronisch wird HAV nie.
+
+## Warum HEV bei Immunsuppression chronisch?
+Ohne ausreichende T-Zell-Antwort wird das Virus nicht eliminiert. Therapie: Reduktion der Immunsuppression, ggf. Ribavirin. Schwangere mit Genotyp 1 haben ein erhöhtes Risiko für fulminante Verläufe.
+
 ## Quellen
 
 - EASL Clinical Practice Guidelines on the management of hepatitis B virus infection (Serologie-Tabellen gesucht, Details nicht geprüft)

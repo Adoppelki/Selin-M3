@@ -89,6 +89,38 @@ Bei der PSC besteht ein erhöhtes Risiko für das Cholangiokarzinom (Lebenszeitr
 
 Es ist eine Erkrankung meist von Frauen mit erhöhten Transaminasen und erhöhtem IgG. Ich bestimme ANA und SMA (Typ 1), LKM-1 (Typ 2) und SLA und sichere die Diagnose durch eine Leberbiopsie mit Interface-Hepatitis und Plasmazellen. Vorher schließe ich Viren, Wilson und Medikamente aus. Therapie sind Prednisolon und zur Erhaltung Azathioprin; beim Absetzen sind Rückfälle häufig.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum wirkt UDCA bei PBC?
+UDCA ist eine hydrophile Gallensäure. Sie verdrängt toxische hydrophobe Gallensäuren aus dem Pool, fördert die bikarbonatreiche Choleresis (Schutz der Gallengangsepithelien), stabilisiert Zellmembranen und hemmt die Apoptose. Das verbessert Enzyme und das transplantatfreie Überleben. Es heilt die Autoimmunität nicht und lindert den Juckreiz meist nicht.
+
+## Warum ist hochdosiertes UDCA bei PSC schädlich?
+In einer Studie mit 28 bis 30 mg/kg erhöhte UDCA das Risiko für Ereignisse (Transplantation, Tod, Varizen). Deshalb wird UDCA bei PSC höchstens in niedriger Dosis erwogen; die Leitlinie empfiehlt keine Dosis mit nachgewiesenem Prognosenutzen.
+
+## Warum AMA und warum IgM?
+AMA richten sich gegen die mitochondriale Pyruvat-Dehydrogenase (PDC-E2, Subtyp M2). Sie sind hochspezifisch für PBC. Das IgM ist bei PBC polyklonal erhöht, bei AIH steigt das IgG.
+
+## Warum prüft man nach 12 Monaten das Ansprechen?
+Nach einem Jahr Therapie sagt die Verbesserung der Enzyme das Langzeitüberleben voraus. Paris-II-Kriterien: AP ≤ 1,5-fach der Norm, AST ≤ 1,5-fach, Bilirubin normal. Nichtansprecher sind Kandidaten für eine Zweitlinientherapie.
+
+## Warum Fibrate und PPAR-Agonisten?
+Fibrate (Bezafibrat) senken Gallensäuresynthese und fördern den Abfluss über PPAR-Rezeptoren; in der BEZURSO-Studie verbesserten sie zusätzlich zu UDCA die Cholestasewerte. Obeticholsäure (FXR-Agonist) ist wegen Sicherheitsbedenken in der EU nicht mehr verfügbar.
+
+## Warum Steroide bei AIH, aber nicht bei PBC?
+Die AIH ist ein T-Zell-vermittelter Angriff auf Hepatozyten und reagiert auf Immunsuppression (Prednisolon, dann Azathioprin zur Steroidersparnis). Die PBC richtet sich gegen Gallengangsepithelien und spricht darauf nicht an; Steroide verschlechtern sogar die Knochendichte, die bei Cholestase ohnehin gefährdet ist.
+
+## Warum Interface-Hepatitis?
+Die Entzündung greift an der Grenzfläche zwischen Portalfeld und Parenchym an (Mottenfraßnekrosen) mit Plasmazellen. Sie ist typisch, aber nicht beweisend für AIH.
+
+## Warum die PSC mit Colitis ulcerosa assoziiert ist
+Eine verbreitete Hypothese: T-Zellen, die im entzündeten Darm aktiviert werden, wandern über den enterohepatischen Kreislauf in die Gallenwege (gemeinsame Homing-Moleküle wie MAdCAM-1). Wichtig praktisch: Koloskopie bei jeder neuen PSC und jährlich bei CED, weil das Kolonkarzinomrisiko erhöht ist.
+
+## Warum Cholangiokarzinom bei PSC?
+Chronische Entzündung und Stenosen führen über Dysplasie zum Karzinom; es tritt schon in den ersten Jahren auf. Auslöser einer plötzlichen klinischen Verschlechterung abklären: Cholangitis, dominante Stenose, Karzinom (MRT/MRCP, Bürstenzytologie, CA 19-9).
+
+## Warum Osteoporose bei Cholestase?
+Vitamin-D-Mangel (gestörte Fettresorption), verminderte Osteoblastenfunktion und Hypogonadismus. Kontrolle der Knochendichte und Substitution gehören zur Betreuung.
+
 ## Quellen
 
 - EASL Clinical Practice Guidelines (Cholestatic liver diseases/PBC/PSC): Titel bekannt, Zweitlinientherapien bitte prüfen

@@ -84,6 +84,35 @@ Eine intensiv juckende Hauterkrankung mit gruppierten Bläschen und Papeln, vor 
 
 Die refraktäre Zöliakie, das Enteropathie-assoziierte T-Zell-Lymphom (EATL), Dünndarmadenokarzinome, die ulzerative Jejunoileitis, ein Hyposplenismus sowie Mangelzustände und Osteoporose. Zur Kontrolle nutze ich Serologie als Compliancemarker, Knochendichtemessung und Vitaminspiegel.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum ist tTG-IgA bei IgA-Mangel falsch negativ?
+Die Serologie misst IgA-Antikörper. Bei selektivem IgA-Mangel (bei Zöliakie gehäuft) können sie nicht gebildet werden. Deshalb immer Gesamt-IgA mitbestimmen; bei Mangel tTG-IgG oder DGP-IgG.
+
+## Warum nicht vor der Diagnostik glutenfrei essen?
+Unter glutenfreier Ernährung verschwinden die Antikörper, und die Mukosa erholt sich. Serologie und Histologie werden falsch negativ. Muss der Patient bereits glutenfrei leben, ist eine Glutenbelastung (mehrere Wochen) vor der Testung oder der HLA-Test nötig.
+
+## Warum Biopsien auch aus dem Bulbus?
+Bei einem Teil der Patienten (besonders Kindern) ist die Läsion fleckig oder nur im Bulbus duodeni nachweisbar. Mehrere Biopsien aus dem Duodenum und dem Bulbus erhöhen die Ausbeute.
+
+## Warum Eisenmangel, Folat- und Calciummangel?
+Eisen, Folat und Calcium werden vorwiegend im Duodenum und proximalen Jejunum resorbiert, genau dort, wo die Zottenatrophie am stärksten ist. Die Eisenmangelanämie ist deshalb oft das einzige Zeichen. Der Calcium- und Vitamin-D-Mangel führt zu Osteoporose und Osteomalazie.
+
+## Warum HLA-Typisierung nur zum Ausschluss?
+30 bis 40 % der Bevölkerung tragen HLA-DQ2 oder DQ8, aber nur ein kleiner Teil erkrankt. Ein negativer Test schließt die Zöliakie praktisch aus (hoher negativer Vorhersagewert). Hilfreich bei unklarer Diagnose unter bereits glutenfreier Diät.
+
+## Warum Dapson bei Duhring wirkt?
+Dapson hemmt die Funktion neutrophiler Granulozyten (u. a. Myeloperoxidase), die in den Papillenspitzen akkumulieren, und lindert den Juckreiz innerhalb von Tagen. Die Hautveränderungen bessern sich dauerhaft nur unter glutenfreier Diät. Nebenwirkungen: dosisabhängige Hämolyse (G6PD-Mangel prüfen) und Methämoglobinämie.
+
+## Warum Hafer problematisch ist
+Hafer selbst enthält Avenin, das nur bei wenigen Patienten Symptome auslöst. Das Hauptproblem ist die Kontamination mit Weizen, Roggen oder Gerste bei Anbau und Verarbeitung. Erlaubt ist daher nur zertifiziert glutenfreier Hafer.
+
+## Warum Hyposplenismus bei Zöliakie?
+Bei einem Teil der Patienten ist die Milzfunktion eingeschränkt (Howell-Jolly-Körperchen). Daraus folgt eine erhöhte Anfälligkeit für Infektionen mit bekapselten Bakterien. Deshalb Impfung gegen Pneumokokken, Meningokokken und Haemophilus.
+
+## Warum die refraktäre Zöliakie gefährlich ist
+Typ II (aberrante intraepitheliale T-Zellen) kann in ein EATL übergehen. Alarmzeichen: Gewichtsverlust, Fieber, Schmerzen, Anämie trotz strikter Diät. Abklärung mit Histologie, Immunphänotypisierung, Bildgebung.
+
 ## Quellen
 
 - S2k-Leitlinie Zöliakie (DGVS 2021): Titel bekannt, Volltext nicht abrufbar

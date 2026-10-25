@@ -99,6 +99,41 @@ Das Mallory-Weiss-Syndrom (Schleimhautriss nach Erbrechen), erosive Gastritis od
 
 Ich gebe bei Risikofaktoren wie Alter über 65, früherem Ulkus, Antikoagulation, Kortikosteroiden oder dualer Plättchenhemmung einen PPI, teste und behandle H. pylori und vermeide NSAR, wenn möglich.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum restriktive Transfusion?
+In der Studie von Villanueva (NEJM 2013) hatten Patienten mit oberer GI-Blutung bei restriktiver Strategie (Transfusion ab Hb 7 g/dl, Ziel 7 bis 9) ein besseres Überleben als bei liberaler Strategie (ab 9 g/dl). Bei Varizenblutung steigert zu viel Volumen den Portaldruck und die Rezidivblutungsrate. Ausnahme: kardiovaskuläre Erkrankung, hier höhere Schwelle.
+
+## Warum ist der Harnstoff bei oberer Blutung erhöht?
+Das Blut wird im Dünndarm verdaut, das Eiweiß zu Harnstoff abgebaut und resorbiert. Hinzu kommt die prärenale Komponente bei Volumenmangel. Ein hoher Harnstoff bei normalem Kreatinin spricht für obere Quelle.
+
+## Warum Adrenalin nie allein?
+Adrenalin stoppt die Blutung durch Vasokonstriktion und Kompression, doch der Effekt hält kurz, und die Rezidivrate ist hoch. Kombiniert mit Clip oder thermischer Therapie ist die Blutstillung deutlich sicherer.
+
+## Warum hochdosierte PPI nach Blutstillung?
+Bei pH über 6 sind Thrombozytenaggregation und Gerinnsel stabil, und Pepsin ist inaktiv. Ein Gerinnsel löst sich im sauren Milieu auf. Hochdosierte PPI über etwa 72 Stunden decken die Phase des höchsten Rezidivrisikos ab.
+
+## Warum Tranexamsäure nicht?
+Die HALT-IT-Studie mit über 12.000 Patienten zeigte keine Senkung der Mortalität, aber mehr venöse Thromboembolien. Daher wird sie bei GI-Blutung nicht empfohlen.
+
+## Warum Erythromycin vor der Endoskopie?
+Als Prokinetikum entleert es Blut und Speisereste aus dem Magen und verbessert die Sicht (ESGE-Empfehlung, wenn keine Kontraindikation wie QT-Verlängerung).
+
+## Warum Terlipressin und Antibiotika bei Varizenblutung?
+Terlipressin senkt über splanchnische Vasokonstriktion den Portaldruck. Antibiotika (z. B. Ceftriaxon) reduzieren bakterielle Infektionen, Rezidivblutungen und Mortalität; Infektionen wiederum begünstigen Rezidivblutungen.
+
+## Warum Gummibandligatur statt Sklerosierung?
+Die Ligatur hat bei Ösophagusvarizen weniger Komplikationen (Ulzera, Strikturen, Perforationen) und ähnliche oder bessere Wirksamkeit. Fundusvarizen werden wegen der großen Gefäße mit Cyanoacrylat (Histoacryl) obliteriert.
+
+## Warum ist die Ballontamponade nur eine Überbrückung?
+Die Sonde komprimiert die Varizen, verursacht aber bei Verweildauer über etwa 24 Stunden Drucknekrosen und Aspirationsrisiko; sie wird intubiert und nur kurz bis zum definitiven Eingriff (Endoskopie, TIPS) eingesetzt. Selbstexpandierende Metallstents sind besser verträglich.
+
+## Warum Glasgow-Blatchford-Score?
+Er nutzt Harnstoff, Hb, systolischen Blutdruck, Puls, Meläna, Synkope, Leber- und Herzerkrankung und identifiziert Patienten mit sehr niedrigem Risiko (Score 0 bis 1), die ambulant versorgt werden können, und Hochrisikopatienten für eine frühe Endoskopie.
+
+## Warum Antikoagulation beachten?
+Marcumar wird mit PPSB und Vitamin K antagonisiert; bei DOAC Pause und, wenn lebensbedrohlich, Antidot (Idarucizumab bei Dabigatran, Andexanet bei Faktor-Xa-Hemmern, sonst PPSB). Die ASS-Sekundärprophylaxe wird möglichst rasch wieder gegeben, weil die kardiovaskulären Risiken überwiegen.
+
 ## Quellen
 
 - ESGE Guideline: Endoscopic management of acute non-variceal upper GI haemorrhage (2021, vollständig gelesen)

@@ -76,6 +76,35 @@ Ich plane eine palliative Chemotherapie, je nach Allgemeinzustand FOLFIRINOX ode
 
 **Im Protokoll:** Willuweit 2026-06-a: inoperables Pankreaskarzinom
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum mFOLFIRINOX adjuvant, aber nur bei fitten Patienten?
+In der PRODIGE-24-Studie verlängerte mFOLFIRINOX gegenüber Gemcitabin das krankheitsfreie und das Gesamtüberleben deutlich, allerdings mit mehr Toxizität (Neutropenie, Durchfall, Neuropathie). Deshalb nur bei gutem Allgemeinzustand (ECOG 0 bis 1) und guter Erholung nach der OP; sonst Gemcitabin-basiert.
+
+## Warum Neoadjuvanz bei Borderline-Resektabilität?
+Ziele sind das Zurückdrängen des Tumors von den Gefäßen (höhere Chance auf R0), eine frühe Behandlung der Mikrometastasen und die Selektion: Patienten, die unter Therapie früh Metastasen entwickeln, profitieren von einer großen OP nicht und werden so vor ihr bewahrt.
+
+## Warum CA 19-9 nicht zum Screening?
+Geringe Spezifität (erhöht bei Cholestase, Cholangitis, Pankreatitis, anderen Tumoren), 5 bis 10 % der Menschen sind Lewis-negativ und bilden es nicht. Als Verlaufsparameter nach Resektion und unter Therapie ist es nützlich.
+
+## Warum nicht jeden Ikterus präoperativ stenten?
+Die DROP-Studie (NEJM 2010) fand, dass routinemäßige präoperative Gallendrainage mehr Komplikationen verursachte als die sofortige Operation. Gestentet wird bei Cholangitis, deutlicher Verzögerung der OP (Neoadjuvanz) oder schwerem Juckreiz. Palliativ sind Metallstents bei längerer Prognose besser als Plastikstents (weniger Verschlüsse).
+
+## Warum neu aufgetretener Diabetes als Warnzeichen?
+Ein Teil des Pankreaskarzinoms verursacht paraneoplastisch eine Insulinresistenz und Glukoseintoleranz; ein neu aufgetretener Diabetes bei älteren Patienten mit Gewichtsverlust sollte an ein Karzinom denken lassen.
+
+## Warum Thrombosen (Trousseau)?
+Muzinproduzierende Adenokarzinome aktivieren die Gerinnung (Tissue Factor, prokoagulatorische Mucine). Das erklärt auch die Thrombophlebitis migrans.
+
+## Warum Rückenschmerz und Plexus-coeliacus-Neurolyse?
+Der Tumor infiltriert perineural den Plexus coeliacus. Die Neurolyse (Alkohol) unterbricht die Schmerzleitung und kann Opioide einsparen.
+
+## Warum die Gefäßbeziehung entscheidend ist
+Am Pankreaskopf liegen V. mesenterica superior, Pfortader und A. mesenterica superior. Eine Ummauerung der Arterie macht den Tumor in der Regel nicht resektabel, ein begrenzter venöser Kontakt kann mit Gefäßresektion beherrschbar sein.
+
+## Warum Whipple mit Pyloruserhalt?
+PPPD und klassische Whipple-OP sind onkologisch gleichwertig. Der Pyloruserhalt kann die Magenfunktion erhalten, hat aber häufiger eine verzögerte Magenentleerung. Wahl nach Tumorlage und Chirurg.
+
 ## Quellen
 
 - S3-Leitlinie exokrines Pankreaskarzinom (DGVS, AWMF 032-010OL): Titel bekannt, Volltext nicht abrufbar

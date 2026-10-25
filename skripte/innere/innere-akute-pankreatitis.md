@@ -131,6 +131,44 @@ Ich denke an mehrere Möglichkeiten. Erstens Pankreatitis-assoziierte Lungenbete
 
 Eine Superinfektion der nekrotischen Anteile, meist ab der zweiten bis vierten Woche. Sie zeigt sich durch Fieber, Verschlechterung und im CT durch Gaseinschlüsse. Ich behandle nach dem Step-up-Prinzip: Antibiotika, dann endoskopische oder perkutane Drainage, und nur wenn nötig eine minimal-invasive Nekrosektomie. Wenn möglich warte ich etwa vier Wochen, bis die Nekrose abgekapselt ist.
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum balancierte Kristalloide (Ringer-Laktat) und nicht NaCl?
+Große Mengen NaCl 0,9 % führen zur hyperchlorämischen metabolischen Azidose. Ringer-Laktat vermeidet das und war in einer kleinen randomisierten Studie mit weniger SIRS verbunden. Wichtig ist die **Dosierung**: Die WATERFALL-Studie (2022) zeigte, dass aggressive Volumengabe gegenüber moderater keinen Vorteil brachte, aber mehr Volumenüberlastung. Deshalb heute zielgerichtet und mit Reevaluation, nicht „so viel wie möglich“.
+
+## Warum frühe enterale Ernährung?
+Die Darmbarriere bleibt erhalten, die bakterielle Translokation aus dem Darm (die Quelle infizierter Nekrosen) wird vermindert. Enterale Ernährung ist der parenteralen überlegen (weniger Infektionen und Organversagen). Parenteral nur, wenn enteral nicht möglich ist.
+
+## Warum keine Antibiotikaprophylaxe?
+Studien zeigten keinen Vorteil bei Infektionsrate oder Mortalität, dafür Resistenzselektion und Pilzinfektionen. Ein erhöhtes CRP oder Fieber ist in den ersten Tagen meist sterile Entzündung (SIRS), nicht Infektion.
+
+## Warum ERCP nicht routinemäßig bei schwerer biliärer Pankreatitis?
+Die APEC-Studie (Lancet 2020) fand bei vorhergesagter schwerer biliärer Pankreatitis **ohne Cholangitis** keinen Nutzen einer dringlichen ERCP mit Papillotomie. Bei Cholangitis ist die Drainage dagegen lebensrettend, weil das Problem der infizierte, gestaute Gang ist und nicht das Pankreas.
+
+## Warum CT erst nach etwa 72 Stunden?
+Nekrosen demarkieren sich erst nach 48 bis 72 Stunden; ein früh angefertigtes CT unterschätzt sie. Außerdem belastet Kontrastmittel bei hypovolämischem Patienten die Niere. Ausnahme: unklare Diagnose oder Komplikationsverdacht.
+
+## Warum Step-up statt primärer Nekrosektomie?
+Die PANTER-Studie zeigte, dass die Step-up-Strategie (Drainage, dann bei Bedarf minimal-invasive Nekrosektomie) gegenüber der primären offenen Nekrosektomie weniger schwere Komplikationen verursacht; ein relevanter Teil der Patienten kommt mit Drainage allein aus. Operieren in der frühen Phase (instabile, nicht abgegrenzte Nekrose) erhöht die Mortalität.
+
+## Warum Cholezystektomie im selben Aufenthalt?
+Die PONCHO-Studie zeigte, dass die frühe Cholezystektomie gegenüber der Operation im Intervall erneute gallensteinbedingte Ereignisse (Rezidiv-Pankreatitis, Koliken) verringert. Bei Nekrosen wartet man, weil Operation im entzündeten Feld riskant ist.
+
+## Warum ist die Lipase besser als die Amylase?
+Die Lipase ist pankreasspezifischer, steigt höher an und bleibt länger erhöht (Tage bis etwa 2 Wochen). Amylase stammt auch aus Speicheldrüsen und kann durch Makroamylasämie erhöht sein.
+
+## Warum Hypokalzämie?
+Fettnekrosen: freigesetzte Fettsäuren binden Calcium zu Kalkseifen. Eine Hypokalzämie gilt als Zeichen schwerer Verläufe.
+
+## Warum Hämatokrit und Harnstoff als Verlaufszeichen?
+Sie spiegeln den Flüssigkeitsverlust in den dritten Raum und die Hämokonzentration wider. Ein hoher oder ansteigender Hämatokrit zu Beginn deutet auf Nekroserisiko, ein hoher Harnstoff auf schlechtere Prognose.
+
+## Warum Pleuraerguss (links) und ARDS?
+Transdiaphragmale Ausbreitung der Entzündung bzw. Freisetzung von Phospholipase A2, die Surfaktant schädigt, und eine systemische Entzündung mit Kapillarleck.
+
+## Besonderheit Hypertriglyzeridämie
+Bei Triglyzeriden über 1000 mg/dl steht die rasche Senkung im Vordergrund (Insulininfusion, ggf. Plasmapherese), dazu Fettrestriktion. Spätere Prophylaxe mit Fibraten und Ernährung.
+
 ## Quellen
 
 - S3-Leitlinie Pankreatitis (DGVS, AWMF 021-003, 2021): Titel bekannt, Volltext nicht abrufbar

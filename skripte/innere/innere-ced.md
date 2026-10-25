@@ -103,6 +103,44 @@ Ich denke an eine CED, besonders einen Morbus Crohn, aber auch an Zöliakie, Inf
 
 **Im Protokoll:** Willuweit 2026-06-c: Fallbeispiel chronische Diarrhö, Aphthen, Beineffloreszenzen, Anämie
 
+## Spezialwissen (Facharzt-Niveau)
+
+## Warum 5-ASA bei Colitis ulcerosa, aber kaum bei Crohn?
+5-ASA wirkt topisch an der Schleimhaut (hemmt u. a. NF-κB, Prostaglandine). Bei der CU ist die Entzündung mukosal begrenzt, bei Crohn transmural; dort ist der Nutzen gering und die Evidenz schwach. Deshalb ist Mesalazin Standard der CU, nicht des Crohn.
+
+## Warum Budesonid?
+Budesonid hat einen hohen First-Pass-Effekt in der Leber, deshalb sind die systemischen Steroidnebenwirkungen gering. Bei ileozökalem Crohn und bei CU (MMX-Formulierung) wirkt es lokal. Steroide sind nur zur Remissionsinduktion geeignet, nicht zur Erhaltung (Nebenwirkungen, keine Wirkung auf die Schleimhautheilung langfristig).
+
+## Warum Azathioprin langsam wirkt und TPMT wichtig ist
+Azathioprin wird zu 6-Mercaptopurin und dann zu aktiven 6-Thioguaninnukleotiden umgesetzt. Die Wirkung setzt nach Wochen bis Monaten ein. TPMT baut 6-MP ab; ein Mangel führt zu Knochenmarktoxizität (Leukopenie). Deshalb vor Therapie TPMT bzw. NUDT15 bestimmen und Blutbild kontrollieren.
+
+## Warum Infliximab mit Immunmodulator kombinieren?
+Die SONIC-Studie zeigte bei Crohn bessere Remissionsraten der Kombination Infliximab plus Azathioprin gegenüber der Monotherapie. Der Immunmodulator senkt die Bildung von Antikörpern gegen Infliximab, damit höhere Talspiegel und weniger Wirkverlust.
+
+## Warum Vedolizumab darmselektiv ist
+Es blockiert das Integrin α4β7, das Lymphozyten in den Darm leitet (Bindung an MAdCAM-1). Weniger systemische Immunsuppression, aber langsamerer Wirkeintritt. Ustekinumab hemmt die gemeinsame p40-Untereinheit von IL-12/23, Anti-TNF den proinflammatorischen Botenstoff TNF.
+
+## Warum Vorsicht bei JAK-Inhibitoren?
+In der ORAL-Surveillance-Studie (Tofacitinib bei rheumatoider Arthritis) traten bei Patienten mit kardiovaskulären Risikofaktoren mehr schwere kardiovaskuläre Ereignisse, Tumoren und venöse Thromboembolien auf. Die europäische Arzneimittelbehörde schränkte JAK-Inhibitoren daraufhin bei Älteren, Rauchern und Risikopatienten ein.
+
+## Warum vor Anti-TNF Tuberkulose ausschließen?
+TNF ist für die Granulombildung und die Eindämmung von Mycobacterium tuberculosis wichtig. Anti-TNF kann eine latente Tuberkulose reaktivieren. Deshalb IGRA und Röntgen vor Beginn, bei Positivität Therapie der latenten TBC.
+
+## Warum Calprotectin?
+Es ist ein Protein aus neutrophilen Granulozyten und gelangt bei Schleimhautentzündung in den Stuhl. Es unterscheidet gut CED (erhöht) von Reizdarm (normal), und es korreliert mit der Aktivität; eine Koloskopie ersetzt es nicht.
+
+## Warum MR-Enterographie statt CT?
+CED-Patienten sind jung und brauchen wiederholte Untersuchungen; die MRT hat keine Strahlenbelastung und zeigt Wandödem, Stenosen, Fisteln und Abszesse gut.
+
+## Warum Nierensteine, Gallensteine und Mangel bei Crohn?
+Bei Ileumbefall oder -resektion fehlt die Rückresorption der Gallensäuren (Gallensäureverlustsyndrom: Durchfall, behandelbar mit Cholestyramin) und von Vitamin B12. Fettmalabsorption bindet Calcium im Darm, das Oxalat wird vermehrt aufgenommen und löst Oxalatsteine aus. Gallensäureverlust fördert Gallensteine.
+
+## Warum toxisches Megakolon gefährlich ist
+Dilatation des Kolons (über 6 cm) mit Systemzeichen bei schwerer Kolitis. Gefahr der Perforation. Koloskopie, Opioide und Anticholinergika vermeiden; Notfallkolektomie bei Therapieversagen.
+
+## Warum zahlt Rauchen unterschiedlich?
+Rauchen verschlechtert Crohn (mehr Rezidive und OPs), bei CU wirkt es eher protektiv, der Mechanismus ist unklar. Keine Empfehlung zum Rauchen; Rauchstopp ist bei Crohn Teil der Therapie.
+
 ## Quellen
 
 - S3-Leitlinie Colitis ulcerosa (DGVS 2023) und S3-Leitlinie Morbus Crohn (DGVS 2021): Titel bekannt, Volltext nicht abrufbar

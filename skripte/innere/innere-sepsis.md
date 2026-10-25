@@ -4,13 +4,11 @@ Priorität A · Infektiologie/Intensiv · Prüfungsbezug: Willuweit 2026-06-a: D
 
 **Prüfstatus:** Karten mit „Beleg: Leitlinie“ stammen aus der gelesenen SSC-2021-Zusammenfassung. Definitionen sind Standardwissen. Vasopressor-Wahl und MAP-Ziel standen in der gelesenen Quelle nicht und sind als Standardwissen markiert.
 
-## Kurzüberblick
-
 - Sepsis = lebensbedrohliche Organdysfunktion durch dysregulierte Wirtsantwort auf Infektion (Sepsis-3, SOFA-Anstieg ≥ 2)
 - **Antibiotika in Schock/hoher Wahrscheinlichkeit innerhalb 1 h**, Fokussuche und Sanierung
 - Kristalloide 30 ml/kg bei Hypotonie/Schock, Vasopressoren, Laktat
 
-## Fragen und Antworten
+## Typische Prüferfragen mit Antwort
 
 ### 1. Definieren Sie Sepsis und septischen Schock.
 

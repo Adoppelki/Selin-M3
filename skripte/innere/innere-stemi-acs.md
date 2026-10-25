@@ -4,13 +4,11 @@ Priorität A · Kardiologie · Prüfungsbezug: Willuweit 2024-05: Prüfling 4 be
 
 **Prüfstatus:** Nur die mit „Beleg: Leitlinie“ markierten Karten sind in einer abgerufenen Quelle gelesen. Rest ist Standardwissen und muss gegen die ESC-Leitlinie 2023 (Tabellen) geprüft werden.
 
-## Kurzüberblick
-
 - STEMI = ST-Hebung im EKG plus Klinik, Ziel ist **schnelle Reperfusion**
 - **Primäre PCI** wenn innerhalb 120 min nach Diagnose möglich, sonst Fibrinolyse
 - Medikamentös: ASS, P2Y12-Hemmer, Heparin; Sekundärprophylaxe lebenslang
 
-## Fragen und Antworten
+## Typische Prüferfragen mit Antwort
 
 ### 1. Wie stellen Sie die Diagnose STEMI?
 

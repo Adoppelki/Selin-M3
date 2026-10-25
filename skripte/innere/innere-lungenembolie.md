@@ -4,13 +4,11 @@ Priorität A · Pneumologie/Kardiologie · Prüfungsbezug: Willuweit 2026-06-a: 
 
 **Prüfstatus:** Karten mit „Beleg: Leitlinie“ stammen aus der abgerufenen ESC-Zusammenfassung. Wells-Score und Details der Risikoklassen sind Standardwissen.
 
-## Kurzüberblick
-
 - Klinische Wahrscheinlichkeit (Wells/Geneva) → D-Dimere nur bei niedriger/mittlerer Wahrscheinlichkeit → CT-Pulmonalisangiographie
 - Risikostratifizierung nach Hämodynamik, RV-Funktion, Troponin
 - Therapie: Antikoagulation (DOAC bevorzugt), bei instabilem Patienten Lyse
 
-## Fragen und Antworten
+## Typische Prüferfragen mit Antwort
 
 ### 1. Bei Patient mit SpO2-Abfall: Wie schließen Sie eine Lungenembolie aus?
 

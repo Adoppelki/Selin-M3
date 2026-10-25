@@ -4,51 +4,85 @@ Priorität A · Gastro/Hepatologie · Prüfungsbezug: Willuweit 2026-06-c: Zöli
 
 **Prüfstatus:** Standardwissen.
 
-## Kurzüberblick
+## Worum geht es?
+Die Zöliakie ist eine immunvermittelte Enteropathie auf Gluten (Klebereiweiß aus Weizen, Roggen, Gerste) bei genetisch Veranlagten. Der Dünndarm entzündet sich, die Zotten flachen ab, die Resorption leidet. Im Protokoll von Willuweit (2026-06-c) war sie die Auflösung eines Falls mit chronischer Diarrhö, Aphthen, Hautveränderungen an den Beinen und Blässe.
 
-- Immunvermittelte Enteropathie auf **Gluten** bei genetischer Veranlagung (**HLA-DQ2/DQ8**)
-- Autoantigen: **Gewebstransglutaminase (tTG)**
-- Diagnostik: **tTG-IgA + Gesamt-IgA** unter glutenhaltiger Kost, Duodenalbiopsie (Zottenatrophie, Kryptenhyperplasie, intraepitheliale Lymphozyten)
-- Therapie: **lebenslang glutenfrei**
+## Pathogenese
+Gliadin (Anteil des Glutens) wird in der Dünndarmschleimhaut durch die **Gewebstransglutaminase (tTG)** deamidiert. Das deamidierte Gliadin bindet an **HLA-DQ2 (über 90 %) oder HLA-DQ8** auf antigenpräsentierenden Zellen und aktiviert CD4-T-Zellen. Folge ist eine chronische Entzündung: vermehrte intraepitheliale Lymphozyten, **Kryptenhyperplasie, Zottenatrophie** (Marsh-Klassifikation). HLA-DQ2/DQ8 sind notwendig, aber nicht ausreichend: ein negativer HLA-Test schließt die Zöliakie praktisch aus, ein positiver beweist sie nicht.
 
-## Fragen und Antworten
+## Klinik
+- **Klassisch**: Durchfälle, Steatorrhö, Gewichtsverlust, Blähungen.
+- **Oligosymptomatisch/extraintestinal**: Eisenmangelanämie, Müdigkeit, Osteoporose, erhöhte Transaminasen, Aphthen, Zahnschmelzdefekte, Infertilität, Polyneuropathie, Kleinwuchs bei Kindern.
+- **Assoziierte Erkrankungen**: Typ-1-Diabetes, Hashimoto-Thyreoiditis, Autoimmunhepatitis, PBC, selektiver IgA-Mangel, Down- und Turner-Syndrom.
+- **Dermatitis herpetiformis Duhring**: intensiv juckende, gruppierte Bläschen und Papeln an den **Streckseiten** (Ellenbogen, Knie, Gesäß).
 
-### 1. Wie entsteht die Zöliakie? Welche HLA-Assoziation?
+## Diagnostik
+1. **Serologie unter glutenhaltiger Ernährung**: **tTG-IgA** plus **Gesamt-IgA**; ergänzend Endomysium-AK oder deamidierte Gliadinpeptid-AK.
+2. Bei **IgA-Mangel** (häufiger bei Zöliakie): tTG-IgG bzw. DGP-IgG.
+3. **Duodenalbiopsie** (mehrere Proben, auch Bulbus): intraepitheliale Lymphozyten, Kryptenhyperplasie, Zottenatrophie.
+4. Kinder: bei sehr hohem tTG-IgA (≥ 10-fach über der Norm) und positivem EMA kann in definierten Fällen auf die Biopsie verzichtet werden (ESPGHAN).
+5. **Vor der Diagnostik nicht glutenfrei essen**, sonst können die Befunde falsch negativ sein.
 
-Gliadin (Glutenanteil) wird durch **tTG deamidiert**, bindet an **HLA-DQ2 (> 90 %) oder HLA-DQ8** auf APC; CD4-T-Zellen lösen eine Entzündung der Dünndarmmukosa aus, mit Zottenatrophie und Kryptenhyperplasie. Der HLA-Typ ist notwendig, aber nicht hinreichend: negatives HLA-DQ2/DQ8 schließt Zöliakie praktisch aus (hoher negativer Vorhersagewert), ein positiver Befund beweist sie nicht.
+## Therapie
+**Lebenslang strikt glutenfrei.**
+- Erlaubt: Mais, Reis, Hirse, Buchweizen, Amaranth, Quinoa, Teff, Kartoffeln, Hülsenfrüchte; Hafer nur als zertifiziert glutenfreier Hafer.
+- Verboten: Weizen (auch Dinkel, Kamut, Grünkern), Roggen, Gerste (auch Malz).
+- Auf versteckte Glutenquellen achten (Fertigprodukte, Soßen, Medikamente, Kontamination).
+- Ernährungsberatung, Substitution von Eisen, Folat, B12, Vitamin D, Calcium.
+- Kontrollen: Serologie als Compliancemarker, Osteoporose-Diagnostik, Vitamine.
+
+## Dermatitis herpetiformis Duhring
+Hautbiopsie mit direkter Immunfluoreszenz: **IgA-Ablagerungen in den Papillenspitzen** der Dermis. Therapie: glutenfreie Diät und Dapson (schnelle Linderung des Juckreizes; Hämolyse und Methämoglobinämie beachten, G6PD prüfen).
+
+## Komplikationen
+Refraktäre Zöliakie (Beschwerden trotz strikter Diät über 12 Monate), **EATL** (Enteropathie-assoziiertes T-Zell-Lymphom), Dünndarmadenokarzinom, ulzerative Jejunoileitis, Hyposplenismus, Mangelzustände und Osteoporose.
+
+## Prüfungsfallen
+- tTG-IgA immer mit dem Gesamt-IgA interpretieren.
+- Glutenfrei **erst nach** der Diagnostik.
+- Hafer ist nur zertifiziert glutenfrei erlaubt.
+
+## Kernfakten zum Merken
+- Gluten + HLA-DQ2 (> 90 %) oder DQ8; Autoantigen tTG.
+- Diagnostik: tTG-IgA + Gesamt-IgA unter Glutenexposition; Duodenalbiopsie (Marsh).
+- Histologie: Zottenatrophie, Kryptenhyperplasie, intraepitheliale Lymphozyten.
+- Therapie: lebenslang glutenfrei; erlaubt Mais, Reis, Hirse, Buchweizen, Amaranth, Quinoa.
+- Duhring: Streckseiten, IgA in den Papillenspitzen, Dapson und glutenfrei.
+- Assoziation: Typ-1-Diabetes, Hashimoto, IgA-Mangel. Komplikation: EATL.
+
+## Typische Prüferfragen mit Antwort
+
+### 1. Wie entsteht die Zöliakie, und welche HLA-Assoziation gibt es?
+
+Das Gliadin des Glutens wird durch die Gewebstransglutaminase deamidiert, bindet an HLA-DQ2 (über 90 Prozent der Patienten) oder HLA-DQ8 und aktiviert CD4-T-Zellen. Das löst eine Entzündung der Dünndarmmukosa mit Zottenatrophie und Kryptenhyperplasie aus. Der HLA-Typ ist notwendig, aber nicht hinreichend: ein negativer Test schließt die Zöliakie praktisch aus, ein positiver beweist sie nicht.
+
+**Im Protokoll:** Willuweit 2026-06-c: Wie entsteht Zöliakie? HLA-Assoziation?
 
 ### 2. Wie diagnostizieren Sie die Zöliakie?
 
-1. Serologie **unter glutenhaltiger Ernährung**: **tTG-IgA** plus **Gesamt-IgA** (ggf. Endomysium-AK, deamidierte Gliadin-Peptid-AK)
-2. Bei **IgA-Mangel**: tTG-IgG bzw. DGP-IgG
-3. **Duodenalbiopsie** (mehrere, auch Bulbus): Marsh-Klassifikation: intraepitheliale Lymphozyten, Kryptenhyperplasie, Zottenatrophie
-4. Kinder: bei tTG-IgA ≥ 10× oberer Normwert und positivem EMA kann in definierten Fällen auf die Biopsie verzichtet werden (ESPGHAN)
-5. Vorher keine glutenfreie Diät beginnen
+Zuerst die Serologie unter glutenhaltiger Ernährung: tTG-IgA zusammen mit dem Gesamt-IgA. Bei IgA-Mangel nutze ich tTG-IgG oder DGP-IgG. Dann sichere ich die Diagnose mit einer Duodenalbiopsie, die intraepitheliale Lymphozyten, Kryptenhyperplasie und Zottenatrophie zeigt. Bei Kindern kann bei sehr hohem tTG-IgA und positivem EMA in definierten Fällen auf die Biopsie verzichtet werden. Der Patient darf vor der Diagnostik nicht glutenfrei essen.
 
-### 3. Welche Getreide darf der Patient essen, welche nicht?
+**Im Protokoll:** Willuweit 2026-06-c: Zottenatrophie, Kryptenhyperplasie, tTG-IgA, IgA-Mangel
 
-- **Verboten:** Weizen (inkl. Dinkel, Kamut, Grünkern), Roggen, Gerste (auch Malz); Hafer nur als zertifiziert glutenfreier Hafer
-- **Erlaubt:** Mais, Reis, Hirse, Buchweizen, Amaranth, Quinoa, Teff; Kartoffeln, Hülsenfrüchte
-- Auf versteckte Gluten in Fertigprodukten, Soßen, Medikamenten achten; Kontamination
+### 3. Welche Getreidesorten darf der Patient essen?
+
+Mais, Reis, Hirse, Buchweizen, Amaranth, Quinoa und Teff. Hafer nur, wenn er als glutenfrei zertifiziert ist. Verboten sind Weizen mit Dinkel, Kamut und Grünkern, Roggen und Gerste. Ich weise auf versteckte Glutenquellen in Fertigprodukten und Medikamenten hin.
+
+**Im Protokoll:** Willuweit 2026-06-c: Welche Getreidesorten darf der Patient essen?
 
 ### 4. Welche Symptome und Assoziationen kennen Sie?
 
-- Klassisch: Diarrhö, Steatorrhö, Gewichtsverlust, Blähungen; oft oligosymptomatisch
-- Extraintestinal: Eisenmangelanämie, Osteoporose, erhöhte Transaminasen, Aphthen, Zahnschmelzdefekte, Infertilität, Neuropathie, Müdigkeit
-- Assoziiert: **Typ-1-Diabetes, Hashimoto**, Autoimmunhepatitis, PBC, selektiver IgA-Mangel, Down-Syndrom, Turner-Syndrom
-- Haut: **Dermatitis herpetiformis Duhring**
+Klassisch sind Durchfälle, Steatorrhö, Gewichtsverlust und Blähungen. Häufig ist die Zöliakie aber oligosymptomatisch mit Eisenmangelanämie, Müdigkeit, Osteoporose, erhöhten Transaminasen, Aphthen oder Infertilität. Assoziiert sind Typ-1-Diabetes, Hashimoto-Thyreoiditis, Autoimmunhepatitis, PBC, selektiver IgA-Mangel und die Dermatitis herpetiformis Duhring.
 
 ### 5. Was ist die Dermatitis herpetiformis Duhring?
 
-Intensiv juckende, gruppierte Bläschen und Papeln, v. a. an **Streckseiten** (Ellenbogen, Knie, Gesäß), mit Zöliakie assoziiert. Diagnostik: Hautbiopsie, **IgA-Ablagerungen in den dermalen Papillenspitzen** (direkte Immunfluoreszenz). Therapie: **glutenfreie Diät** und Dapson (schnelle Juckreizlinderung; Methämoglobin und Hämolyse beachten, G6PD prüfen).
+Eine intensiv juckende Hauterkrankung mit gruppierten Bläschen und Papeln, vor allem an den Streckseiten von Ellenbogen, Knien und am Gesäß, die mit der Zöliakie assoziiert ist. In der Hautbiopsie sieht man mit direkter Immunfluoreszenz IgA-Ablagerungen in den Papillenspitzen. Ich behandle mit glutenfreier Diät und Dapson, achte dabei auf Hämolyse und Methämoglobinämie und prüfe zuvor die G6PD.
+
+**Im Protokoll:** Willuweit 2026-06-c: Dermatitis herpetiformis Duhring
 
 ### 6. Welche Komplikationen drohen?
 
-- Refraktäre Zöliakie (Beschwerden trotz strikter Diät > 12 Monate)
-- **EATL** (Enteropathie-assoziiertes T-Zell-Lymphom), Dünndarmadenokarzinom
-- Ulzerative Jejunoileitis, Hyposplenismus
-- Mangelzustände (Eisen, Folat, B12, Vitamin D, Calcium, Zink), Osteoporose
-Kontrollen: Serologie (Diätcompliance), DEXA, Vitamine.
+Die refraktäre Zöliakie, das Enteropathie-assoziierte T-Zell-Lymphom (EATL), Dünndarmadenokarzinome, die ulzerative Jejunoileitis, ein Hyposplenismus sowie Mangelzustände und Osteoporose. Zur Kontrolle nutze ich Serologie als Compliancemarker, Knochendichtemessung und Vitaminspiegel.
 
 ## Quellen
 

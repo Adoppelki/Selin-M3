@@ -1,57 +1,91 @@
 # Ikterus und Cholestase
 
-Priorität A · Gastro/Hepatologie · Prüfungsbezug: Willuweit 2024-05 und 2025-12: Ikterus; 2026-06-b: Cholestase-/Leberlabor
+Priorität A · Gastro/Hepatologie · Prüfungsbezug: Willuweit 2024-05 und 2025-12: Ikterus; 2026-06-b: Müdigkeit, Pruritus, Cholestase-/Leberlabor
 
 **Prüfstatus:** Standardwissen.
 
-## Kurzüberblick
+## Worum geht es?
+Ikterus ist die gelbliche Verfärbung von Skleren, Haut und Schleimhäuten durch erhöhtes Bilirubin. Sichtbar wird er ab etwa 2 bis 2,5 mg/dl, zuerst an den Skleren. Willuweit nutzt den Ikterus gern als Einstieg: Daraus entwickelt sich die Differenzialdiagnose, die Diagnostik und dann das Krankheitsbild (Steine, Tumor, Hepatitis, PBC/PSC). Entscheidend ist ein klarer Denkweg.
 
-- Ikterus ab Bilirubin ca. 2–2,5 mg/dl sichtbar (Skleren zuerst)
-- Einteilung **prä-, intra-, posthepatisch**, im Labor: unkonjugiert vs. konjugiert und Enzymmuster
-- Cholestase: **AP und γGT** führend, Bilirubin direkt ↑, Juckreiz, acholischer Stuhl, dunkler Urin
-- Wichtigster erster Schritt: **Sonographie** (Gallenwege erweitert?)
+## Bilirubin-Stoffwechsel kurz
+Bilirubin entsteht beim Hämabbau (hauptsächlich aus Erythrozyten). Es wird indirekt (unkonjugiert, an Albumin gebunden) zur Leber transportiert, dort mit Glucuronsäure **konjugiert** (direktes Bilirubin) und über die Galle in den Darm ausgeschieden. Im Darm entsteht Urobilinogen (Stuhlfarbe); ein Teil wird rückresorbiert und im Urin ausgeschieden. Konjugiertes Bilirubin ist wasserlöslich und erscheint daher im Urin (dunkel), unkonjugiertes nicht.
 
-## Fragen und Antworten
+## Einteilung
+- **Prähepatisch**: zu viel Bilirubin fällt an. Hämolyse (hämolytische Anämie, Sichelzell, Malaria) mit indirektem Bilirubin ↑, LDH ↑, Haptoglobin ↓, Retikulozyten ↑. Urin nicht dunkel (acholurischer Ikterus).
+- **Intrahepatisch**:
+  - hepatozellulär (Hepatitis, Zirrhose, Toxine, Medikamente, Alkohol): ALT/AST ↑, Synthese gestört
+  - intrahepatisch cholestatisch (PBC, Medikamente, Schwangerschaftscholestase)
+  - angeboren: Morbus Meulengracht/Gilbert (unkonjugiert, harmlos, bei Fasten oder Infekt), Crigler-Najjar, Dubin-Johnson und Rotor (konjugiert)
+- **Posthepatisch (extrahepatische Cholestase)**: Gallengangsstein, Tumor (Pankreaskopf, Gallengang, Papille), Striktur (PSC), Cholangitis. Typisch: **acholischer (heller) Stuhl, dunkler Urin**, Juckreiz, AP und γGT ↑, direktes Bilirubin ↑.
+
+## Labor zuordnen
+- **Cholestase**: AP, γGT, direktes Bilirubin.
+- **Zellschaden**: ALT, AST. AST > ALT (De-Ritis-Quotient > 1) spricht für Alkohol oder fortgeschrittene Schädigung.
+- **Synthese**: INR/Quick, Albumin, Cholinesterase.
+- **Hämolyse**: LDH, Haptoglobin, Retikulozyten, indirektes Bilirubin, Coombs-Test.
+Bei erhöhter AP prüfen, ob sie aus der Leber stammt (γGT erhöht) oder aus dem Knochen.
+
+## Vorgehen bei neuem Ikterus
+1. **Anamnese**: Schmerz, Fieber, Juckreiz, Stuhl- und Urinfarbe, Gewichtsverlust, Medikamente, Alkohol, Reisen, Drogen, Vorerkrankungen (Gallensteine, CED).
+2. **Untersuchung**: Hautzeichen der Leber, Courvoisier-Zeichen, Aszites, Hepatosplenomegalie.
+3. **Labor** wie oben, Hepatitis-Serologie, bei Bedarf Autoantikörper (AMA, ANA, SMA).
+4. **Sonographie**: Gallenwege erweitert?
+5. **Ja**: MRCP oder Endosonographie, dann therapeutische ERCP. **Nein**: hepatische Ursache abklären (Serologie, Autoimmunität, Eisen, Kupfer, ggf. Biopsie).
+
+## Courvoisier-Zeichen
+Tastbare, schmerzlose, vergrößerte Gallenblase bei Ikterus: spricht für einen Verschluss des Hauptgallengangs durch einen **Tumor** (z. B. Pankreaskopf), weil die Gallenblase noch dehnbar ist. Bei Steinleiden ist sie meist vernarbt und nicht vergrößerbar.
+
+## Pruritus bei Cholestase
+Der Juckreiz entsteht über pruritogene Substanzen (u. a. Lysophosphatidsäure/Autotaxin; die Rolle der Gallensäuren allein ist nicht der ganze Mechanismus). Therapie stufenweise: Ursache beheben (Drainage), Cholestyramin (mit Abstand zu anderen Medikamenten), dann Rifampicin, Naltrexon, Sertralin. UDCA bessert den Juckreiz meist nicht gut.
+
+## Prüfungsfallen
+- Immer zuerst Sonographie, dann gezielt weiter.
+- Müdigkeit plus Juckreiz plus erhöhte AP bei einer Frau mittleren Alters ist PBC, bis das Gegenteil bewiesen ist.
+- Bei Cholestase an Cholangitis denken, wenn Fieber dazukommt.
+
+## Kernfakten zum Merken
+- Sichtbar ab Bilirubin etwa 2 bis 2,5 mg/dl, zuerst Skleren.
+- Prä-, intra-, posthepatisch; Hämolyse: indirekt ↑, LDH ↑, Haptoglobin ↓.
+- Posthepatisch: heller Stuhl, dunkler Urin, AP/γGT ↑, Juckreiz.
+- Erster Schritt: Sonographie der Gallenwege.
+- Courvoisier-Zeichen = Tumor, nicht Stein.
+- Meulengracht: unkonjugiert, harmlos, bei Fasten oder Infekt.
+- Pruritus: Cholestyramin, Rifampicin, Naltrexon, Sertralin.
+
+## Typische Prüferfragen mit Antwort
 
 ### 1. Wie gliedern Sie die Ursachen eines Ikterus?
 
-- **Prähepatisch:** Hämolyse (indirektes Bilirubin ↑, LDH ↑, Haptoglobin ↓, Retikulozyten ↑)
-- **Intrahepatisch:** hepatozellulär (Hepatitis, Zirrhose, Toxine: ALT/AST ↑) oder intrahepatisch cholestatisch (PBC, Medikamente, Schwangerschaftscholestase)
-- **Posthepatisch:** Steine, Tumor (Pankreaskopf, Gallenwege), PSC-Stenosen, Cholangitis
-- Angeborene Formen: Morbus Meulengracht (unkonjugiert), Crigler-Najjar, Dubin-Johnson, Rotor (konjugiert)
+Ich unterscheide prä-, intra- und posthepatisch. Prähepatisch ist vor allem die Hämolyse mit indirektem Bilirubin, hoher LDH, niedrigem Haptoglobin und hohen Retikulozyten. Intrahepatisch gibt es hepatozelluläre Ursachen wie Hepatitis, Alkohol und Zirrhose, intrahepatische Cholestasen wie PBC und medikamentös-toxische Formen sowie angeborene Formen wie Meulengracht, Crigler-Najjar, Dubin-Johnson und Rotor. Posthepatisch sind Steine, Tumoren, Strikturen und Cholangitis.
 
-### 2. Welche Laborparameter helfen Ihnen bei der Einordnung?
+**Im Protokoll:** Willuweit 2024-05 und 2025-12: Ikterus
 
-- **Cholestase:** AP, γGT, direktes Bilirubin ↑
-- **Zellschaden:** ALT, AST (De-Ritis-Quotient AST/ALT > 1 bei Alkohol, fortgeschrittener Schädigung)
-- **Synthese:** INR/Quick, Albumin, Cholinesterase
-- **Hämolyse:** LDH, Haptoglobin, Retikulozyten, freies Hb, Coombs-Test
-- Differenzierung der AP: AP-Isoenzyme oder γGT (γGT ↑ spricht für Leber/Galle, nicht Knochen)
+### 2. Welche Laborparameter ordnen Sie wem zu?
+
+Cholestase zeigen AP, γGT und direktes Bilirubin. Der Leberzellschaden zeigt sich an ALT und AST, und ein AST/ALT-Quotient über 1 spricht für Alkohol oder eine fortgeschrittene Schädigung. Die Syntheseleistung beurteile ich mit INR bzw. Quick, Albumin und Cholinesterase. Eine Hämolyse belege ich mit LDH, Haptoglobin, Retikulozyten, indirektem Bilirubin und dem Coombs-Test.
+
+**Im Protokoll:** Willuweit 2026-06-b: Cholestase-/Leberlabor
 
 ### 3. Wie gehen Sie bei einem neu aufgetretenen Ikterus vor?
 
-1. Anamnese (Schmerz, Fieber, Medikamente, Alkohol, Reisen, Juckreiz, Stuhl-/Urinfarbe, Gewichtsverlust) und Untersuchung
-2. Labor (siehe oben), Hepatitis-Serologie, ggf. Autoantikörper
-3. **Sonographie:** erweiterte Gallenwege? Steine? Raumforderung?
-4. **Ja, erweitert:** MRCP oder Endosonographie, dann ERCP therapeutisch
-5. **Nein:** hepatische Ursache abklären (Serologie, AMA, ANA, Eisen, Kupfer, ggf. Biopsie)
+Zuerst Anamnese und Untersuchung, etwa nach Schmerzen, Fieber, Juckreiz, Stuhl- und Urinfarbe, Gewichtsverlust, Medikamenten, Alkohol und Reisen. Dann Labor mit Leber- und Cholestaseparametern, Gerinnung, Blutbild, Hämolyseparametern und Hepatitis-Serologie. Als erste Bildgebung mache ich eine Sonographie. Sind die Gallenwege erweitert, folgen MRCP oder Endosonographie und dann gegebenenfalls eine therapeutische ERCP. Sind sie nicht erweitert, kläre ich die hepatische Ursache mit Serologie, Autoantikörpern, Eisen, Kupfer und gegebenenfalls einer Biopsie.
 
-### 4. Was bedeutet Courvoisier-Zeichen?
+### 4. Was bedeutet das Courvoisier-Zeichen?
 
-Tastbare, schmerzlose, vergrößerte Gallenblase bei Ikterus. Spricht für Verschluss des DHC **durch Tumor** (z. B. Pankreaskopf), weil die Gallenblase noch dehnungsfähig ist. Bei Steinen ist sie meist vernarbt und schrumpft.
+Eine tastbare, schmerzlose, vergrößerte Gallenblase bei Ikterus. Sie spricht für einen Verschluss des Hauptgallengangs durch einen Tumor, etwa im Pankreaskopf, weil sich die bisher gesunde Gallenblase dehnen kann. Bei Steinleiden ist die Gallenblase meist vernarbt und schrumpft.
 
-### 5. Wie erklären Sie Juckreiz bei Cholestase? Wie behandeln Sie ihn?
+### 5. Warum juckt die Haut bei Cholestase und was tun Sie dagegen?
 
-Ablagerung bzw. Anstieg pruritogener Substanzen (u. a. Gallensäuren, Autotaxin/Lysophosphatidsäure); Pathophysiologie nicht vollständig geklärt.
-Stufen: Cholestyramin (Abstand zu anderen Medikamenten) → Rifampicin → Naltrexon → Sertralin; Behandlung der Ursache (Drainage). UDCA bessert den Juckreiz meist nicht gut.
+Es sammeln sich pruritogene Substanzen an (unter anderem Lysophosphatidsäure bzw. Autotaxin; Gallensäuren allein erklären es nicht). Ich behandle zuerst die Ursache, zum Beispiel durch Drainage. Medikamentös gehe ich stufenweise vor: Cholestyramin, dann Rifampicin, dann Naltrexon, dann Sertralin. UDCA bessert den Juckreiz meist nicht gut.
 
-### 6. Differenzialdiagnosen von Müdigkeit/Erschöpfung plus Pruritus?
+**Im Protokoll:** Willuweit 2026-06-b: Pruritus DD, Wirkung von UDCA auf den Juckreiz
 
-- Anämie/Eisenmangel, Hypothyreose (Hashimoto)
-- Cholestatische Lebererkrankung: **PBC** (typisch Frau mittleren Alters), PSC
-- Niereninsuffizienz (urämischer Pruritus), Polycythaemia vera, Lymphom (Hodgkin), Diabetes, Medikamente
-Erster Schritt: großes Blutbild, Ferritin, TSH, Kreatinin, Leberwerte inkl. AP.
+### 6. Differenzialdiagnosen von Müdigkeit, Erschöpfung und Pruritus?
+
+Anämie und Eisenmangel, Hypothyreose (Hashimoto), eine cholestatische Lebererkrankung, besonders PBC bei der Frau mittleren Alters, aber auch PSC, dazu Niereninsuffizienz mit urämischem Pruritus, Polycythaemia vera, Lymphome wie Hodgkin, Diabetes und Medikamente. Den ersten Schritt macht ein großes Blutbild, Ferritin, TSH, Kreatinin und die Leberwerte mit AP.
+
+**Im Protokoll:** Willuweit 2026-06-b: Müdigkeit/Erschöpfung DD, Pruritus DD
 
 ## Quellen
 
-- Standardwissen (Innere-Lehrbücher); Tokyo Guidelines 2018 für Cholangitis-Anteil
+- Standardwissen (Innere-Lehrbücher); Tokyo Guidelines 2018 für den Cholangitis-Anteil (Kriterien abgerufen)

@@ -14,7 +14,7 @@ seen = set()
 # Neues Format (durchgehendes Skript) hat Vorrang vor dem alten Kurzformat
 for d in (fach + "2", fach):
     for f in sorted(glob.glob(os.path.join(root, "quelle", d, "*.json"))):
-        if os.path.basename(f) == "spezialwissen.json":
+        if os.path.basename(f).startswith("spezialwissen"):
             continue
         for t in json.load(open(f, encoding="utf-8")):
             if t["id"] not in seen:
@@ -22,9 +22,9 @@ for d in (fach + "2", fach):
                 topics.append(t)
 
 spez = {}
-sp = os.path.join(root, "quelle", fach + "2", "spezialwissen.json")
-if os.path.exists(sp):
-    spez = json.load(open(sp, encoding="utf-8"))
+# alle spezialwissen*.json, später Dateien überschreiben frühere (gleiche id)
+for sp in sorted(glob.glob(os.path.join(root, "quelle", fach + "2", "spezialwissen*.json"))):
+    spez.update(json.load(open(sp, encoding="utf-8")))
 missing = [t["id"] for t in topics if t["id"] not in spez]
 print("ohne Spezialwissen:", missing)
 
